@@ -1,0 +1,14 @@
+{% for project in projects %}
+                           <div class="home_project_listitem" name="home-project-item">
+							<div>
+								<a href="/project/{{ project.project.id }}/issue/all"><img src="{{ project.project.PBAvatar }}" class="img-rounded" style="width:122px; height:122px;" /></a>
+							</div>
+							<div>
+								<span><i class="fa fa-fw {{ project.platform_flag }}"></i> {{ project.project.PBTitle }}</span>
+							</div>
+							<div>
+								<span><i class="fa  fa-flag-o fa-fw"></i> 版本:{{ project.lastest_version }}</span>
+							</div>
+						</div>
+                            
+{% endfor%}

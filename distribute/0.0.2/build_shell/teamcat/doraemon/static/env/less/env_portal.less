@@ -1,0 +1,81 @@
+@import 'env-variables.less';
+@import 'env-base.less';
+@import '/static/global/less/global-left-sub-nav.less';
+@import '/static/global/less/global-base.less';
+
+
+/*设置自动化任务工具条---------------------------------------------------------------------------------*/
+.portal_env_sub_leftnav
+{
+  .sub-leftnav();
+}
+
+
+.portal_env_view
+{
+  .sub_leftnav_brother();
+  padding-left:0px !important;
+  position:fixed;
+  left:0px;
+}
+
+.portal_env_listitem
+{
+  padding:0px 20px 20px 10px;
+  float:left;
+  cursor:pointer;
+  width:300px;
+  height:220px;
+}
+
+.portal_env_listitem div table tr
+{
+  padding:5px 5px 5px 5px;
+}
+
+
+.portal_env_hover
+{
+	background:rgba(0,0,0,.05);
+	border-radius: 3px;
+}
+
+
+.portal-env-list-plus
+{
+  border: 1px dashed #a1a3a6;
+  filter:alpha(Opacity=70); opacity:1.0;
+  height:148px;
+  width:148px;
+  margin-left:10px;
+  font-size:30px;
+  padding-top:45px;
+}
+
+.portal_env_listitem div
+{
+  padding: 5px 5px 5px 5px;
+}
+
+.portal_env_container
+{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	max-height:820px;
+	overflow-y:scroll;
+}
+
+.env_portal_menu_item
+{
+   width:120px;
+}
+
+.env_portal_menu_item_active
+{
+  border-bottom:2px solid #BBB;
+}
+
+
+
+

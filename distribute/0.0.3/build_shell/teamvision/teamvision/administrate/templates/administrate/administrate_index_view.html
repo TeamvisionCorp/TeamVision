@@ -1,0 +1,30 @@
+{% extends "masterpage_nirvana.html" %}
+
+{% block styles %}
+      
+     <link rel="stylesheet/less" href="/static/administrate/less/administrate.less" type="text/css" media="screen"/>
+     {% block admin_styles %} {% endblock %}
+
+{% endblock %}
+
+{% block left %}
+
+{{ left_nav_bar }}
+
+{% endblock %}
+
+{% block content %}
+
+     {% block admin_content %}{% endblock %}
+
+{% endblock %}
+
+{% block scripts %}
+
+     <!-- <script  type="text/javascript" src="/static/ucenter/js/ucenter.js"></script> -->
+     {% block admin_scripts %}{% endblock %}
+
+{% endblock %}
+
+<!--子页面继承内容 -->
+

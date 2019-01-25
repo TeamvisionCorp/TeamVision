@@ -1,0 +1,5 @@
+
+{% for module in modules %}    
+      <option {{ module.is_selected }} value="{{ module.module.id }}">{{ module.module.Name }}</option>
+{% endfor %}
+

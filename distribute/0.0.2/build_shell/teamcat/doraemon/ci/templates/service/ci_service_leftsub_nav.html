@@ -1,0 +1,30 @@
+
+<div id="ci_service_sub_leftnav" class="left_sub_nav">
+	<div class="sub_bar_header">
+		<p>
+		<h5>后端服务</h5>
+		
+	</p>
+	</div>
+<div class="left_sub_menu_container">
+	
+	<ul class="nav nav-stacked">
+		<li class="{{ page.all_active }}">
+			<a href="/ci/service/all" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>所有</a>
+		</li>
+		
+		{% for product in page.products %}
+		
+		{% if page.active_product_id == product.id %}
+		<li class="left_sub_meun_active">
+		{% else %}
+		<li class="">
+		{% endif %}
+			<a href="/ci/service/product/{{ product.id }}" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>{{ product.PTitle }}</a>
+		</li>
+		
+		{% endfor %}
+	</ul>
+
+</div>
+</div>

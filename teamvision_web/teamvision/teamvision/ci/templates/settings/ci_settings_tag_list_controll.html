@@ -1,0 +1,24 @@
+{% for tag in ci_tags %}
+		   <div  class="ci_settings_listview_item container-fluid" style="height:50px;">
+		   	<div class="row">
+				<div class="col-lg-10 col-md-8 col-sm-8">
+
+						<div class="ci_settings_listview_item_title">
+							<div class="fontfamily">
+								<span  name="tag_project-title">
+								<input type="hidden" name="tag_id" value="{{ tag.tag.id }}" />
+								<i class="fa fa-square fa-fw fa-lg" style="color:{{ tag.tag.TagColor }}"></i>
+								<span class="task_tag_title" name="tag_name" contenteditable="true"> {{ tag.tag.TagName }}</span>
+								</span>
+							</div>
+						</div>
+
+				</div>
+<!-- 				<div class="col-lg-1 col-md-4 col-sm-4" style="line-height:1.5em">
+					<span ><i class="fa fa-gears fa-fw fa-lg"></i>
+						<a><span name="ci_<settings></settings>_delete" style="color:red; 	quotes: 		;"><i class="fa fa-trash-o fa-lg fa-fw"></i></span></a>
+					</span>
+				</div> -->	
+			</div>
+		    </div>
+		    {% endfor %}

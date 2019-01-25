@@ -1,0 +1,41 @@
+<html>
+  <link rel="stylesheet" href="/static/userauthority/css/userauthority.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="/static/global/css/global.css" type="text/css" media="screen"/>
+  <body>
+  	<div id="header">
+         <span class="headerTitle">
+              Doraemon 质量助手
+         </span>
+    </div>
+	<div  class="watermark"></div>
+<div id="dialog-userlogin" class="dialog-user" title="登陆">
+	<div id="dialog-logintitle" class="dialog-usertitle">
+		<span >登陆</span>
+	</div>
+	{% if form.errors %}
+	<p class="error">
+		用户名或密码无效，请检查！
+	</p>
+	{% endif %}
+	<div id="userloginform" class="userform">
+		<form  action='' method='post' enctype="multipart/form-data">
+			{% csrf_token %}
+			<div>
+				<label for="username">用户:</label>
+				<input type="text" name="username" value="" id="username">
+			</div>
+			<div>
+				<label for="password">密码:</label>
+			    <input type="password" name="password" value="" id="password">
+			</div>
+			<div>
+				<input id="loginsubmit" class="us" type="submit" value="登陆" />
+			</div>
+			<input type="hidden" name="next" value="{{ next|escape }}" />
+		</form>
+	</div>
+   </div>
+</body>
+<script  type="text/javascript" src="/static/userauthority/js/userauthority.js"></script>
+
+</html>

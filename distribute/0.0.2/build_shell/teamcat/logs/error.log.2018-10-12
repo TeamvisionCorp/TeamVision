@@ -1,0 +1,77 @@
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Fri, 12 Oct 2018 10:54:18 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.

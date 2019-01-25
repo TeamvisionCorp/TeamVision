@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DoraemonController" default="release">
+	<xmlproperty file="pom.xml"/> 
+	<property name="release.version" value="${project.version}" />
+	
+	<property name="dist.name" value="distribute" />
+	<property name="dist.dir" location="${dist.name}" />
+	<property name="contro.dir" location="${dist.dir}/${project.artifactId}-${release.version}" />
+	<property name="cres.dir" location="${contro.dir}/res" />
+	<property name="clibs.dir" location="${contro.dir}/libs" />
+	<property name="czipFile" value="controller-${release.version}.zip" />
+	
+	<property name="proj.dir" location="." />
+	
+	<target name="mvn-build">
+	    <exec executable="cmd">
+			<arg value="/c" />
+			<arg value="mvn" />
+			<arg value="clean" />
+			<arg value="install" />
+		</exec>
+	</target>
+	
+	<target name="clean" description="Removes package output files">
+	    <exec executable="adb">
+			<arg value="kill-server" />
+		</exec>
+		
+		<delete dir="${dist.dir}" />
+		<mkdir dir="${dist.dir}" />
+	</target>
+
+	
+	<target name="package-controller" depends="clean,mvn-build">
+		<mkdir dir="${contro.dir}" />
+		<mkdir dir="${cres.dir}" />
+		<mkdir dir="${clibs.dir}" />
+		<!-- copy agent jar file to libs -->
+		<copy todir="${clibs.dir}">
+			<fileset dir="${proj.dir}/target">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${clibs.dir}">
+			<fileset dir="${proj.dir}/target/dependency">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+
+		<!-- generate shell file -->
+		<exec executable="cmd" dir="${contro.dir}">
+			<arg
+				line="/c echo java -jar libs\DoraemonController-${release.version}.jar > controller.bat" />
+		</exec>	
+		<copy todir="${cres.dir}">
+			<fileset dir="${proj.dir}/res">
+				<include name="AutoTestingSummary.html" />
+				<include name="CaseException.html" />
+				<include name="CaseFailedDetail.html" />
+				<include name="CITaskBuild.html" />
+				<include name="CITaskDeploy.html" />
+				<include name="CITaskFailure.html" />
+				<include name="CITaskReport.html" />
+				<include name="PackageSummary.html" />
+				<include name="ServerSummary.html" />
+				<include name="ChangeLogSummary.html" />
+				<include name="CodeInfoSummary.html" />
+				<include name="CodeUrlSummary.html" />
+				<include name="CodeVersionSummary.html" />
+				<include name="QRCode.html" />
+				<include name="DisasterSummary.html" />
+				<include name="DisasterReport.html" />
+				<include name="TimerErrorReport.html" />
+				<include name="TaskTooMachReport.html" />
+				<include name="logo.jpg" />
+		</fileset>
+		</copy>	
+		<copy todir="${contro.dir}">
+			<fileset dir="${proj.dir}/res">
+				<include name="controller.sh" />
+				<include name="controller.bat" />
+		</fileset>
+		<fileset dir="${proj.dir}">
+				<include name="controller.properties" />
+		</fileset>
+		</copy>	
+		<zip basedir="${contro.dir}" destfile="${dist.dir}\${czipFile}" />
+	</target>
+	
+	<target name="release" depends="package-controller"/>
+	
+
+</project>

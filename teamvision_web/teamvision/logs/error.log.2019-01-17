@@ -1,0 +1,305 @@
+Wed, 16 Jan 2019 20:16:41 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Thu, 17 Jan 2019 09:47:53 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 09:48:02 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 09:48:15 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 09:49:09 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 09:49:18 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 15:26:01 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 15:26:24 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 15:26:25 simplelogger.py[line:28] ERROR time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-14' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 15:26:25 simplelogger.py[line:28] ERROR time data '2019-01-17' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 200, in init_task
+    temp_date = datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z")
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data '2019-01-17' does not match format '%Y-%m-%dT%H:%M:%S.000Z'
+Thu, 17 Jan 2019 15:33:07 simplelogger.py[line:28] ERROR local variable 'temp_date' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 209, in init_task
+    tmp_task.DeadLine = temp_date
+UnboundLocalError: local variable 'temp_date' referenced before assignment
+Thu, 17 Jan 2019 15:33:17 simplelogger.py[line:28] ERROR local variable 'temp_date' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 209, in init_task
+    tmp_task.DeadLine = temp_date
+UnboundLocalError: local variable 'temp_date' referenced before assignment
+Thu, 17 Jan 2019 15:33:26 simplelogger.py[line:28] ERROR local variable 'temp_date' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 209, in init_task
+    tmp_task.DeadLine = temp_date
+UnboundLocalError: local variable 'temp_date' referenced before assignment
+Thu, 17 Jan 2019 15:35:05 simplelogger.py[line:28] ERROR ['’2019-01-16T16:00:00.000Z‘ 必须为合法的日期格式，请使用 YYYY-MM-DD 格式。']
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 139, in edit_task
+    task.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 823, in _save_table
+    forced_update)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 872, in _do_update
+    return filtered._update(values) > 0
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 709, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1374, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1050, in execute_sql
+    sql, params = self.as_sql()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1340, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 767, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1276, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1271, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1246, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['’2019-01-16T16:00:00.000Z‘ 必须为合法的日期格式，请使用 YYYY-MM-DD 格式。']
+Thu, 17 Jan 2019 15:36:13 simplelogger.py[line:28] ERROR ['’2019-01-16T16:00:00.000Z‘ 必须为合法的日期格式，请使用 YYYY-MM-DD 格式。']
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 139, in edit_task
+    task.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 759, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 823, in _save_table
+    forced_update)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/base.py", line 872, in _do_update
+    return filtered._update(values) > 0
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 709, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1374, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1050, in execute_sql
+    sql, params = self.as_sql()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1340, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 767, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1276, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1271, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 1246, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['’2019-01-16T16:00:00.000Z‘ 必须为合法的日期格式，请使用 YYYY-MM-DD 格式。']
+Thu, 17 Jan 2019 16:12:54 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:13:03 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:13:35 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:14:04 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:14:43 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:21:12 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:23:24 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:26:01 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:28:12 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:28:23 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:28:44 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:28:57 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:31:44 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:31:59 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 16:57:58 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:00:29 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:05:21 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:06:20 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:07:24 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:07:35 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:08:04 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:08:11 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:11:07 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'
+Thu, 17 Jan 2019 17:11:14 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 149, in edit_child_task
+    if child.get('value').strip() != '':
+AttributeError: 'NoneType' object has no attribute 'strip'

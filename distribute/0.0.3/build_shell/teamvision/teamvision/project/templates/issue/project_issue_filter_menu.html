@@ -1,0 +1,7 @@
+{% for filter in filters %}
+<li  label="{{ filter.id }}" class="issue_filter_item">
+<a href="#" style="font-size:10px; 	">{{ filter.FilterName }}
+<i class="fa fa-fw fa-trash pull-right" ></i>
+</a>
+</li>
+{% endfor %}

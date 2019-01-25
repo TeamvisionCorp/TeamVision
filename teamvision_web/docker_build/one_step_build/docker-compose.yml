@@ -1,0 +1,70 @@
+version: "3"
+services:
+  nginx:
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx:/web/nginx
+      - ./nginx/conf:/etc/nginx/conf.d
+    networks:
+      teamcat:
+        aliases:
+          - nginx
+    depends_on:
+      - django_web
+
+  django_web:
+    build: ./teamvision
+    expose:
+      - "8055"
+      - "8066"
+    volumes:
+      - ./teamvision:/web/www/teamvision
+    working_dir: /web/www/teamvision
+    command: "sh startup.sh"
+    networks:
+      teamcat:
+        aliases:
+          - django_web
+    depends_on:
+      - mysql
+      - mongodb
+      - redis
+
+
+  mysql:
+    build: ./mysql
+    expose:
+      - "3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    networks:
+      teamcat:
+        aliases:
+          - mysql_db
+
+
+
+  redis:
+    build: ./redis
+    expose:
+      - "6379"
+    networks:
+      teamcat:
+        aliases:
+          - redis
+
+  mongodb:
+    build: ./mongo
+    expose:
+      - "27017"
+    volumes:
+      - ./mongo/data:/data/mongodb
+    networks:
+      teamcat:
+        aliases:
+          - mongo_db
+networks:
+  teamcat:

@@ -1,0 +1,18 @@
+<html>
+
+  <body>
+     <embed src="/project/issue/download/{{ file_id }}" type="application/pdf" />
+  </body>
+</html>
+ 
+ 
+ {% if file_type == 1 %}
+                     <img alt="" src="/project/issue/download/{{ file_id }}">
+                     {% endif %}
+                     {% if file_type == 2 %}
+                     <video src="/project/issue/download/{{ file_id }}" controls="controls">
+                     </video>
+                     {% endif %}
+                     {% if file_type == 3 %}
+                         <embed src="/project/issue/download/{{ file_id }}" type="application/pdf"/>
+                     {% endif %}

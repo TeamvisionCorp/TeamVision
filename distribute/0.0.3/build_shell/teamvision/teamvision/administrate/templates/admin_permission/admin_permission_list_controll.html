@@ -1,0 +1,25 @@
+{% for permission in permissions %}
+		   <div  class="admin_user_listview_item container-fluid">
+		   	<div class="row">
+		   		<div class="pull-left permission_row_item" style="width:170px;">
+					<span style="color:#333;">
+						<input type="hidden" value="{{ permission.id }}" name="permission_id" />
+						<span style="font-size:14px;" class="content-editable" contenteditable="true" name="permission_name"> 
+							<i class="fa fa-shield fa-fw fa-lg"></i>
+							{{ permission.name }}
+						</span>
+					</span> 
+					
+				</div>
+				<div class="col-md-8 col-sm-6 usergroup_row_item" >
+							<span name="permission_desc" class="content-editable" contenteditable="true"   style="color:#333;">
+								<i class="fa fa-info-circle fa-fw"></i>
+								{{ permission.description }}
+							</span>
+				</div>
+				<div class="col-sm-1" style="line-height:1.5em;">
+					<span style="margin-top:30px;display:inline-block;cursor:pointer" name="permission_delete"><i class="fa fa-trash-o fa-fw fa-lg" style="color:red;"></i></span>
+				</div>
+			</div>
+		    </div>
+{% endfor %}

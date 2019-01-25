@@ -1,0 +1,5 @@
+{% for server in deploy_servers %}
+   
+      <option {{ server.is_selected }} value="{{ server.ci_server.id }}">{{ server.ci_server.ServerName }}</option>
+   
+{% endfor %}

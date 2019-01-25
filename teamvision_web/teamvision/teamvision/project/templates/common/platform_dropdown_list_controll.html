@@ -1,0 +1,5 @@
+{% for platform in platforms %}
+   
+      <option {{ platform.is_selected }} value="{{ platform.platform.DicDataValue }}">{{ platform.platform.DicDataName }}</option>
+   
+{% endfor %}

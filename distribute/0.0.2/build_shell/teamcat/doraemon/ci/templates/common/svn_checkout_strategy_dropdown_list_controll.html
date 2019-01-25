@@ -1,0 +1,5 @@
+{% for strategy in checkout_strategies %}
+   
+      <option {{ strategy.is_selected }} value="{{ strategy.dm_data_value.DicDataValue }}">{{ strategy.dm_data_value.DicDataName }}</option>
+   
+{% endfor %}

@@ -1,0 +1,33 @@
+{% extends "ucenter/ucenter_index_view.html" %}
+
+{% block ucenter_styles %}
+
+<!-- <link rel="stylesheet/less" href="/static/home/less/home_project.less" type="text/css" media="screen"/> -->
+
+{% endblock %}
+
+{% block ucenter_content %}
+
+<div id="ucenter_account_sub_leftnav" class="sub_side_bar">
+	
+	{{ sub_nav_bar }}
+	
+</div>
+
+<div id="ucenter_account_view" class="sub_sidebar_brother">
+	
+	{{ user_form }}
+	
+	{{ avatar_info }}
+	
+	{{ password_webpart }}
+	
+</div>
+
+{% endblock %}
+
+{% block ucenter_scripts %}
+
+<script  type="text/javascript" src="/static/ucenter/js/ucenter_account.js"></script>
+
+{% endblock %}

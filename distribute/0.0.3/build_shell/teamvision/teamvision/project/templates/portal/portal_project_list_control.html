@@ -1,0 +1,22 @@
+{% for project in projects %}
+                           <div class="portal_project_listitem" name="portal-project-item">
+							<div>
+								<a href="/project/{{ project.project.id }}/issue/all"><img src="{{ project.project.PBAvatar }}" class="img-rounded" style="width:200px; height:100px;" /></a>
+							</div>
+							<div>
+							    <div>
+								<span><i class="fa fa-fw {{ project.platform_flag }}"></i> {{ project.project.PBTitle }}</span>
+							</div>
+							<div>
+								<span><i class="fa  fa-flag-o fa-fw"></i> 版本:{{ project.lastest_version }}</span>
+							</div>
+							</div>
+						</div>
+                            
+{% endfor%}
+                  
+                        
+                       <!--  <div class="portal_project_listitem portal-project-list-plus" name="portal-project-item" id="portal_add_project">
+							<p class="text-center"><i class="fa fa-plus"></i></p>
+						</div> -->
+					

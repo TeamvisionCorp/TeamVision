@@ -1,0 +1,39 @@
+				<div class="left_menu_container">
+					<ul class="leftmenu">
+						<li id="mydashboard" class="{{ page.dashboard_active }}">
+							<a class="leftmenuitem" href="/home/summary"><i class="fa fa-dashboard fa-fw fa-lg"></i><span>面板</sapn></a>
+						</li>
+{#						<li class={{ page.project_active }}>#}
+{#							<a class="leftmenuitem" href="{{ page.project_href }}"><i class="fa fa-flag fa-fw fa-lg"></i><span>项目</sapn></a>#}
+{#						</li>#}
+						<li class={{ page.issue_active }}>
+							<a class="leftmenuitem" href="{{ page.issue_href }}"><i class="fa fa-bullhorn fa-fw fa-lg"></i><span>问题</span> </a>
+						</li>
+						<li class={{ page.fortesting_active }}>
+							<a class="leftmenuitem" href="{{ page.fortesting_href }}"><i class="fa fa-bullhorn fa-fw fa-lg"></i><span>提测</span> </a>
+						</li>
+						
+						<li class={{ page.task_active }}>
+							<a class="leftmenuitem" href="{{ page.task_href }}"><i class="fa fa-tasks fa-fw fa-lg"></i><span>任务</span></a>
+						</li>
+						
+						
+						<li class={{ page.device_active }}>
+							<a class="leftmenuitem" href="{{ page.device_href }}"><i class="fa fa-mobile-phone fa-fw fa-lg"></i><span>设备</span> </a>
+						</li>
+						
+						<li class={{ page.webapps_active }}>
+							<a class="leftmenuitem" href="{{ page.webapps_href }}"><i class="fa fa-rocket fa-fw fa-lg"></i><span>工具</span></a>
+						</li>
+						<!-- {% for menuitem in meunitemlist %}
+						     <li id={{ menuitem.get_id }}>
+							      <a class="leftmenuitem"><i class=" {{ menuitem.get_key }} "></i>&nbsp; {{ menuitem.get_name }}</a>
+						    </li>
+						{% endfor %} -->
+						
+						<!-- <li class="leftmenu-plus">
+							<a class="leftmenuitem" href="#"><i class="fa fa-plus fa-fw"></i></a>
+						</li> -->
+					</ul>
+					
+					</div>

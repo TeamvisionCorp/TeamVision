@@ -1,0 +1,15 @@
+<span class="dorpdown_option_menu" role="module_menu">
+<div>
+	<b class="top"> <i class="top-arrow1"></i> <i class="top-arrow2"></i>
+	</b>
+</div>
+<ul class="dorpdown_option_list" role="module_menu">
+  {% for module in modules %}
+	<li class="option-item" labelid='{{ module.module.id }}'>
+	   <span name="item-icon" style="display:inline-block;width:30px;padding-left:10px;"><i   class="fa fa-cube fa-fw "></i></span>
+	   <span name="item-text" style="display:inline-block;width:70px;"> {{ module.module.Name }}</span>
+	   <span name="item-status" style="display:inline-block;width:30px;" ><i class="fa  {{ module.is_selected_style }}" type='{{ module.module.id }}'></i></span>
+  </li>
+ {% endfor %}
+</ul>
+ </span>

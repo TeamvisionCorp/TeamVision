@@ -1,0 +1,34 @@
+				<div class="left_menu_container">
+					<ul class="leftmenu">
+						<!-- <li class="master-page-header-logo">
+								<a href="/"><img src="/static/global/images/logo.jpg"/ class="img-circle" style="width:50px; height:50px;"></a>
+							</li>
+ -->						<li id="my_account" class="{{ page.account_active }}">
+							<a class="leftmenuitem" href="{{ page.account_href }}"><i class="fa fa-dashboard fa-fw fa-lg"></i><span>账号</span></a>
+						</li>
+						
+						<li class={{ page.fortesting_active }}>
+							<a class="leftmenuitem" href="{{ page.fortesting_href }}"><i class="fa fa-users fa-fw fa-lg"></i><span>团队</span> </a>
+						</li>
+						
+						<li class={{ page.autotask_active }}>
+							<a class="leftmenuitem" href="{{ page.autotask_href }}"><i class="fa fa-comments-o fa-fw"></i><span>消息</span></a>
+						</li>
+						
+						<li class={{ page.task_active }}>
+							<a class="leftmenuitem" href="{{ page.task_href }}"><i class="fa fa-tv fa-fw fa-lg"></i><span>面板</span></a>
+						</li>
+						
+						<li class={{ page.project_active }}>
+							<a class="leftmenuitem" href="{{ page.project_href }}"><i class="fa fa-magic fa-fw fa-lg"></i><span>快捷方式</span></a>
+						</li>
+						
+						<!-- {% for menuitem in meunitemlist %}
+						     <li id={{ menuitem.get_id }}>
+							      <a class="leftmenuitem"><i class=" {{ menuitem.get_key }} "></i>&nbsp; {{ menuitem.get_name }}</a>
+						    </li>
+						{% endfor %} -->
+						
+					</ul>
+					
+					</div>

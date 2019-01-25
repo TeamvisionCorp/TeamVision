@@ -1,0 +1,197 @@
+<div class="issue-detail-panel">
+    <div class="issue-detail-tool-bar">
+        {% if issue.issue.Status != 3 %}
+        <span id="resolve_issue" operation_type="1" class="issue-detail-operation cursor-hand">
+        <i class="fa fa-legal"></i> 解决问题</span>
+        {% endif %}
+        {% if issue.issue.Status == 4 %}
+        <span id="close_issue" operation_type="2" class="issue-detail-operation cursor-hand">
+        <i class="fa fa-anchor"></i> 关闭问题</span>
+        {% endif %}
+        {% if issue.issue.Status == 3 %}
+        <span id="reopen_issue" operation_type="3"  class="issue-detail-operation cursor-hand">
+        <i class="fa fa-reply-all"></i> 重新打开</span>
+        {% endif %}
+        {% if issue.issue.Status == 4 %}
+            <span id="reopen_issue" operation_type="3"  class="issue-detail-operation cursor-hand">
+        <i class="fa fa-reply-all"></i> 重新打开</span>
+        {% endif %}
+    </div>
+    <div class="issue-detail-summary">
+         <div  style="padding-left: 30px">
+         <span class="issue-detail-id">
+         <i id="close-detail-panel" class="fa fa-angle-right fa-lg cursor-hand"></i>
+            #{{ issue.issue.id }} 
+         </span>
+          <span class="issue-default-title">{{ issue.default_title }}</span>
+          <span class="issue-detail-title" style="display: inline" contenteditable="true" field_name="Title">{{ issue.issue.Title }}</span>
+         </div>
+         <div class="issue-detail-creation">
+            <span class="issue-detail-creator">{{ issue.creator_name }}</span>
+            <span class="issue-detail-createdate">创建于{{ issue.create_date }},</span>
+            <span style="display:inline-block;">{{ issue.update_date }}更新</span>
+         </div>
+         <div class="issue-detail-topic">
+             <div class="col-sm-4">
+                
+                 <span class="issue-detail-topic-content cursor-hand postion-absolute">
+                 <span class="issue-detail-topic-field-name">状态:</span>
+                 <i class="fa {{ issue.status.Label }} {{ issue.status.LabelStyle }} " ></i>
+                  <span>{{ issue.status.Name }}</span>
+                 <!--  <i class="fa fa-caret-down"></i>
+                  {{ status_dropdown_menu }} -->
+                 </span>
+            
+             </div>
+             <div class="col-sm-4">
+                 <span class="issue-detail-topic-content cursor-hand postion-absolute" field_name="Solution">
+                 <span class="issue-detail-topic-field-name">解决结果:</span>
+                 <i class="fa {{ issue.solution.Label }} {{ issue.solution.LabelStyle }}"></i>
+                <span>{{ issue.solution.Name }}</span>
+              <!--   <i class="fa fa-caret-down"></i>
+                {{ solution_dropdown_menu }} -->
+                </span>
+                
+             </div>
+             <div class="col-sm-4">
+                
+                 <span class="issue-detail-topic-content cursor-hand postion-absolute" field_name="Severity">
+                 <span class="issue-detail-topic-field-name">严重性:</span>
+                 <span name="field-icon"><i class="fa  fa-circle {{ issue.severity.LabelStyle }}"></i></span>
+                  <span name="field-text">{{ issue.severity.Name }}</span>
+                 <i class="fa fa-caret-down"></i>
+                 <span>{{ severity_dropdown_menu }}</span>
+                 </span>
+             </div>
+         </div>
+    </div>
+    <div class="issue-detail-body" class="issue-detail-body">
+         <div class="issue-desc" style="">
+            <div class="issue-detail-desc-title">
+                <i class="fa fa-sticky-note"></i> 描述:
+            </div>
+            <div id="issue-desc-content-view"  title="点击编辑" data-toggle="tooltip" data-placement="bottom" class="issue-detail-desc-content-veiw" contenteditable="true" field_name="Desc" >
+                 {{ issue.issue.Desc|safe }}
+            </div>
+            <div id="issue-desc-edit-view" class="issue-detail-desc-edit-veiw" field_name="Desc">
+                 <textarea name="text" id="myEditor"># Test</textarea>
+            </div>
+             <div id="issue-desc-save-view" class="pull-right" style="display:none;margin-top:5px;">
+                      <button  id="issue-desc-save-button"  class="btn ladda-button issue-detail-desc-save-button" data-style="slide-right" type="submit" title="保存修改">
+                      <span class="ladda-label"><span class="glyphicon glyphicon-ok"></span></span><span class="ladda-spinner"></span>
+                      </button>
+                      <button id="issue-desc-cancel-button" class="btn btn-default" title="取消修改" type="button"><span class="glyphicon glyphicon-remove"></span></button>
+             </div>
+         </div>
+         <div class="issue-detail-field" >
+            <div style="margin-top:-10px;">
+              <div class="col-sm-6 issue-detail-field-content">
+                <span class=" cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="Processor">
+                     <i class="fa fa-hand-o-right"></i> 经办人:
+                <span name="field-text" style="color:#3b73af;">{{ issue.processor_name }}</span>
+                <i class="fa fa-caret-down"></i>
+                <span>{{ member_dropdown_menu }}</span>
+                </span>
+                  <span style="margin-left: 200px;"  class=" cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="Team">
+                     <i class="fa fa-hand-o-right"></i> 团队:
+                <span name="field-text" style="color:#3b73af;">{{ issue.team_name }}</span>
+                <i class="fa fa-caret-down"></i>
+                <span>{{ team_dropdown_menu }}</span>
+                </span>
+              </div>
+            <div class="col-sm-6 issue-detail-field-content" >
+             <span class="cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="Module">
+                    <i class="fa fa-cube"></i> 模块:
+                 <span name="field-text" style="color:#3b73af;">{{ issue.module_name }}</span>
+                 <i class="fa fa-caret-down"></i>
+                 <span>{{ module_dropdown_menu }}</span>
+                </span>
+            </div>
+            <div class="col-sm-6 issue-detail-field-content" >
+             <span class=" cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="Version">
+                     <i class="fa fa-code-fork"></i> 版本:
+                 <span name="field-text" style="color:#3b73af;">{{ issue.version }}</span>
+                 <i class="fa fa-caret-down"></i>
+                 <span>{{ version_dropdown_menu }}</span>
+                </span>
+              
+            </div>
+            <div class="col-sm-6 issue-detail-field-content" >
+               <span class=" cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="IssueCategory">
+                <i class="fa fa-chain"></i> 问题分类:
+                 <span name="field-text" style="color:#3b73af;">{{ issue.category.Name }}</span>
+                 <i class="fa fa-caret-down"></i>
+                 <span>{{ category_dropdown_menu }}</span>
+                 </span>
+            </div>
+            <div class="col-sm-6 issue-detail-field-content" >
+            <span class="cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="ProjectPhase">
+                <i class="fa fa-leaf"></i> 项目阶段:
+                 <span name="field-text" style="color:#3b73af;">{{ issue.project_phase.Name }}</span>
+                 <i class="fa fa-caret-down"></i>
+                 <span>{{ phase_dropdown_menu }}</span>
+                 </span>
+            </div>
+             <div class="col-sm-6 issue-detail-field-content">
+               
+                 <span class="cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="DeviceOS">
+                  <i class="fa fa-sticky-note"></i> 系统:
+                    <span name="field-text" os_id="{{ issue.issue.DeviceOS }}" style="color:#3b73af;">{{ issue.os_name }}</span>
+                    <i class="fa fa-caret-down"></i>
+                    <span>{{ os_dropdown_menu }}</span>
+                 </span>
+                 <span  os_id={{ issue.os_version.OS  }} class=" cursor-hand issue-detail-field-dropdown-menu postion-absolute" field_name="OSVersion" style="margin-left:120px;">
+                  <span name="field-text"   style="color:#3b73af;margin-left:10px;">{{ issue.os_version.Name }}</span>
+                   <i class="fa fa-caret-down"></i>
+                   <span id="issue_device_os_version">{{ os_version_dropdown_menu }}</span>
+                 </span>
+            </div>
+            </div>
+         </div>
+         <div class="issue-attahcments" style="“”">
+              <div style="margin-bottom:2px;color:#b2b2b2;padding:15px 5px 5px 30px;">
+                   <span><i class="fa fa-paperclip"></i> 附件:</span>
+                   <div class="pull-right">
+                    <div class="issue-info btn-group issue-detail-field-dropdown-menu">
+                       <a  id="issue-detail-upload-file-button" class="btn btn-default btn-xs postion-absolute" style="color:#b2b2b2;">
+                            <i class="fa fa-cloud-upload"></i> 上传
+                        </a>
+                    </div>
+               
+                  </div>
+              </div>
+              <div  class="attachment-container">
+                  <div>
+                  {% for attachment in issue.attachments %}
+                     <div class="attachment-item">
+                          <span class="attachment-item-fileinfo cursor-hand" name="attachment_info" file_id={{ attachment.file.id }}><i class="fa text-muted fa-file-image-o" style="color:#b2b2b2;"></i> 
+                          {{ attachment.file.FileName }}
+                          </span>
+                          <span class="attachment-item-operation">
+                           <center style="float:right;">
+                              <a name="detail_attachment_download" style="color:#3b73af;" href="/project/issue/download/{{ attachment.file.id }}"><i class="fa fa-fw fa-download cursor-hand"></i></a>
+                              <span name="detail_attachment_delete"><i class="fa fa-fw fa-trash cursor-hand"></i></span>
+                            </center>
+                          </span>
+                     </div>
+                    {% endfor %}
+                  </div>
+              </div>
+         </div>
+         <div class="issue-detail-activity">
+            <div class="issue-detail-activity-title">
+               <i class="fa fa-bullhorn"></i> 问题动态:
+            </div>
+            <div style="margin-bottom:2px;color:#b2b2b2;padding:10px 5px 5px 50px;">
+                 <div style="border-left: 2px solid #b2b2b2;margin-bottom:20px;">
+                  {{ issue_detail_activity }}
+                </div>
+         </div>
+         <div class="issue-detail-comment-add">
+              <div class="input-group" style="height:47px;box-shadow: -15px 0px rgba(0, 0, 0, 0.1);">
+                <input id="issue_comment_input" style="height:47px;outline: medium;border: none;" type="text" class="form-control" placeholder="输入内容，按Enter快速发布" aria-describedby="basic-addon2">
+                  <span class="input-group-addon issue-comment-add-button" id="issue_comment_add_button">发布</span>
+              </div>
+         </div>
+    </div>
+</div>

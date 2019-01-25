@@ -1,0 +1,25 @@
+<div name="task-parameter-group" class="filed-pop-meun">
+   
+   <div style="overflow-y: scroll;height:150px;">
+	<ul class="list-group">
+		<li class="list-group-item">
+			<input class="form-control" placeholder="按照参数组名称查找" name="context_search_input" role="task-parameter" > 
+		</li>
+		{% for group in parameter_groups %}
+		<li class="list-group-item" labelid="{{ group.id }}" >
+			{% if group.is_default %}
+			<i class="fa  fa-check fa-fw fa-lg"></i><span style="padding-left:20px;"> {{ group.group_name }}</span>
+		    {% else %}
+		    <i class="fa fa-fw fa-lg"></i><span style="padding-left:20px;"> {{ group.group_name }}</span>
+		    {% endif %}
+		</li>
+		{% endfor %}
+		<!-- <li class="list-group-item"></li> -->
+		
+	</ul>
+	
+</div>
+<span name="confirm_build_withparameter" style="width:65px!important; margin-right:30px !important;" class="cursor-hand small_green_radius_button pull-right">构建</span>
+   
+   	
+</div>

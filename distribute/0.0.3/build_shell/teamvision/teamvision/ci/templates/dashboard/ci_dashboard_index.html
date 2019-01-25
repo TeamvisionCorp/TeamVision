@@ -1,0 +1,27 @@
+{% extends "ci/ci_index_view.html" %}
+
+{% block ci_styles %}
+
+{% endblock %}
+
+{% block ci_content %}
+    
+	<div class="ci_task_view">
+		<div id="ci_dashboard_tasks" style=" position:fixed;left:0px;" class="col-lg-9 col-md-6 col-sm-12 col-xs-12 ci-dashboard-summary">
+			{{ dashboard_task_list }}
+		</div>
+		
+		<div id="ci_dashboard_in_queue" style=" position:fixed;left:75%;" class="col-lg-3  col-md-6 hidden-sm hidden-xs ci-dashboard-summary">
+			{{ dashboard_task_queue }}
+			{{ dashboard_agent }}
+		</div>
+	
+	</div>
+{% endblock %}
+
+{% block ci_scripts %}
+
+<script  type="text/javascript" src="/static/ci/js/ci_dash_board.js"></script>
+<script  type="text/javascript" src="/static/ci/js/ci_task.js"></script>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+	<div class="admin-panel-nonbackground">
+		<div class="admin-panel-head-nonbackground">
+			<input id="group_id" value="{{ group.group.id }}" type="hidden" />
+			<h3 class="panel-title">设置  <span class="badge"> {{ group.group.name }}</span> 权限
+				<!-- <a id="commit_group_permission" class="button-inlist pull-right"  style="margin-right:10% !important; padding-left:25px;width:80px; height:25px; display:inline-block">应用</a> -->
+			</h3>
+		</div>
+		<div class="admin-panel-body-nonbackground" id="group_permission_list">
+			{{ permission_list_webpart }}
+		</div>
+	</div>
+
+	
+
+</div>

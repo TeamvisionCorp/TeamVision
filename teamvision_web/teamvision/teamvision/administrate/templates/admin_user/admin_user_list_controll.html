@@ -1,0 +1,25 @@
+{% for user in users %}
+		   <div  class="admin_user_listview_item container-fluid">
+		   	<div class="row">
+		   		<div class="pull-left" style="width:60px;">
+					<span name="user_fullname" style="color:#333;margin-top: 10px">
+						
+						<a href="/administrate/user/{{ user.user.id }}/edit"><img class="img-circle" src="{{ user.user_avatar }}"  style="width:40px;height:40px;"/></a>
+									{% for group in user.user_groups %}
+								    <span class='label label-default visible-lg-inline-block visible-md-inline-block' labelid="{{ group.id }}" style='background-color:{{ group.extend_info.backcolor }} ; opacity:0.5;font-size:8px !important;'>{{ group.name }}</span>
+								    {% endfor %}
+					</span> 
+					
+				</div>
+				<div class="col-sm-10">
+							<span style="color:#333" class="admin_user_listview_item_name">
+								{{ user.user_full_name }}
+							</span> 
+							<span  style="color:#999;"  name="user_email">{{ user.user_name|safe }}</span>
+				</div>
+				<div class="col-sm-1" style="line-height:1.5em;">
+					<span style="margin-top:30px;display:inline-block;cursor:pointer" name="user_delete"><i class="fa fa-trash-o fa-fw fa-lg" style="color:red;"></i></span>
+				</div>
+			</div>
+		    </div>
+{% endfor %}

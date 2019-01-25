@@ -1,0 +1,5 @@
+
+{% for team in teams %}
+      <option {{ team.is_selected }} value="{{ team.team.id }}">{{ team.team.Name }}</option>
+{% endfor %}
+

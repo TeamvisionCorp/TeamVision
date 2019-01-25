@@ -1,0 +1,670 @@
+Mon, 14 Jan 2019 11:08:18 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 11:08:30 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 11:10:56 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 12:08:10 simplelogger.py[line:28] ERROR ProjectModule matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 481, in get
+    result=super(ModuleManager,self).get_queryset().get(id=moduleid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectModule matching query does not exist.
+Mon, 14 Jan 2019 12:08:10 simplelogger.py[line:28] ERROR ProjectCodeUrl matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 139, in get
+    result=super(CodeUrlManager,self).get_queryset().get(id=code_url_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectCodeUrl matching query does not exist.
+Mon, 14 Jan 2019 12:08:11 simplelogger.py[line:18] ERROR Connection unexpectedly closed
+Mon, 14 Jan 2019 12:08:11 simplelogger.py[line:18] ERROR Connection unexpectedly closed
+Mon, 14 Jan 2019 12:08:11 simplelogger.py[line:18] ERROR Connection unexpectedly closed
+Mon, 14 Jan 2019 12:08:11 simplelogger.py[line:18] ERROR Connection unexpectedly closed
+Mon, 14 Jan 2019 12:08:11 simplelogger.py[line:18] ERROR Connection unexpectedly closed
+Mon, 14 Jan 2019 12:10:04 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 13:38:15 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 14:22:43 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Mon, 14 Jan 2019 15:30:21 simplelogger.py[line:28] ERROR type object 'datetime.date' has no attribute 'fromisoformat'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 137, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 202, in init_task
+    tmp_task.DeadLine = datetime.date.fromisoformat(dead_line)
+AttributeError: type object 'datetime.date' has no attribute 'fromisoformat'
+Mon, 14 Jan 2019 15:30:52 simplelogger.py[line:28] ERROR type object 'datetime.date' has no attribute 'fromisoformat'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 137, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 202, in init_task
+    tmp_task.DeadLine = datetime.date.fromisoformat(dead_line)
+AttributeError: type object 'datetime.date' has no attribute 'fromisoformat'
+Mon, 14 Jan 2019 15:32:28 simplelogger.py[line:28] ERROR type object 'datetime.datetime' has no attribute 'fromisoformat'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 137, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 202, in init_task
+    tmp_task.DeadLine = datetime.datetime.fromisoformat(dead_line)
+AttributeError: type object 'datetime.datetime' has no attribute 'fromisoformat'
+Mon, 14 Jan 2019 15:58:19 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 204, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:06:37 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 204, in init_task
+    print(DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE)))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:08:09 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 201, in init_task
+    print(DateTimeHelper.get_date(dead_line, '%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE)))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:11:22 simplelogger.py[line:28] ERROR 'str' object has no attribute 'astimezone'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 201, in init_task
+    print(dead_line.astimezone(pytz.timezone(TIME_ZONE)))
+AttributeError: 'str' object has no attribute 'astimezone'
+Mon, 14 Jan 2019 16:12:58 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 201, in init_task
+    print(datetime.datetime.strptime(dead_line, "%Y-%m-%dT%H:%M:%S.000Z").astimezone(pytz.timezone(TIME_ZONE)))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:13:43 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 205, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:17:21 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 207, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:18:28 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 207, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:23:04 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 207, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:35:36 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 208, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:36:37 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 208, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:40:59 simplelogger.py[line:28] ERROR 'builtin_function_or_method' object has no attribute 'utcoffset'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 204, in init_task
+    print(temp_date.time.utcoffset())
+AttributeError: 'builtin_function_or_method' object has no attribute 'utcoffset'
+Mon, 14 Jan 2019 16:43:20 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 208, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:44:15 simplelogger.py[line:28] ERROR utcoffset() missing 1 required positional argument: 'dt'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 204, in init_task
+    print(temp_date.tzinfo.utcoffset())
+TypeError: utcoffset() missing 1 required positional argument: 'dt'
+Mon, 14 Jan 2019 16:44:41 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 208, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:50:38 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 209, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Mon, 14 Jan 2019 16:51:55 simplelogger.py[line:28] ERROR unsupported type for timedelta days component: datetime.timedelta
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 205, in init_task
+    temp_date = temp_date+ datetime.timedelta(offset)
+TypeError: unsupported type for timedelta days component: datetime.timedelta
+Mon, 14 Jan 2019 16:52:39 simplelogger.py[line:28] ERROR astimezone() cannot be applied to a naive datetime
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 138, in edit_task
+    task = TaskService.init_task(task_data,task,user.id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 210, in init_task
+    tmp_task.DeadLine = DateTimeHelper.get_date(dead_line,'%Y-%m-%dT%H:%M:%S.000Z').astimezone(pytz.timezone(TIME_ZONE))
+ValueError: astimezone() cannot be applied to a naive datetime
+Tue, 15 Jan 2019 10:17:02 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 10:18:53 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 140, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 147, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 15 Jan 2019 10:18:56 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 140, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/business/project/task_service.py", line 147, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 15 Jan 2019 10:19:36 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 10:48:43 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 10:53:00 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 10:54:46 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 11:26:34 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:03:31 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:05:35 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:39:05 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:40:47 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:41:59 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:43:47 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:44:00 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:44:36 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:44:47 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:45:56 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:47:47 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:50:03 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:50:30 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:50:37 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:51:07 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:54:28 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 12:54:48 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 12:54:48 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 12:54:49 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 12:55:41 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 13:00:33 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 13:00:33 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 13:00:33 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 13:02:14 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 13:02:14 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 13:02:14 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 14:10:01 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 14:10:01 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 14:10:01 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 14:46:57 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:47:19 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:47:38 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:48:16 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:48:37 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:48:49 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:50:41 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:51:35 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 14:51:54 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 15:37:20 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Tue, 15 Jan 2019 15:43:18 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 16:42:25 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 16:42:30 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 16:43:01 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 16:43:09 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 15 Jan 2019 16:49:00 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.

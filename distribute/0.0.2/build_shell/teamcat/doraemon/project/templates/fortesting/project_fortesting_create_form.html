@@ -1,0 +1,149 @@
+<form class="form-horizontal" id="{{ fortesting.form_id }}">
+	<input type="hidden" value="{{ fortesting.fortesting.id }}" id="fortesting_id" />
+	{% if fortesting.is_create %}
+	<div class="form-group">
+		<label for="ProjectID" class="col-sm-1 control-label">项目</label>
+		<div class="col-sm-11">
+			<select name="ProjectID" id="ProjectID" readonly>
+            {{ project_dorpdownlist }}
+        </select>
+		</div>
+	</div>
+	
+	<div class="form-group" name="project_module">
+		<label for="ProjectModule" class="col-sm-1 control-label">模块</label>
+		<div class="col-sm-11">
+			<select name="ProjectModule" id="ProjectModule">
+            {{ module_dorpdownlist|safe }}
+            </select>
+		</div>
+	</div>
+	
+	{% else %}
+	 
+	    <div class="form-group">
+		<label for="Project" class="col-sm-1 control-label">项目</label>
+		<div class="col-sm-11">
+		    <input type="hidden" class="form-control" id="ProjectID" name="Project" value="{{ fortesting.fortesting.ProjectID }}" >
+			<input type="text" class="form-control" id="ProjectName" name="Project" readonly value="{{ fortesting.project_title }}" >
+		</div>
+	    </div>
+	    
+	    {% if fortesting.has_module %}
+	<div class="form-group" name="project_module">
+		<label for="ProjectModule" class="col-sm-1 control-label">模块</label>
+		<div class="col-sm-11">
+			<select name="ProjectModule" id="ProjectModule">
+            {{ module_dorpdownlist|safe }}
+            </select>
+		</div>
+	</div>
+	{% endif %}
+	
+	{% endif %}
+	
+	
+	
+	
+	
+	
+	{% if fortesting.is_create %}
+	
+	<div class="form-group">
+		<label for="VersionID" class="col-sm-1 control-label">版本</label>
+		<div class="col-sm-11">
+		    <select name="VersionID" id="VersionID">
+            {{ version_dorpdownlist }}
+            </select>
+		</div>
+	</div>
+	
+	{% else %}
+	
+	<div class="form-group">
+		<label for="VersionID" class="col-sm-1 control-label">版本</label>
+		<div class="col-sm-11">
+			<input type="text" class="form-control" id="VersionID" name="VersionID" placeholder="提测产品的版本号。" readonly value="{{ fortesting.version| default_if_none:"" }}" >
+		</div>
+	</div>
+	
+	{% endif %}
+	
+	<div class="form-group">
+		<label for="Topic" class="col-sm-1 control-label">主题</label>
+		<div class="col-sm-11">
+			<input type="text" class="form-control" id="Topic" name="Topic" placeholder="提测主题"  value="{{ fortesting.topic| default_if_none:'' }}" >
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="CodeRepertory" class="col-sm-1 control-label">代码仓库</label>
+		<div class="col-sm-11">
+			<input type="text" class="form-control" id="CodeRepertory" name="CodeRepertory" placeholder="代码仓库地址"  value="{{ fortesting.code_resp| default_if_none:"" }}" >
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="Branch" class="col-sm-1 control-label">分支</label>
+		<div class="col-sm-11">
+			<input type="text" class="form-control" id="Branch" name="Branch" placeholder="分支"  value="{{ fortesting.code_branch| default_if_none:"" }}" >
+		</div>
+	</div>
+	
+	{% if fortesting.is_create %}
+	<div class="form-group">
+		<label for="ExpectCommitDate" class="col-sm-1 control-label">预计提测时间</label>
+		<div class="col-sm-11">
+			<input type="date" class="form-control" id="ExpectCommitDate" name="ExpectCommitDate"  value="{% now 'Y-m-d' %}" >
+		</div>
+	</div>
+	{% else %}
+	<div class="form-group">
+		<label for="ExpectCommitDate" class="col-sm-1 control-label">预计提测时间</label>
+		<div class="col-sm-11">
+			<input type="date" class="form-control" id="ExpectCommitDate" name="ExpectCommitDate"  value="{{ fortesting.fortesting.ExpectCommitDate|date:'Y-m-d' }}" >
+		</div>
+	</div>
+	{% endif %}
+
+	
+	<div class="form-group">
+		<label for="TestingFeature" class="col-sm-1 control-label">提测内容</label>
+		<div class="col-sm-11">
+			<textarea   class="form-control" id="TestingFeature" name="TestingFeature" placeholder="提测内容" rows="5">{{ fortesting.fortesting.TestingFeature|safe }}</textarea>
+		</div>
+	</div>
+    
+   
+    <div class="form-group">
+		<label for="TestingAdvice" class="col-sm-1 control-label">测试建议</label>
+		<div class="col-sm-11">
+			<textarea   class="form-control" id="TestingAdvice" name="TestingAdvice" placeholder="测试建议" rows="5">{{ fortesting.fortesting.TestingAdvice|safe }}</textarea>
+		</div>
+	</div>
+	
+
+	
+<!-- 	{% if not fortesting.is_create %}
+	
+	<div class="form-group">
+		<div class="col-sm-offset-1 col-sm-10">
+			<button type="button" class="btn btn-success" id="save_fortesting">
+				保存
+			</button>
+		</div>
+	</div>
+	
+    {% endif %} -->
+    <input  id="upload_files" name="attachments"  type="hidden" value="{{ fortesting.fortesting.Attachment|default_if_none:"" }}" />
+</form>
+ <div class="form-group" style="height:100px;">
+		<label for="TestingAdvice" class="col-sm-1 control-label">附件</label>
+		<div class="col-sm-11" style="margin-left:-10px;">
+			<form action="/project/fortesting/upload_attachmentd" class="dropzone" name="{{ fortesting.form_id }}" style="border: 2px dashed #ccc;border-radius:5px;min-height:100px;">
+             <div class="fallback">
+            <input name="file" type="file" multiple id="myId" />
+            </div>
+             </form>
+		</div>
+	</div>
+

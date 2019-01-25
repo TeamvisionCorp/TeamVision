@@ -1,0 +1,44 @@
+ {% for fortesting in fortestings %}
+ {% if fortesting.fortesting.Status == 5 %}
+   <div class="web-board-column-item-default" style="background-color:#f7f7f7;opacity:0.4;" id="{{ fortesting.fortesting.id }}" project_id={{ fortesting.fortesting.ProjectID }}  notify_status={{ fortesting.fortesting.EmailNotificationStatus  }}>
+              <div style="display:table;width:100%;table-layout:fixed;">
+                <div style="float:left; width:80%;">
+                    <div style="padding:5px;">{{ fortesting.project_title }} V{{ fortesting.version }}</div>
+                    <div style="max-height:100px;overflow:hidden;padding:5px;word-wrap:break-word;word-break: break-all;color:#777;opacity:0.8;">
+                    {{ fortesting.topic|safe }}
+                    </div>
+                </div>
+                <div class="pull-right" style="width:15%;">
+                   <div class="nic-circle-30-blue" style="margin-left:10px;">
+		             <div class="nic-content-30-white-10fontsize cursor-hand" >{{ fortesting.commitor_name }}</div>
+		           </div>
+                   <div class="web-board-column-item-label">{{ fortesting.expect_commit_date }}</div>
+        
+                 </div>
+              </div>
+   </div>
+    
+ {% else %}
+
+ <div class="web-board-column-item-default" id="{{ fortesting.fortesting.id }}" project_id={{ fortesting.fortesting.ProjectID }}  notify_status={{ fortesting.fortesting.EmailNotificationStatus  }}>
+              <div style="display:table;width:100%;table-layout:fixed;">
+                <div style="float:left; width:80%;">
+                    <div style="padding:5px;">{{ fortesting.project_title }} V{{ fortesting.version }}</div>
+                    <div style="max-height:100px;overflow:hidden;padding:5px;word-wrap:break-word;word-break: break-all;color:#777;opacity:0.8;">
+                   {{ fortesting.topic|safe }}
+                    </div>
+                </div>
+                <div class="pull-right" style="width:15%;">
+                   
+                   <div class="nic-circle-30-blue" style="margin-left:10px;">
+		             <div class="nic-content-30-white-10fontsize cursor-hand" >{{ fortesting.commitor_name }}</div>
+		           </div>
+                   <div class="web-board-column-item-label">{{ fortesting.expect_commit_date }}</div>
+        
+                 </div>
+              </div>
+</div>
+
+{% endif %}
+
+{% endfor %}

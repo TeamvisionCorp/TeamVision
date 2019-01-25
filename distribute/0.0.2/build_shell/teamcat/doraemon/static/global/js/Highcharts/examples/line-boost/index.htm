@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/boost.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+
+<div id="container" style="height: 400px; max-width: 800px; margin: 0 auto"></div>
+
+
+		<script type="text/javascript">
+
+
+function getData(n) {
+    var arr = [],
+        i,
+        a,
+        b,
+        c,
+        spike;
+    for (i = 0; i < n; i = i + 1) {
+        if (i % 100 === 0) {
+            a = 2 * Math.random();
+        }
+        if (i % 1000 === 0) {
+            b = 2 * Math.random();
+        }
+        if (i % 10000 === 0) {
+            c = 2 * Math.random();
+        }
+        if (i % 50000 === 0) {
+            spike = 10;
+        } else {
+            spike = 0;
+        }
+        arr.push([
+            i,
+            2 * Math.sin(i / 100) + a + b + c + spike + Math.random()
+        ]);
+    }
+    return arr;
+}
+var n = 500000,
+    data = getData(n);
+
+
+console.time('line');
+Highcharts.chart('container', {
+
+    chart: {
+        zoomType: 'x'
+    },
+
+    boost: {
+        useGPUTranslations: true
+    },
+
+    title: {
+        text: 'Highcharts drawing ' + n + ' points'
+    },
+
+    subtitle: {
+        text: 'Using the Boost module'
+    },
+
+    tooltip: {
+        valueDecimals: 2
+    },
+
+    series: [{
+        data: data,
+        lineWidth: 0.5
+    }]
+
+});
+console.timeEnd('line');
+
+		</script>
+	</body>
+</html>

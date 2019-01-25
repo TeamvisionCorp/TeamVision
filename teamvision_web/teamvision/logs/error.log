@@ -1,0 +1,14 @@
+Tue, 22 Jan 2019 12:09:20 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Tue, 22 Jan 2019 12:14:41 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.

@@ -1,0 +1,33 @@
+<form class="form-horizontal" id="permission_create_form">
+
+	<div class="form-group">
+		<label for="permission_title" class="col-sm-2 control-label">权限标题</label>
+		<div class="col-sm-6">
+				<input type="text" class="form-control input-md"  name="permission_title" id="permission_title" placeholder="权限标题" value="{{ permission.name|default_if_none:"" }}">
+		</div>
+	</div>
+
+	<div class="form-group" >
+		<label for="codename" class="col-sm-2 control-label">标识Key</label>
+		<div class="col-sm-6">
+				<input type="text" class="form-control input-md"  name="codename" id="codename" placeholder="权限唯一标识">
+		</div>
+	</div>
+	
+	
+	<div class="form-group" >
+		<label for="permission_type" class="col-sm-2 control-label">权限分类</label>
+		<div class="col-sm-4">
+		<select name="permission_type" id="permission_type">
+            {{ content_type_control }}
+        </select>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="permission_desc" class="col-sm-2 control-label">权限描述</label>
+		<div class="col-sm-10">
+				<input type="text" class="form-control input-md"  name="permission_desc" id="permission_desc" placeholder="描述权限作用（不超过50个字符）" >
+		</div>
+	</div>
+</form>

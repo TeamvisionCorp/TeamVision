@@ -1,0 +1,120 @@
+<div class="container-fluid">
+	<div class="admin-panel-nonbackground">
+		<div class="admin-panel-head-nonbackground">
+			<h3 class="panel-title">修改账号：<span class="badge"> {{ user.user_full_name }}</span></h3>
+		</div>
+		<div class="admin-panel-body-nonbackground" id="user_list">
+			<form class="form-horizontal" id="edit_user_form">
+				<div class="form-group">
+					<input type="hidden" id="edit_user_id" value="{{ user.user.id }}" />
+					<label for="emali" class="col-sm-1 control-label">邮箱</label>
+					<div class="col-sm-4">
+						<input type="email" class="form-control input-md"  name="email" id="email" placeholder="Email" value="{{ user.user.email|default_if_none:"" }}">
+					</div>
+				</div>
+
+				<div class="form-group" >
+					<label for="last_name" class="col-sm-1 control-label">姓氏</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control input-md"  name="last_name" id="last_name" placeholder="姓氏" value="{{ user.user.last_name|default_if_none:"" }}">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="first_name" class="col-sm-1 control-label">名字</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control input-md"  name="first_name" id="first_name" placeholder="名字" value="{{ user.user.first_name|default_if_none:"" }}">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
+						<button type="button" class="btn btn-success" id="edit_user_save_user">
+							保存
+						</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+    {% admin_required %}
+	<div class="admin-panel-nonbackground">
+		<div class="admin-panel-head-danger">
+			<h2 class="panel-title">权限</h2>
+		</div>
+		<div class="admin-panel-body-nonbackground">
+			<form class="form-horizontal" id="update_user_group">
+				<div class="form-group">
+					<label for="PBVisiableLevel" class="col-sm-1 control-label">权限</label>
+					<div class="col-sm-10">
+						<div class="radio">
+							<label>
+								<input type="radio" name="user_auth_group" id="optionsRadios1" value="27" {{ user.admin }} aria-describedby="option_private">
+								<i class="fa fa-lock fa-fw fa-lg"></i> Admin <span id="option_private" class="help-block">系统管理员组，拥有所有权限.</span></label>
+						</div>
+
+						<div class="radio">
+							<label>
+								<input type="radio" name="user_auth_group" id="optionsRadios2" value="28" {{ user.manager }} aria-describedby="option_internal">
+								<i class="fa fa-shield fa-fw fa-lg"></i>Manager<span id="option_internal" class="help-block">管理员组，拥有除创建用户组以外的所有权限。</span></label>
+						</div>
+
+						<div class="radio">
+							<label>
+								<input type="radio" name="user_auth_group" id="optionsRadios2" value="29" {{ user.default_group }} aria-describedby="option_public">
+								<i class="fa fa-globe fa-fw fa-lg"></i>User<span id="option_public" class="help-block">普通用户角色</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
+						<button type="button" class="btn btn-danger" id="edit_user_save_auth">
+							保存
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+    
+    {% end_admin %}
+    
+	<div class="admin-panel-nonbackground">
+		<div class="admin-panel-head-danger">
+			<h2 class="panel-title">密码重置</h2>
+		</div>
+		<div class="admin-panel-body-nonbackground">
+			<form class="form-horizontal" id="reset_user_password">
+
+				<div class="form-group">
+					<label for="new_password" class="col-sm-1 control-label">密码</label>
+					<div class="col-sm-3">
+						<input type="password" class="form-control input-md"  name="new_password" id="new_password" placeholder="输入密码">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="confirm_password" class="col-sm-1 control-label">确认</label>
+					<div class="col-sm-3">
+
+						<input type="password" class="form-control input-md"  name="confirm_password" id="confirm_password" placeholder="再次输入密码" >
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
+						<button type="button" class="btn btn-danger" id="edit_user_reset_password">
+							重置
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>

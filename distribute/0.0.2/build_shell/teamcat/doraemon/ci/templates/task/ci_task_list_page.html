@@ -1,0 +1,54 @@
+<div>
+	<div class="ci-panel-nonbackground">
+		<div class="ci-panel-head-nonbackground" style="padding-top:25px!important;">
+		  <div class="pull-left" style="margin-top:-15px;">
+		  	<input type="hidden" id="task_type_id" value="{{ task_type }}" />
+		  	<input type="hidden" id="task_product_id" value="{{ product_id }}" />
+		  	<span style="margin-left:30px;padding-top:10px;width:300px;display:inline-block;x"><i class="fa fa-search fa-fw"></i>
+		  		<input type="text"  placeholder="输入任务名称，回车开始搜索!" style="border:none;outline:medium;width:250px;" id="task_search_keyword" />
+		  	</span>
+		  </div>
+		  <div class="hidden-md pull-left" style="width:400px;margin-top:-5px;">
+		  	<span name="project_filter_down_arrow" select_project="" class="cursor-hand" style="width:100px;display:inline-block;">
+		  	    <span name="project_filter_name">项目</span>
+		  	    <span><i class="fa fa-caret-down fa-fw"></i></span>
+		  	  {{ project_filter }}
+		  	</span>
+		    
+		    <span name="tag_filter_down_arrow" select_tag="" class="cursor-hand" style="min-width:100px;display:inline-block;">
+		      <span name="tag_filter_name">标签</span>
+		      <span><i class="fa fa-caret-down fa-fw"></i></span>
+		      <span name="tag_filter_icon"></span>
+		      {{ task_tag_filter }}
+		    </span>
+		     <!-- <span name="status_filter_down_arrow" select_project="" class="cursor-hand" style="width:100px;display:inline-block;">
+		     <span name="status_filter_name">状态</span>
+		     <span ><i class="fa fa-caret-down fa-fw"></i></span>
+		          {{ task_status_filter }}
+		    </span> -->
+		    <!-- <span class="" style="margin-left:20px;">排序<i class="fa fa-caret-down fa-fw"></i></span> -->
+		 </div>
+		  
+		  <div class="pull-right nic-circle-30-green" style="margin-right:52px;margin-top:-15px;">
+		    <span id="ci_deploy_add" class="nic-content-30-white cursor-hand"><i class="fa fa-plus fa-fw"></i></span>
+		   </div>
+		</div>
+	</div>
+		<div class="ci-panel-body-nonbackground" id="ci_task_container">
+			{{ ci_task_listcontroll }}		     
+		</div>
+		
+		<div class="ci-panel-footer-nonbackground">
+			<span class="hidden-md"  style="margin-left:400px;"> <i class="fa fa-circle status-default" style="opacity: 0.6;font-size:2px;"></i> 正在执行</span>
+		  	<span class="hidden-md"  style="margin-left: 20px"> <i class="fa fa-circle status-fail" style="opacity: 0.6;font-size:2px;"></i> 失败</span>
+		    <span class="hidden-md"  style="margin-left: 20px"> <i class="fa fa-circle status-cancel" style="opacity: 0.6;font-size:2px;"></i> 取消</span>
+		    <span class="hidden-md"  style="margin-left: 20px"> <i class="fa fa-circle status-success" style="opacity: 0.6;font-size:2px;"></i> 成功</span>
+			{% if ci_task_page_title ==  'dashboard' %}
+	<!-- 		<a class="pull-right" id="ci_view_more_task" style="color:#555;">
+				<i class="fa fa-hand-o-right fa-fw"></i>
+				查看更多任务
+			</a> -->
+			{% endif %}
+		</div>
+	</div>
+</div>

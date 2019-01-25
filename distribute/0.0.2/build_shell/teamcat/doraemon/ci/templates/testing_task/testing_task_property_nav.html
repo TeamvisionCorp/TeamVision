@@ -1,0 +1,42 @@
+
+<div id="ci_deploy_sub_leftnav" class="left_sub_nav">
+	<div class="sub_bar_header">
+		<span class="cursor-hand" name="ci_task_back"><i class="fa fa-arrow-left fa-fw fa-lg"></i>返回</span>
+	</div>
+<div class="left_sub_menu_container">
+	
+	<ul class="nav nav-stacked">
+		<input type="hidden" id="ci_task_id_value" value="{{ page.ci_task.ci_task.id }}" />
+		<li class="{{ page.result_active }}">
+			<a href="/ci/{{ page.ci_task.task_type_name }}/{{ page.ci_task.ci_task.id }}/history" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>测试记录<span class="badge pull-right"></span></a>
+		</li>
+		
+		{% project_tester_required page.ci_task.ci_task.Project %}
+		<li class="{{ page.config_active }}">
+			<a href="/ci/{{ page.ci_task.task_type_name }}/{{ page.ci_task.ci_task.id }}/config" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>任务配置<span class="badge pull-right"></span></a>
+		</li>
+		<li class="{{ page.parameter_active }}">
+			<a href="/ci/{{ page.ci_task.task_type_name }}/{{ page.ci_task.ci_task.id }}/parameter" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>通用参数<span class="badge pull-right"></span></a>
+		</li>
+		{% end_project_tester %}
+		<li style="border-bottom: solid #f0f0f0; height:20px; margin-bottom: 20px"></li>
+		{% project_user_not_allowed page.ci_task.ci_task.Project %}
+		<li class="{{ page.build_active }}">
+			<a href="/ci/{{ page.ci_task.task_type_name }}/{{ page.ci_task.ci_task.id }}/testing" class="left_sub_menu_item"><i style="color:#32be77" class="fa fa-gavel fa-fw pull-left"></i><span class="property_nav_button">立即构建</span></a>
+		</li>
+		{% end_project_user_not_allowed %}
+		{% if request.user.id == page.ci_task.ci_task.Creator %}
+		<li>
+			<a href="#" class="left_sub_menu_item"><i style="color:red" class="fa fa-minus-circle fa-fw pull-left"></i><span name="task_delete" class="property_nav_button">删除任务</span></a>
+		</li>
+		{% endif %}
+		<!-- <li>
+			<a href="#" class="left_sub_menu_item"><i style="color:red" class="fa fa-trash fa-fw pull-left"></i><span name="workspace_clean" class="property_nav_button">清理空间</span></a>
+		</li>
+		<li class="{{ page.build_clean_active }}">
+			<a href="/ci/{{ page.ci_task.task_type_name }}/{{ page.ci_task.ci_task.id }}/history/build_clean" class="left_sub_menu_item"><i style="color:red" class="fa fa-shower fa-fw pull-left"></i><span name="build_clean" class="property_nav_button">清除构建</span></a>
+		</li> -->
+	</ul>
+
+</div>
+</div>

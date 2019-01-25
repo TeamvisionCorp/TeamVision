@@ -1,0 +1,152 @@
+@import "app-global-variables.less";
+@import "global-base.less";
+
+
+/* Style for header*************************************************************/
+
+
+/*header整体设置*/
+
+.app-head{
+  /*background-color:#24272D;*/
+  .app-head-background();
+  height: @app-head-height;
+  width: @app-head-width;
+  position: @app-head-position;
+  z-index: @app-head-z-index;
+  // border-bottom: 1px solid @master-page-leftnav-right_border-color;
+  // box-shadow:0 0 0 2px #77ac98;
+  box-shadow:0 0 0 2px rgba(0,0,0,.05);
+  .doraemon-font();
+  top:0px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+/*header logo 样式####################################################################################*/
+
+.app-head-logo
+{
+  padding-top:10px;
+  padding-bottom:0px;
+  padding-left:20px;
+  width: 59px;
+//  background-color:#ffff;
+  //background-color:@master-page-leftnav-background;
+  display:block-inline;
+}
+
+
+
+/*header title 样式####################################################################################*/
+.app-head-title {
+  .doraemon-font(@body-font-family,@title-size,@header-font-color);
+  font-size:20px;
+  padding: 17px 2px 0px  5px;
+  margin-left: -6px;
+}
+
+
+/*header 菜单样式####################################################################################*/
+
+.app-head-menu
+{
+  color: @app-head-color;
+}
+
+
+
+.app-head-menu ul li {
+  padding: 0px 10px 2px 10px;
+  // width: @master-page-header-menu-width;
+  height: @app-head-menu-item-height;
+  .font-family();
+  float:left;
+}
+
+
+.app-head-menu ul li a
+{
+   display:inline-block;
+   padding-top:0px;
+   font-size:14px;
+   color:inherit;
+   font-weight:400;
+   opacity:0.9;
+}
+
+.app-head-menu ul li:hover {
+//  .master-page-header-menu-hover();
+}
+
+
+/*header 设置样式####################################################################################*/
+.app-head-settings
+{
+  /*background-color:#24272D;*/
+  width:auto;
+  height: 41px;
+  margin-left: 0px;
+  padding-top:5px;
+
+}
+
+.app-head-settings div
+{
+  .app-head-background();
+  .doraemon-font(@body-font-family,@small-size,@header-font-color);
+}
+
+.app-head-settings ul li
+{
+  width: 40px;
+  padding: 0px 5px 0px 0px;
+  height: 25px;
+  float:right;
+  margin-top:0px;
+}
+
+.app-head-settings ul li i
+{
+  padding-top:0px;
+  display:inline-block;
+  font-size:16px !important;
+  opacity:0.6;
+}
+
+
+
+/*header 新建菜单样式####################################################################################*/
+
+.header_project span a
+{
+  padding-top:21px;
+  display:inline-block;
+    color:#fff;
+   font-size:16px;
+}
+
+.filed-pop-meun li
+{
+	color:#555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

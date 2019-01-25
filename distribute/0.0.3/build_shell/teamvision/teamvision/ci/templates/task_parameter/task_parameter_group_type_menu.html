@@ -1,0 +1,17 @@
+
+<div>
+	<b class="top"> <i class="top-arrow1"></i> <i class="top-arrow2"></i>
+	</b>
+</div>
+<ul id="" class="dorpdown_option_list" style="">
+    {% project_admin_required  task.Project %}
+	<li class="option-item"><i class="fa fa-fw fa-check" type='1'></i>
+		Release</li>
+	{% end_project_admin %}
+	<li class="option-item"><i class="fa fa-fw fa-check selected"
+		type='2'></i> Testing</li>
+	<li class="option-item"><i class="fa fa-fw fa-check" type='3'></i>
+		Staging</li>
+	<li class="option-item"><i class="fa fa-fw fa-check" type='4'></i>
+		自定义</li>
+</ul>

@@ -1,0 +1,28 @@
+{% for tq in task_queue_list %}
+<div  class="ci_task_queue_listview_item container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="ci_task_queue_listview_item_content row">
+				<span class="col-sm-12" style="color:#337ab7;">
+					<span name="tq_uuid" style="display:none">{{ tq.ci_task_queue.TaskUUID }}</span>
+					<span name="task_id" style="display:none">{{ tq.ci_task.id }}</span>
+					<span><i class="fa fa-clock-o fa-fw fa-lg" style="color:gray"></i>
+						<a  name="ci_task_name" href="/ci/{{ tq.task_type_name }}/{{ tq.ci_task.id }}/history" style="color:#337ab7">
+						 {{ tq.ci_task.TaskName }}_{{ tq.ci_task_queue.id }}_{{ tq.build_version }}
+						</a>
+					</span> 
+				</span>
+			</div>
+
+		</div>
+
+		<div class="col-sm-3 cursor-hand" style="line-height:1.5em;">
+			<div class="row">
+                <span class="col-lg-6 hidden-md hidden-sm hidden-xs"> <img src="{{ tq.start_by_avatar }}" style="height:20px;width:20px" class="img-circle" title="{{ tq.start_by_name }}" /></span>
+				<span class="col-lg-6 col-sm-12 cursor-hand"  name="tq_stop" style="opacity:0.6; display:inline-block"> <i class="fa fa-close fa-fw fa-lg" style="color:gray;"></i> </span>
+			</div>
+		</div>
+
+	</div>
+</div>
+{% endfor %}

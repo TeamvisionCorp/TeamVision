@@ -1,0 +1,1444 @@
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 10:54:08 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 16:09:44 simplelogger.py[line:28] ERROR Unsupported lookup 'exclude' for IntegerField or join on the field not permitted.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_service.py", line 50, in get_ci_tasks_recently_build
+    result=CITaskService.get_product_ci_tasks(request, task_type, product_id).filter(LastHistory__exclude=(0,))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1214, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1078, in build_lookup
+    lhs = self.try_transform(lhs, lookups[-1])
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1114, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'exclude' for IntegerField or join on the field not permitted.
+Tue, 09 Oct 2018 16:09:44 simplelogger.py[line:28] ERROR eval() arg 1 must be a string, bytes or code object
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/ci/views/ci_task_view.py", line 164, in more_dashboard_task_list
+    result=page_worker.dashboard_more_task_list(request)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/ci/pagefactory/ci_task_pageworker.py", line 103, in dashboard_more_task_list
+    dm_ci_tasks = CITaskService.filter_tasks(request)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_service.py", line 118, in filter_tasks
+    result=[task for task in result if task.Project in eval(project_ids)]
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_service.py", line 118, in <listcomp>
+    result=[task for task in result if task.Project in eval(project_ids)]
+TypeError: eval() arg 1 must be a string, bytes or code object
+Tue, 09 Oct 2018 16:09:53 simplelogger.py[line:28] ERROR list index out of range
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_queue_service.py", line 38, in start_user
+    ci_task_history = CITaskHistory.objects.get_history_by_tq(tq_id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 187, in get_history_by_tq
+    return result[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 307, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+Tue, 09 Oct 2018 16:10:03 simplelogger.py[line:28] ERROR list index out of range
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_queue_service.py", line 38, in start_user
+    ci_task_history = CITaskHistory.objects.get_history_by_tq(tq_id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 187, in get_history_by_tq
+    return result[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 307, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+Tue, 09 Oct 2018 16:10:15 simplelogger.py[line:28] ERROR list index out of range
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/ci/ci_task_queue_service.py", line 38, in start_user
+    ci_task_history = CITaskHistory.objects.get_history_by_tq(tq_id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 187, in get_history_by_tq
+    return result[0]
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 307, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+Tue, 09 Oct 2018 16:35:46 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:35:46 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:35:46 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:35:46 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:27 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:27 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:27 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:27 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:41 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:55 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:55 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:55 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:36:55 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:01 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:01 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:01 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:01 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:40:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:42:57 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:42:57 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:42:57 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:42:57 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:43:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:43:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:43:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:43:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:07 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:07 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:07 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:07 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:18 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:23 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:23 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:23 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:44:23 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:33 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:33 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:33 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:33 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:45:42 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:10 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:10 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:10 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:11 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:12 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:12 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:12 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:33 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:33 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:33 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:33 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:33 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:51:34 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:34 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:34 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:51:34 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:39 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:39 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:39 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:39 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:39 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:40 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:40 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:41 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:41 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:57 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:57 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:57 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:57 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:57 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:52:59 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:59 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:59 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:52:59 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:53:06 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:53:06 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:53:06 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:53:06 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:53:06 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:53:08 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:53:08 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:53:08 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:53:08 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:11 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:11 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:11 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:12 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:12 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:12 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:13 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:13 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:13 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:13 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:28 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:29 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:30 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:30 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:30 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:51 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:54:53 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:53 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:53 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:54:53 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:17 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:18 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:56:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:56:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:56:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:56:19 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:58:15 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:15 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:15 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:15 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:16 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:16 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:16 simplelogger.py[line:28] ERROR User matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/auth_user/user_service.py", line 29, in get_user
+    user=User.objects.get(id=userid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+Tue, 09 Oct 2018 16:58:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:58:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:58:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 16:58:17 simplelogger.py[line:28] ERROR CITaskFlowSection matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/ci_model_manager.py", line 91, in get
+    result = super(CITaskFlowSectionManager, self).get_queryset().get(id=section_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.ci.models.DoesNotExist: CITaskFlowSection matching query does not exist.
+Tue, 09 Oct 2018 17:27:33 simplelogger.py[line:28] ERROR invalid literal for int() with base 10: '10.69.58.195'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/connection.py", line 895, in get_connection
+    connection = self._available_connections.pop()
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/project/views/project_issue_view.py", line 30, in index
+    result=page_worker.get_index_page(request, projectid,issue_id)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/project/pagefactory/project_issue_pageworker.py", line 41, in get_index_page
+    pagefileds={'left_nav_bar':left_nav_bar,'web_app_view':self.get_web_app(projectid,issue_id),'issue_id':issue_id}
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/project/pagefactory/project_issue_pageworker.py", line 46, in get_web_app
+    issue_item=self.get_issue_item(project_id,0)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/project/pagefactory/project_issue_pageworker.py", line 175, in get_issue_item
+    issue_list_controll=self.get_issue_more(project_id, user_id,0)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/doraemon/project/pagefactory/project_issue_pageworker.py", line 185, in get_issue_more
+    dm_issues=IssueService.all_issues(project_id,user_id)[start_issue_index:end_issue_index]
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/issue_service.py", line 36, in all_issues
+    if RedisService.has_key(filter_key):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/common/redis_service.py", line 94, in has_key
+    return redis_helper.has_key(key)
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/gatesidelib/redis_helper.py", line 71, in has_key
+    return r.exists(key)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/client.py", line 855, in exists
+    return self.execute_command('EXISTS', name)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/client.py", line 570, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/connection.py", line 897, in get_connection
+    connection = self.make_connection()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/connection.py", line 906, in make_connection
+    return self.connection_class(**self.connection_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/redis/connection.py", line 399, in __init__
+    self.port = int(port)
+ValueError: invalid literal for int() with base 10: '10.69.58.195'
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 17:45:54 simplelogger.py[line:28] ERROR Project matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/model_managers/project_model_manager.py", line 198, in get
+    result=super(ProjectManager,self).get_queryset().get(id=projectid)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+doraemon.project.models.DoesNotExist: Project matching query does not exist.
+Tue, 09 Oct 2018 18:07:27 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:07:29 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:07:31 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:07:54 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:08:53 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:08:54 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'
+Tue, 09 Oct 2018 18:08:56 simplelogger.py[line:28] ERROR 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 138, in edit_task
+    TaskService.edit_child_task(task,task_data.get('childTask'))
+  File "/Users/ethan/Documents/OneDrive/coding.net/doraemon_nirvana_lte/doraemon/business/project/task_service.py", line 145, in edit_child_task
+    for child in child_data.get('items',[]):
+AttributeError: 'NoneType' object has no attribute 'get'

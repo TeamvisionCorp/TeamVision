@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/doraemon/ci/pagefactory/ci_plugin_pageworker.py" line="64" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/project/views/project_task_view.py" line="44" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/views/project_task_view.py" line="42" />
+    <bookmark url="file://$PROJECT_DIR$/business/project/task_service.py" line="104" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/project/views/project_task_view.py" line="54" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py" line="7" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/urlrouter/project_member_urls.py" line="15" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/urlrouter/project_member_urls.py" line="16" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/project/views/project_issue_view.py" line="227" />
+    <bookmark url="file://$PROJECT_DIR$/business/project/issue_service.py" line="37" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/static/project/js/project_settings.js" line="9" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/api/project/viewmodel/api_project.py" line="29" />
+    <bookmark url="file://$PROJECT_DIR$/doraemon/home/urlrouter/home_page_urls.py" line="9" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d751ecd8-6143-42f1-baad-100eeca7a0d6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citask/CITaskHistoryItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/components/common/BoardColumn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/components/common/BoardColumn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/components/layout/AppHead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/components/layout/AppHead.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowHistoryItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowHistoryItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/CITaskFlowSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/ci/citaskflow/ci_task_flow_item/Head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teamcat_font_end/src/views/home/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../teamcat_font_end/src/views/home/Head.vue" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="home_page_device.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_page_device.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="home_device_list_controll.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/home/templates/device/home_device_list_controll.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_device_list_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/home/templates/device/home_device_list_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ci_serializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/api/ci/serializer/ci_serializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_serializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
+              <folding>
+                <element signature="e#70#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bvt_report.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doraemon/project/templates/email_report/bvt_report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4944">
+              <caret line="206" column="12" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#td#1;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcomplete_report.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/project/templates/email_report/testcomplete_report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="170" column="49" lean-forward="true" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ci_task_parameter_service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/ci/ci_task_parameter_service.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="task_service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business/project/task_service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1432" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project_task_view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doraemon/api/project/views/project_task_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>taskData</find>
+      <find>update_version_number</find>
+      <find>init_detail_panel</find>
+      <find>init_desc_editor</find>
+      <find>parentHasClass</find>
+      <find>load</find>
+      <find>load_issue_items</find>
+      <find>all_issues</find>
+      <find>prelog_trigger</find>
+      <find>save</find>
+      <find>/ci/dashboard</find>
+      <find>get_ci_tasks_recently_build</find>
+      <find>__init__</find>
+      <find>is_va</find>
+      <find>is_valid()</find>
+      <find>is_valid</find>
+      <find>ci_task</find>
+      <find>CITask</find>
+      <find>DateTimeHelper</find>
+      <find>update_ci_taskhistory</find>
+      <find>Api</find>
+      <find>email</find>
+      <find>request.POST</find>
+      <find>ci/dashboard</find>
+      <find>start_task_from_proptey_bar</find>
+      <find>start_task</find>
+      <find>start</find>
+      <find>span</find>
+      <find>width: 200px</find>
+      <find>ex</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Task</replace>
+      <replace>team</replace>
+      <replace>taskData</replace>
+      <replace>task_data</replace>
+      <replace>formdata</replace>
+      <replace>validate_data</replace>
+      <replace>CITaskFlowService</replace>
+      <replace>CITaskFlow</replace>
+      <replace>task_flow</replace>
+      <replace>FlowName</replace>
+      <replace>Response</replace>
+      <replace>form_data</replace>
+      <replace>td</replace>
+      <replace>tr</replace>
+      <replace>width: 100px</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/doraemon/api/project/urlrouter/project_report_urls.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/project/serializer/project_report_serializer.py" />
+        <option value="$PROJECT_DIR$/doraemon/static/project/contents/BVTReport.html" />
+        <option value="$PROJECT_DIR$/doraemon/ci/views/ci_testing_view.py" />
+        <option value="$PROJECT_DIR$/doraemon/static/project/contents/testprogress_report.html" />
+        <option value="$PROJECT_DIR$/doraemon/static/project/contents/testcomplete_report.html" />
+        <option value="$PROJECT_DIR$/business/project/project_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/pagefactory/project_report_pageworker.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/pagefactory/project_template_path.py" />
+        <option value="/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/rest_framework/mixins.py" />
+        <option value="$PROJECT_DIR$/business/business_service.py" />
+        <option value="$PROJECT_DIR$/gatesidelib/datetimehelper.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/templates/issue/project_issue_detail.html" />
+        <option value="$PROJECT_DIR$/business/project/issue_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/viewmodels/vm_project_issue.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/mongo_models.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/project/views/project_fortesting_view.py" />
+        <option value="$PROJECT_DIR$/business/project/fortesting_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/home/viewmodels/home_left_nav_bar.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/viewmodels/project_left_nav_bar.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/project/views/project_report_view.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/pagefactory/project_emailreport_pageworker.py" />
+        <option value="$PROJECT_DIR$/business/project/report_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/templates/email_report/testcomplete_report.html" />
+        <option value="$PROJECT_DIR$/doraemon/project/templates/email_report/testprogress_report.html" />
+        <option value="$PROJECT_DIR$/doraemon/ci/templates/task_parameter/task_parameter_edit_page.html" />
+        <option value="$PROJECT_DIR$/business/ucenter/account_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/views/ci_task_flow_view.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_task_flow_urls.py" />
+        <option value="$PROJECT_DIR$/business/ci/ci_taskflow_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/filters/ci_taskflow_filter.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_urls.py" />
+        <option value="$PROJECT_DIR$/business/ci/ci_task_queue_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_flow_history_urls.py" />
+        <option value="$PROJECT_DIR$/business/ci/ci_taskflow_section_service.py" />
+        <option value="$PROJECT_DIR$/model_managers/ci_model_manager.py" />
+        <option value="$PROJECT_DIR$/doraemon/ci/models.py" />
+        <option value="$PROJECT_DIR$/business/ci/ci_task_service.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/serializer/ci_serializer.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/serializer/ci_taskflow_serializer.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/ci/views/ci_flow_history_view.py" />
+        <option value="$PROJECT_DIR$/doraemon/static/global/templates/masterpage_nirvana.html" />
+        <option value="$PROJECT_DIR$/doraemon/home/pagefactory/home_device_pageworker.py" />
+        <option value="$PROJECT_DIR$/doraemon/static/home/less/home_device.less" />
+        <option value="$PROJECT_DIR$/doraemon/home/templates/home/home_left_nav.html" />
+        <option value="$PROJECT_DIR$/doraemon/static/device/less/home_device.less" />
+        <option value="$PROJECT_DIR$/doraemon/static/home/less/home_unlogin.less" />
+        <option value="$PROJECT_DIR$/doraemon/home/templates/device/home_device_list_page.html" />
+        <option value="$PROJECT_DIR$/doraemon/api/project/views/project_task_view.py" />
+        <option value="$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py" />
+        <option value="$PROJECT_DIR$/doraemon/project/templates/email_report/bvt_report.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/doraemon/static/global/js/bootstrap-markdown-editor/ace-builds/package.json" />
+      <path value="$PROJECT_DIR$/doraemon/static/global/js/bootstrap-markdown-editor/bootstrap-markdown-editor/package.json" />
+      <path value="$PROJECT_DIR$/doraemon/static/global/js/less.js-master/less.js-master/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="doraemon_nirvana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doraemon_nirvana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doraemon_nirvana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doraemon_nirvana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="auth_extend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doraemon_nirvana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="doraemon" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doraemon/api/ci/urlrouter" />
+      <recent name="$PROJECT_DIR$/doraemon/api/ci/views" />
+      <recent name="$PROJECT_DIR$/doraemon/project/pagefactory" />
+      <recent name="$PROJECT_DIR$/business/project" />
+      <recent name="$PROJECT_DIR$/doraemon/static/project/contents" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doraemon/project/templates/report" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ci_taskflow_serializer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="doraemon_nirvana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/doraemon/api/ci/serializer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/doraemon/api/ci/serializer/ci_taskflow_serializer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ci_taskflow_serializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d751ecd8-6143-42f1-baad-100eeca7a0d6" name="Default" comment="" />
+      <created>1524904098498</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524904098498</updated>
+      <workItem from="1524904102439" duration="1424000" />
+      <workItem from="1524905748281" duration="1000" />
+      <workItem from="1524905801042" duration="3000" />
+      <workItem from="1524905842894" duration="55000" />
+      <workItem from="1524905902829" duration="232000" />
+      <workItem from="1524906149674" duration="3946000" />
+      <workItem from="1524988979912" duration="75000" />
+      <workItem from="1525160008841" duration="46000" />
+      <workItem from="1525161124255" duration="713000" />
+      <workItem from="1526265720260" duration="48078000" />
+      <workItem from="1526547390109" duration="18244000" />
+      <workItem from="1527471063251" duration="12505000" />
+      <workItem from="1527579457705" duration="20525000" />
+      <workItem from="1527922601238" duration="35374000" />
+      <workItem from="1529400600959" duration="638000" />
+      <workItem from="1529549760921" duration="1014000" />
+      <workItem from="1529550887725" duration="2847000" />
+      <workItem from="1529909487403" duration="26046000" />
+      <workItem from="1530525115738" duration="40336000" />
+      <workItem from="1531382889904" duration="4659000" />
+      <workItem from="1531792747739" duration="306000" />
+      <workItem from="1531880619648" duration="1135000" />
+      <workItem from="1532505212010" duration="61951000" />
+      <workItem from="1533540893190" duration="14907000" />
+      <workItem from="1534226584621" duration="682000" />
+      <workItem from="1534227350728" duration="68688000" />
+      <workItem from="1536047234694" duration="17100000" />
+      <workItem from="1536219321873" duration="14343000" />
+      <workItem from="1536314792401" duration="412000" />
+      <workItem from="1536718827056" duration="3570000" />
+      <workItem from="1536746013688" duration="3614000" />
+      <workItem from="1536891246475" duration="10322000" />
+      <workItem from="1537165802350" duration="12747000" />
+    </task>
+    <task id="LOCAL-00001" summary="修复任务创建不能保存描述的bug">
+      <created>1524988417421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524988417421</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修复问题管理相关bug">
+      <created>1526542762062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526542762062</updated>
+    </task>
+    <task id="LOCAL-00003" summary="重新打开经办人修改为问题修复者">
+      <created>1526544554677</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526544554677</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加问题统计 问题状态统计图版本过滤功能">
+      <created>1526624083545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526624083546</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修复CI任务执行完成，不能发出邮件的bug.">
+      <created>1526954830416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526954830416</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修复bug详情展示问题标题换行的bug">
+      <created>1527059398441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527059398441</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改提测部分样式">
+      <created>1527157199298</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527157199298</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修复部分bug">
+      <created>1527498103715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527498103715</updated>
+    </task>
+    <task id="LOCAL-00009" summary="新版任务创建功能完成">
+      <created>1527575800770</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527575800770</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修复个类bug">
+      <created>1527846524771</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527846524771</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修复我的--问题--搜索以及刷新bug">
+      <created>1528202421511</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1528202421511</updated>
+    </task>
+    <task id="LOCAL-00012" summary="完成我的页面重构，以及全局设置">
+      <created>1528363420111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1528363420111</updated>
+    </task>
+    <task id="LOCAL-00013" summary="完成我的页面，任务，以及全局设置功能">
+      <created>1528455460826</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1528455460826</updated>
+    </task>
+    <task id="LOCAL-00014" summary="修复问题统计久版本数据展示问题">
+      <created>1529031256942</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529031256942</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修复提测动态bug">
+      <created>1529550050873</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1529550050873</updated>
+    </task>
+    <task id="LOCAL-00016" summary="添加信息">
+      <created>1529550975338</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1529550975338</updated>
+    </task>
+    <task id="LOCAL-00017" summary="完成队列信息展示">
+      <created>1530259851062</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1530259851062</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修复项目任务编辑后不能保存的bug,原因是DeadLine修改后的值为显示值例如30天后，与要求的时间格式不符合">
+      <created>1530498486218</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530498486218</updated>
+    </task>
+    <task id="LOCAL-00019" summary="增加部分CI相关接口">
+      <created>1530613006957</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1530613006957</updated>
+    </task>
+    <task id="LOCAL-00020" summary="完成项目创建，搜索。完成CI任务搜索，创建功能">
+      <created>1530861034998</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1530861034998</updated>
+    </task>
+    <task id="LOCAL-00021" summary="CI首页重构，完成上线">
+      <created>1531291705127</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1531291705127</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修复上线后部分小问题">
+      <created>1531295378724</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531295378724</updated>
+    </task>
+    <task id="LOCAL-00023" summary="修复上线后部分小问题">
+      <created>1531301441539</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1531301441539</updated>
+    </task>
+    <task id="LOCAL-00024" summary="修复上线后部分小问题">
+      <created>1531386438940</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1531386438940</updated>
+    </task>
+    <task id="LOCAL-00025" summary="修复上线后部分小问题">
+      <created>1531475622953</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1531475622953</updated>
+    </task>
+    <task id="LOCAL-00026" summary="修复上线后部分小问题">
+      <created>1531884273253</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1531884273253</updated>
+    </task>
+    <task id="LOCAL-00027" summary="完成TaskFlow一期设计开发">
+      <created>1532687003291</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1532687003292</updated>
+    </task>
+    <task id="LOCAL-00028" summary="2.1.3版本上线">
+      <created>1532938102776</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1532938102776</updated>
+    </task>
+    <task id="LOCAL-00029" summary="修复2.1.3版本线上bug">
+      <created>1532938595761</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1532938595761</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修复2.1.3版本线上bug">
+      <created>1532940761234</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1532940761234</updated>
+    </task>
+    <task id="LOCAL-00031" summary="增加mock api model">
+      <created>1533113676790</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1533113676790</updated>
+    </task>
+    <task id="LOCAL-00032" summary="完成MOCKAPI 服务端以及前段设计">
+      <created>1533177552530</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1533177552530</updated>
+    </task>
+    <task id="LOCAL-00033" summary="修复升级IVIEW3.0带来的问题">
+      <created>1533200860099</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1533200860099</updated>
+    </task>
+    <task id="LOCAL-00034" summary="新增Interface管理">
+      <created>1533784041645</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1533784041645</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修复stop ci task bug">
+      <created>1533867288896</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1533867288896</updated>
+    </task>
+    <task id="LOCAL-00036" summary="完成mock 二期功能开发">
+      <created>1534155093451</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1534155093451</updated>
+    </task>
+    <task id="LOCAL-00037" summary="完成mock 二期功能开发">
+      <created>1534155272987</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1534155272987</updated>
+    </task>
+    <task id="LOCAL-00038" summary="VUE重构提测部分&#10;增加新增bug,bug状态变更发送通知邮件">
+      <created>1534400723788</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1534400723788</updated>
+    </task>
+    <task id="LOCAL-00039" summary="VUE 增加报告发送">
+      <created>1535011032516</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1535011032516</updated>
+    </task>
+    <task id="LOCAL-00040" summary="完成测试进度报告，BVT报告，测试完成报告模板，页面开发">
+      <created>1535510034986</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1535510034986</updated>
+    </task>
+    <task id="LOCAL-00041" summary="完成测试进度，测试完成，BVT报告的增删改查">
+      <created>1535533313200</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1535533313200</updated>
+    </task>
+    <task id="LOCAL-00042" summary="完成测试进度，测试完成，BVT报告的Web端开发。">
+      <created>1535683107221</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1535683107221</updated>
+    </task>
+    <task id="LOCAL-00043" summary="完成测试进度，测试完成，BVT邮件报告模板">
+      <created>1535708666152</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1535708666152</updated>
+    </task>
+    <task id="LOCAL-00044" summary="完成提测相关报告模板化">
+      <created>1536294437408</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1536294437408</updated>
+    </task>
+    <task id="LOCAL-00045" summary="CI工作流阶段相关任务开发">
+      <created>1536829734989</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1536829734990</updated>
+    </task>
+    <task id="LOCAL-00046" summary="完成CI工作流有序执行UI层面工作">
+      <created>1536893761054</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1536893761054</updated>
+    </task>
+    <task id="LOCAL-00047" summary="完成CI工作流历史记录相关API">
+      <created>1536908586581</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1536908586581</updated>
+    </task>
+    <task id="LOCAL-00048" summary="完成CI工作流历史记录相关API">
+      <created>1537172319027</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1537172319027</updated>
+    </task>
+    <task id="LOCAL-00049" summary="移动设备全局导航到我的局部导航中">
+      <created>1537241106122</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1537241106122</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="426538000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.496875" weight="0.3214649" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.12291667" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49520767" weight="0.40416667" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49361023" weight="0.32604167" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27635783" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24427083" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946752" visible="true" weight="0.4051282" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修复项目任务编辑后不能保存的bug,原因是DeadLine修改后的值为显示值例如30天后，与要求的时间格式不符合" />
+    <MESSAGE value="增加部分CI相关接口" />
+    <MESSAGE value="完成项目创建，搜索。完成CI任务搜索，创建功能" />
+    <MESSAGE value="CI首页重构，完成上线" />
+    <MESSAGE value="修复上线后部分小问题" />
+    <MESSAGE value="完成TaskFlow一期设计开发" />
+    <MESSAGE value="2.1.3版本上线" />
+    <MESSAGE value="修复2.1.3版本线上bug" />
+    <MESSAGE value="增加mock api model" />
+    <MESSAGE value="完成MOCKAPI 服务端以及前段设计" />
+    <MESSAGE value="修复升级IVIEW3.0带来的问题" />
+    <MESSAGE value="新增Interface管理" />
+    <MESSAGE value="修复stop ci task bug" />
+    <MESSAGE value="完成mock 二期功能开发" />
+    <MESSAGE value="VUE重构提测部分&#10;增加新增bug,bug状态变更发送通知邮件" />
+    <MESSAGE value="VUE 增加报告发送" />
+    <MESSAGE value="完成测试进度报告，BVT报告，测试完成报告模板，页面开发" />
+    <MESSAGE value="完成测试进度，测试完成，BVT报告的增删改查" />
+    <MESSAGE value="完成测试进度，测试完成，BVT报告的Web端开发。" />
+    <MESSAGE value="完成测试进度，测试完成，BVT邮件报告模板" />
+    <MESSAGE value="完成提测相关报告模板化" />
+    <MESSAGE value="CI工作流阶段相关任务开发" />
+    <MESSAGE value="完成CI工作流有序执行UI层面工作" />
+    <MESSAGE value="完成CI工作流历史记录相关API" />
+    <MESSAGE value="移动设备全局导航到我的局部导航中" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动设备全局导航到我的局部导航中" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/business/ucenter/account_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/ci/pagefactory/ci_testing_pageworker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/ci/pagefactory/ci_task_pageworker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6480">
+          <caret line="292" column="8" selection-start-line="292" selection-start-column="8" selection-end-line="292" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/ci/views/ci_testing_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/filters/ci_taskflow_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+          <folding>
+            <element signature="e#74#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/views/ci_task_history_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/ci/views/ci_task_history_view.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/render/ci_task_history_render.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_agent_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_flow_history_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#74#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_taskflow_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="37" />
+          <folding>
+            <element signature="e#62#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_taskflow_section_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+          <folding>
+            <element signature="e#62#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/views/ci_task_flow_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
+          <folding>
+            <element signature="e#73#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/urlrouter/ci_task_flow_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="17" column="112" selection-start-line="17" selection-start-column="112" selection-end-line="17" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_task_queue_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="31" column="125" selection-start-line="31" selection-start-column="125" selection-end-line="31" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/viewmodel/api_ci_taskflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_managers/ci_model_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="140" column="54" selection-start-line="140" selection-start-column="54" selection-end-line="140" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/ci/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_task_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="237" column="34" selection-start-line="237" selection-start-column="34" selection-end-line="237" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/serializer/ci_taskflow_serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+          <folding>
+            <element signature="e#69#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/views/ci_task_basic_view.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/views/ci_flow_history_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="39" column="119" selection-start-line="39" selection-start-column="119" selection-end-line="39" selection-end-column="119" />
+          <folding>
+            <element signature="e#73#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/global/templates/masterpage_nirvana.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="106" column="104" selection-start-line="106" selection-start-column="104" selection-end-line="106" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/urlrouter/home_device_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/views/home_device_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/pagefactory/home_template_path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/pagefactory/home_device_pageworker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_left_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="122" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/device/less/home_device.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home-base.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home-testjob.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home-variables.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home_dash_board.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home_device.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/static/home/less/home_unlogin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_page.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_page_welcome.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_page_project_summary.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/home/home_page_device.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/device/home_device_list_controll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/home/templates/device/home_device_list_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/ci/ci_task_parameter_service.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/project/task_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/project/views/project_task_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/ci/serializer/ci_serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/api/project/serializer/project_serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
+          <folding>
+            <element signature="e#70#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/project/templates/email_report/testcomplete_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="170" column="49" lean-forward="true" selection-start-line="170" selection-start-column="49" selection-end-line="170" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doraemon/project/templates/email_report/bvt_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4944">
+          <caret line="206" column="12" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#table#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.5 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>doraemon_nirvana</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Python 3.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

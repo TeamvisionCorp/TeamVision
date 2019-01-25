@@ -1,0 +1,133 @@
+Fri, 18 Jan 2019 22:38:06 simplelogger.py[line:28] ERROR ProjectIssue matching query does not exist.
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/model_managers/project_model_manager.py", line 327, in get
+    result=super(IssueManager,self).get_queryset().get(id=issue_id)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+teamvision.project.models.DoesNotExist: ProjectIssue matching query does not exist.
+Fri, 18 Jan 2019 22:43:42 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:43:42 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:43:42 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:44:08 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:44:08 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:44:08 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:46:22 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:46:22 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'
+Fri, 18 Jan 2019 22:46:22 simplelogger.py[line:28] ERROR ProjectIssue has no field named '0'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 566, in get_field
+    return self.fields_map[field_name]
+KeyError: '0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ethan/Documents/OneDrive/coding.net/teamvision_lte/teamvision/teamvision/project/models.py", line 242, in get_field_verbose_name
+    result = ProjectIssue._meta.get_field(field_name).verbose_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/options.py", line 568, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: ProjectIssue has no field named '0'

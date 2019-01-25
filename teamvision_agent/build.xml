@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Teamcat_Distrubite_package" default="release">
+	<xmlproperty file="pom.xml"/> 
+	<property name="release.version" value="${project.properties.release-version}" />
+	
+	<property name="dist.name" value="distribute" />
+	<property name="dist.dir" location="${dist.name}" />
+	<property name="agent.dir" location="${dist.dir}/agent-${release.version}" />
+	<property name="libs.dir" location="${agent.dir}/libs" />
+	<property name="plugins.dir" location="${agent.dir}/plugins" />
+    <property name="adebug.dir" location="${basedir}/source/DoraAgent/libs" />
+	<property name="debug.driver.dir" location="${basedir}/source/DoraDriver/libs" />
+    <property name="zipFile" value="agent-${release.version}.zip" />
+<!-- 	<property name="ftpPath" location="${ftpPath}"/> -->
+    
+	<property name="proj.dir" location="." />
+	
+	<property name="shell" value="cmd" />
+	<property name="shell-arg" value="/c" />
+	
+	<target name="mvn-build">
+	    <exec executable="${shell}">
+			<arg value="${shell-arg}" />
+			<arg value="mvn" />
+			<arg value="clean" />
+			<arg value="install" />
+		</exec>
+	</target>
+	
+	<target name="clean" description="Removes package output files">
+	    <!--<exec executable="adb">
+			<arg value="kill-server" />
+		</exec>-->
+		
+		<delete dir="${dist.dir}" />
+		<mkdir dir="${dist.dir}" />
+	</target>
+
+	<target name="agent-debug" depends="package-agent">
+		<delete dir="${adebug.dir}" />
+		<copy todir="${adebug.dir}">
+			<fileset dir="${libs.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${adebug.dir}/../res">
+			<fileset dir="${proj.dir}/source/DoraAndroidUITestDriver/res">
+				<include name="*.apk" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="driver-debug" depends="package-agent">
+		<delete dir="${debug.driver.dir}" />
+		<copy todir="${debug.driver.dir}">
+			<fileset dir="${libs.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="package-agent" depends="clean, mvn-build">
+		<mkdir dir="${agent.dir}" />
+		<mkdir dir="${libs.dir}" />
+		<mkdir dir="${plugins.dir}" />
+
+		<!-- copy agent jar file to libs -->
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraAgent/target">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraAgent/target/dependency">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraDriver/target/dependency">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${agent.dir}">
+			<fileset dir="${proj.dir}/source/DoraAgent/src/main/resources">
+				<include name="agent.properties" />
+			</fileset>
+		</copy>
+		<copy todir="${agent.dir}">
+			<fileset dir="${proj.dir}">
+				<include name="version.txt" />
+			</fileset>
+		</copy>
+		<copy todir="${agent.dir}">
+			<fileset dir="${proj.dir}/source/DoraAgent">
+				<include name="log4j.properties" />
+			</fileset>
+		</copy>
+		
+		<!-- copy plugins jar file -->
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraAndroidUITestDriver/target">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraAndroidUITestDriver/target/dependency">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+ 		<copy todir="${agent.dir}/res">
+			<fileset dir="${proj.dir}/source/DoraAndroidUITestDriver/res">
+				<include name="*.apk" />
+			</fileset>
+		</copy>
+		<!--copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraStepDriver/target">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${libs.dir}">
+			<fileset dir="${proj.dir}/source/DoraStepDriver/target/dependency">
+				<include name="*.jar" />
+			</fileset>
+		</copy-->
+				
+		<!-- generate shell file -->
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+				line='${shell-arg} echo title Teamcat-Agent> agent.bat' />
+		</exec>
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+				line="${shell-arg} echo java -jar libs/teamcat-agent-${release.version}.jar>> agent.bat" />
+		</exec>
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+				line="${shell-arg} echo java -jar libs/teamcat-agent-${release.version}.jar> agent.sh" />
+		</exec>
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+				line="${shell-arg} echo java -jar libs/teamcat-agent-${release.version}.jar client> agent-cli.bat" />
+		</exec>
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+				line="${shell-arg} 'echo agent.key= > agent.properties'" />
+		</exec>
+		<exec executable="${shell}" dir="${agent.dir}">
+			<arg
+					line="${shell-arg} 'echo server.host= http://10.69.58.195:8443/>> agent.properties'" />
+		</exec>
+		<zip basedir="${agent.dir}" destfile="${dist.dir}\${zipFile}" />
+	</target>
+
+	
+	<target name="release" depends="package-agent, agent-debug, driver-debug"/>
+	
+	<target name="publish"  depends="release">
+	    <fail unless="ftpPath">"ftpPath" property does't exist</fail>
+	    <delete file="${ftpPath}/${zipFile}" />
+ 	    <copy todir="${ftpPath}">
+			<fileset dir="${dist.dir}">
+				<include name="${zipFile}" />
+			</fileset>
+		</copy> 
+	</target>
+</project>

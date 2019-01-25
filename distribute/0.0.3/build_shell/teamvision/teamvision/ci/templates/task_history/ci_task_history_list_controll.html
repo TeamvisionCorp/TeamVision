@@ -1,0 +1,79 @@
+{% for history in ci_task_histories %}
+<div  class="ci_task_listview_item container-fluid">
+<div style="" class="ci_task_history_status {{ history.is_build_success }}">
+			
+		</div>
+	<div class="row">
+		<div class="col-md-7 col-lg-7 col-sm-6">
+			<div class="ci_task_listview_item_title row">
+				<!-- <span class="col-sm-12"> <i class="fa fa-fw fa-lg fa-bell {{ history.is_build_success }}" name="task-history-check"></i> </span> -->
+			</div>
+			<div class="ci_task_listview_item_content row">
+				<span class="col-sm-12"> 
+					<input name="task_history_id" type="hidden" value="{{ history.ci_task_history.id }} " />
+					<span name="task-history-check"> </span>
+					<span name="task_build_version" >#{{ history.ci_task_history.BuildVersion }}</span> 
+					<span class=""  style="cursor:pointer"> <i class="fa fa-clock-o"></i>
+						 <span style="color:#555" name="ci_task_last_run_time">{{ history.last_run_time }}</span> 
+				    </span> 
+				    <span class="hidden-sm hidden-md hidden-xs">{{ history.duration }}</span>
+				    <span class="hidden-sm hidden-md hidden-xs">{{ history.version  }}</span>
+	
+				    <span><i class="fa fa-folder-open fa-fw"></i>
+				    {% if history.ci_task_history.BuildStatus != 0 %}
+				    	     <span><a href="/ci/history/buildlog/{{ history.ci_task_history.BuildLogID }}" target="_blank" style="color:#555">日志</a></span> 
+				    </span> 
+				    {% else %}
+				     <span name="ci_bulid_log" class="cursor-hand" style="padding-top:10px;color:#555">日志</span>
+				    {% endif %}
+				   
+				 <span class="postion-absolute hidden-sm hidden-md hidden-xs"   name="history_tags">
+				 	 <span name="add_tag" style="cursor:pointer"> <i class="fa fa-tags fa-fw"></i><i class="fa fa-plus-circle fa-fw"></i> </span> 
+				 {% for tag in history.task_tags %} 
+				<span class='label label-default visible-lg-inline-block ' labelid="{{ tag.id }}" style='background-color:{{ tag.TagColor }} ; opacity:0.5;font-size:8px !important;'>
+					{{ tag.TagName }} 
+				</span> 
+				{% endfor %} 
+				<span name="loader"><i class="fa fa-spinner fa-spin"></i></span>
+				 {{ history.tag_menu }}
+				  </span>
+				 </span>
+
+			</div>
+
+		</div>
+		<div class="col-md-2 col-lg-2 col-sm-3 cursor-hand hidden-md hidden-xs hidden-sm" style="line-height:1.5em;">
+			<span style="margin-top:30px; display:inline-block;margin-right:15px;"> <img src="{{ history.started_by_avatar }}" style="width:30px;height:30px;" class="img-circle" title="{{ history.started_by_name }}"> </span>
+		    <span style="margin-top:30px; display:inline-block"><img src="/static/global/images/agent.png" style="width:20px;height:20px;" class="img-circle" title="{{ history.agent_name }}"></span>
+		</div>
+		
+		<div class="col-md-2 col-lg-2 col-sm-4 cursor-hand" style="line-height:1.5em;">
+			{% if history.ci_task.TaskType == 4 %}
+			  {% if history.has_package %}
+			<span  class="postion-absolute">
+				<span style="margin-top:30px;display:inline-block;cursor:pointer" name="down_package">
+				<i class="fa fa-download fa-fw fa-2x" style="color:green;"></i>
+				{% if history.has_parameter %}
+				<span class="hidden-sm  hidden-xs" style="width:100px;">
+				    	{{ history.build_parameter  }}
+				    </span>
+			    </span>
+			    {% endif  %}
+			</span>
+			<div name="ci_task_download_package" class="filed-pop-meun" style="margin-top:60px;margin-left:-20px;">
+			</div>
+			<div name="qrcode_image" class="filed-pop-meun qrcode">
+	    	        <div style="height:50px">
+	    	   	      <center style="font-size:16px;color:#555;padding-top:15px;">{{ history.project_name }} {{ history.version }}</center>
+	    	        </div>
+	    	        <div style="margin-top:0px;">
+	    	   	      <img name="qrcode_img" src="" style="height:150px;width:150px;margin-left:25px;" class="img-rounded"/>
+	    	        </div>
+	        </div>
+			{% endif %}
+			{% endif %}
+			
+		</div>
+	</div>
+</div>
+{% endfor %}

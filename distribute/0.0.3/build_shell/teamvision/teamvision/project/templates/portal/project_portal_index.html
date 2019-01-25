@@ -1,0 +1,21 @@
+{% extends "project/project_index_view.html" %}
+
+{% block project_styles %}
+<link rel="stylesheet/less" href="/static/project/less/project_portal.less" type="text/css" media="screen"/>
+{% endblock %}
+
+{% block project_content %}
+{% if sub_nav_bar != "" %}
+<div id="portal_project_sub_leftnav" class="portal_project_sub_leftnav">
+	{{ sub_nav_bar }}
+</div>
+{% endif %}
+<div id="portal_project_view" class="portal_project_view" style="top:60px;">
+	{{ project_list }}
+</div>
+{% endblock %}
+
+{% block project_scripts %}
+
+<script  type="text/javascript" src="/static/project/js/project_portal.js"></script>
+{% endblock %}

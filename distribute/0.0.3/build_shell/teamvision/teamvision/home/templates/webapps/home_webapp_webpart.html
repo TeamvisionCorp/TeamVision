@@ -1,0 +1,40 @@
+<div class="listview-window-container">
+	<div>
+		<div id="home_project_listview_window" class="listview-window">
+			<div class="listview-window-title">
+				所有工具<span class="badge">{{ webapps|length }}</span>
+			</div>
+			<div id="home_project_listview_container">
+				<div id="home_dashboard_project_listview" class="container-fluid">
+					<div class="row">
+
+						{% for webapp in webapps %}
+						<div class="col-lg-1 col-md-2 col-sm-3 home_webapp_listitem" name="home-webapp-item">
+							<div id="{{ webapp.webapp.id }}">
+								{% if not webapp.is_public %}
+								<a><i name="home_webapp_remove" class="fa fa-minus-square fa-lg remove_icon-inlist pull-right"></i></a>
+								{% endif %}
+								<a href="{{ webapp.webapp.app_url }}" target="_blank"><img src="{{ webapp.webapp.app_avatar }}" class="img-thumbnail" style="width:100px; height:100px;" />
+								</a>
+							</div>
+							<div>
+							<span><i class="fa fa-fw fa-rocket"></i> {{  webapp.webapp.app_title }}</span>
+							
+							
+							
+							</div>
+							<!-- <div>
+							<span><i class="fa  fa-flag-o fa-fw"></i> 版本:{{ project.lastest_version }}</span>
+							</div> -->
+						</div>
+
+						{% endfor%}
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+	<div class="ci-panel-nonbackground">
+		<div class="ci-panel-head-nonbackground">
+			<h3 class="panel-title" style="margin-left:30px;">
+			<input type="hidden" value={{ ci_task.id }} id="ci_task_id"/>
+			<strong>{{ ci_task.TaskName }}</strong></h3>
+		</div>
+		<div class="ci-panel-body-nonbackground" id="ci_task_build_confirm">
+			<form class="form-horizontal" id="ci_task_build_confim_form">
+				<div class="form-group" >
+					<label for="ci_task_parameter_group" class="col-sm-2 control-label">参数组</label>
+					<div class="col-sm-2">
+						<select name="ci_task_parameter_group">
+							{{ task_parameter_groups }}
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<span name="build_confirm" class="cursor-hand green_radius_button">确认构建</span>
+
+		</div>
+	</div>
+			</form>
+		</div>
+	</div>
+</div>

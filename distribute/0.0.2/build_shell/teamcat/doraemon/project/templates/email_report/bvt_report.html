@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: #f5f7f9; color: #6a6c6f;
+        }
+
+        tr {
+            #border: 1px solid lightgray;
+        }
+
+        td {
+            border: 1px solid lightgray;
+            height: 30px;
+        }
+
+        .table {
+            border: 1px solid lightgray;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 760px;
+            margin-left: 100px;
+            border-spacing: 0px;
+            /*padding: 2px;*/
+            /*padding-left: 5px;*/
+            /*padding-right: 5px;*/
+        }
+
+        .tr {
+            display: flex;
+        }
+
+        .td {
+            border-right: 1px solid lightgrey;
+            padding: 5px 5px 0px 5px;
+            text-align: left;
+            min-height: 30px;
+        }
+
+        .row {
+            padding-top: 5px;
+            padding-left: 10px;
+            text-align: left;
+            height: 30px;
+        }
+
+        .title {
+            text-align: center;
+            border-right: none;
+        }
+
+        .comment {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /*padding: 2px;*/
+            /*padding-left: 5px;*/
+            /*padding-right: 5px;*/
+        }
+
+        .detail {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            {#border: 1px solid lightgrey;#}
+            padding: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .detail-title {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid lightgrey;
+            /*padding: 2px;*/
+            /*padding-left: 5px;*/
+            /*padding-right: 5px;*/
+        }
+
+        .Verdict {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            {#border: 1px solid lightgrey;#}
+            padding: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .Verdict-title {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid lightgrey;
+            /*padding: 2px;*/
+            /*padding-left: 5px;*/
+            /*padding-right: 5px;*/
+        }
+
+        .report-title {
+            text-align: center;
+            height: 38px;
+            background-color: #202d40;
+            color: #fff;
+            padding-top: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<table class="table" style="width: 787px; margin-bottom: 20px;">
+    <tr>
+        <td class="report-title">{{ report.Topic }}</td>
+    </tr>
+</table>
+<table class="comment" style="margin-left: 100px;width: 760px;">
+<tr >
+    <td style="border: none;">{{ report.Comments|safe }}</td>
+</tr>
+</table>
+
+<table class="table" style="width: 760px; margin-bottom: 20px;">
+    <tr class="tr">
+        <td class="td title" style="width: 760px;">{{ report.ProjectInfo.Project }}-{{ report.ProjectInfo.Version }}BVT通报</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">项目名称:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Project }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">版本:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Version }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">测试人员:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Tester }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">开发人员:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Dev }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">PM:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.PM }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">测试开始日期:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.StartDate }}</td>
+    </tr>
+</table>
+
+<table class="table" style="width: 760px;margin-bottom: 20px;">
+    <tr class="tr">
+                <td class="td title" style="width:760px;">
+                    检查点通过情况
+                </td>
+    </tr>
+    <tr class="tr">
+                <td class="td" style="width: 600px;">
+                    功能点
+                </td>
+        <td class="td" style="width:160px;padding-top: 0px">
+                    通过情况
+                </td>
+    </tr>
+
+    {% for feature in report.FeatureProgress.Feature %}
+        <tr class="tr">
+                    <td class="td" style="width: 600px;">
+                    {{ feature.Content }}
+                    </td>
+            {% if feature.Passed1 %}
+                <td class="td" style="width:160px;padding-top: 0px;color: red;">未通过</td>
+            {% else %}
+                <td class="td" style="width:160px;padding-top: 0px;color: green;">通过</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+</table>
+
+<table class="detail" style="margin-left: 100px; width: 778px;">
+    <tr>
+        <td class="detail-title">BVT结果详情</td>
+    </tr>
+    <tr>
+        <td>{{ report.BVTDetailResult|safe }}</td>
+    </tr>
+</table>
+
+<table class="Verdict" style="margin-left: 100px; width: 778px;">
+    <tr>
+        <td class="Verdict-title">BVT结论</td>
+    </tr>
+    <tr>
+        <td >{{ report.BVTVerdict|safe }}</td>
+    </tr>
+</table>
+
+</body>
+</html>

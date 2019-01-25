@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<title>Email</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			body
+      	      {
+      	      	width: 100%;
+      	      	border:0;
+				background-color:#FFFFFF;
+				margin: 0; 
+				padding: 0;
+				font-family:Microsoft YaHei;
+      	      }
+      	      .title
+      	      {
+	          border:0;
+			  padding:0;
+			  spacing:0;
+			  width:100%;
+			  background-color:#50565F; 
+			  font-size:28px;
+      	      }	
+			  .summarytitle
+      	      {
+	          border:0;
+			  padding:0;
+			  spacing:0;
+			  width:100%;
+			  background-color:#FFFFFF; 
+			  font-size:25px;
+      	      }
+			   .subject
+      	      { 
+	          border:0;
+			  padding:8;
+			  spacing:0;
+			  width:100%;
+			   background-color:#FFFFFF;
+			  font-size:16px;
+      	      }
+         </style>
+	</head>
+	
+	
+	<body>
+		<table class = "title">
+			<tr > 
+				<td style = "color:#FFFFFF">TeamCat Report - $Subject</td>
+			</tr>		
+		</table>
+		<br>
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">灾难任务信息</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>	
+		</table> 
+		<br>
+		<table class="subject">
+			<tr >
+				<td>	
+					<table border="2" cellpadding="10" cellspacing="0" width="90%" style="border-collapse: collapse;text-align:center;  background-color:#FFFFFF;">
+						<tr >
+							<td style = "color:#6C6C6C;"><b>队列ID</b></td><td style = "color:#6C6C6C;"><b>入列时间</b></td><td style ="color:#6C6C6C"><b>异常信息</b></td>
+						</tr>		
+						$DisasterSummary
+					</table>	
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

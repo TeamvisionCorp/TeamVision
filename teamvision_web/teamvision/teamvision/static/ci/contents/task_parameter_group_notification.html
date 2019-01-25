@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<title>Email</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			body
+      	      {
+      	      	width: 90%;
+      	      	border:0;
+				background-color:#FFFFFF;
+				align:center;
+				margin: 0; 
+				padding: 0;
+				margin-right: auto;
+				margin-left: auto;
+				font-family:Microsoft YaHei;
+      	      }
+      	      
+      	      .title
+      	      {
+	          border:0;
+			  padding:0;
+			  spacing:0;
+			  width:100%;
+			  background-color:#50565F; 
+			  font-size:28px;
+      	      }	
+      	      
+      	      .subject td
+      	      {
+      	         font-size:13px;
+      	      }
+			  .summarytitle
+      	      {
+	          border:2;
+			  padding:0;
+			  spacing:0;
+			  width:100%;
+			  background-color:#FFFFFF; 
+			  font-size:25px;
+      	      }
+			   .subject
+      	      { 
+	          border:0;
+			  padding:8;
+			  spacing:0;
+			  width:100%;
+			   background-color:#FFFFFF;
+			  font-size:16px;
+      	      }
+         </style>
+		
+	</head>
+
+	<body>
+		 <table class = "title">
+			<tr > 
+				<td style = "color:#FFFFFF">TeamCat Report - $Subject</td>
+			</tr>		
+		</table><br>
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">项目信息</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>
+		</table> 
+		<table class="subject">
+			<tr >
+				<td style = "color:#6C6C6C;">项目: $ProjectName</td>
+			</tr>		
+			<tr >
+				<td style = "color:#6C6C6C;">参数组: $GroupName</td>
+			</tr>
+
+			<tr >
+				<td style = "color:#6C6C6C;">修改人员: $Changer</td>
+			</tr>
+		</table><br>	
+		
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">属性变化</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>	
+		</table> 
+		<table class="subject">
+		    <th style="margin-bottom: 10px;">
+					   <tr>
+					       <td style="width:100px;padding:5px;">字段</td>
+					       <td style="width:200px;padding:5px;">原值</td>
+					       <td style="width:200px;padding:5px;">新值</td>
+					       </tr>
+					   </th>
+			$GroupPropertyChange	
+		</table>
+		<br>	
+		
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">参数变化</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>	
+		</table> 
+		<table class="subject">
+		<th style="margin-bottom: 10px;">
+					   <tr>
+					       <td style="width:100px;padding:5px;">字段</td>
+					       <td style="width:200px;padding:5px;">原值</td>
+					       <td style="width:200px;padding:5px;">新值</td>
+					       </tr>
+					   </th>
+			$ParameterChange
+		</table>
+		<br>	
+		
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">新增参数</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>	
+		</table> 
+		<table class="subject">
+		<th style="margin-bottom: 10px;">
+					   <tr>
+					       <td style="width:100px;padding:5px;">字段</td>
+					       <td style="width:200px;padding:5px;">原值</td>
+					       <td style="width:200px;padding:5px;">新值</td>
+					       </tr>
+					   </th>
+			$ParameterNew
+		</table>
+		<br>	
+		<table class="subject">
+			$ParameterChange
+		</table>
+		<br>	
+		
+		<table class = "summarytitle">
+			<tr > 
+				<td style = "color:#FFA487">删除参数</td>
+			</tr>
+			<tr > 
+				<td  style="height:2px;border:none;border-top:2px solid #FFA487;" ></td>
+			</tr>	
+		</table> 
+		<table class="subject">
+		<th style="margin-bottom: 10px;">
+					   <tr>
+					       <td style="width:100px;padding:5px;">字段</td>
+					       <td style="width:200px;padding:5px;">原值</td>
+					       <td style="width:200px;padding:5px;">新值</td>
+					       </tr>
+					   </th>
+			$ParameterDelete
+		</table>
+		<br>	
+	
+	</body>
+</html>

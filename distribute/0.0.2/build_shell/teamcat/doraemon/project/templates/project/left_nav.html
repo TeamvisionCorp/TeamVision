@@ -1,0 +1,41 @@
+<div class="left_menu_container">
+	<ul class="leftmenu">
+		
+		<!-- <li id="mydashboard" class={{ page.dashboard_active }} >
+			<a class="leftmenuitem" href="{{ page.dashboard_href }}">
+				<i class="fa fa-dashboard fa-fw fa-lg"></i>
+				<img src="{{ page.project.PBAvatar }}" class="img-circle" style="width:45px; height:45px;" title="{{ page.project.PBTitle }}" />
+			<p>概要</p>
+			</a>
+		</li> -->
+		<li class={{ page.issue_active }}>
+			<a class="leftmenuitem" href="{{ page.issue_href }}"><i class="fa fa-bug fa-fw fa-lg"></i><span>问题</span></a>
+		</li>
+		<li class={{ page.fortesting_active }}>
+			<a class="leftmenuitem" href="{{ page.fortesting_href }}"><i class="fa fa-bullhorn  fa-fw fa-lg"></i><span>提测</span></a>
+		</li>
+		<li class={{ page.task_active }}>
+			<a class="leftmenuitem" href="{{ page.task_href }}"><i class="fa fa-tasks fa-fw fa-lg"></i><span>任务</span></a>
+		</li>
+		
+		<li class={{ page.statistics_active }}>
+			<a class="leftmenuitem" href="{{ page.statistics_href }}"><i class="fa fa-bar-chart fa-fw fa-lg"></i><span>统计</span></a>
+		</li>
+        <li class={{ page.archive_active }}>
+			<a class="leftmenuitem" href="{{ page.archive_href }}"><i class="fa fa-archive fa-fw fa-lg"></i><span>归档</span></a>
+		</li>
+		<!-- <li class={{ testjob_active }}>
+			<a class="leftmenuitem" href="/project/interfaces"><i class="fa fa-tags fa-fw fa-lg"></i><span>接口</span></a>
+		</li> -->
+		{% for menuitem in page.custom_menu_list %}
+		<li id={{ menuitem.get_id }}>
+			<a class="leftmenuitem"><i class=" {{ menuitem.get_key }} "></i><span>{{ menuitem.get_name }}</span> </a>
+		</li>
+		{% endfor %}
+		
+		<li class={{ page.settings_active }}>
+			<a class="leftmenuitem" href="{{ page.settings_href }}"><i class="fa fa-cogs fa-fw fa-lg"></i><span>设置</span></a>
+		</li>
+	</ul>
+
+</div>

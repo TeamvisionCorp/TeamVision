@@ -1,0 +1,143 @@
+@import '../../assets/teamcat/global/less/app-global-variables.less';
+@import '../../assets/teamcat/global/less/global-base.less';
+
+
+/* Style for header*************************************************************/
+
+
+/*header整体设置*/
+
+@head-item-top:20px;
+
+.app-head{
+  /*background-color:#24272D;*/
+  .app-head-background();
+  height: @app-head-height;
+  width: @app-head-width;
+  position: @app-head-position;
+  z-index: @app-head-z-index;
+  box-shadow:0 0 0 2px rgba(0,0,0,.05);
+  .doraemon-font();
+  top:0px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+.app-head-item
+{
+  display:inline-block;
+  .doraemon-font(@body-font-family,@title-size,@header-font-color);
+  font-weight:400;
+  opacity:0.9;
+  height: @app-head-height;
+  .font-family();
+}
+
+
+
+
+/*header logo 样式####################################################################################*/
+
+.app-head-logo
+{
+  padding-top:15px;
+  display:block-inline;
+}
+
+
+
+/*header title 样式####################################################################################*/
+.app-head-title {
+  font-size:20px;
+  padding: @head-item-top 2px 0px  5px;
+  width:120px;
+}
+
+
+/*header 菜单样式####################################################################################*/
+
+.app-head-menu
+{
+  padding-top:5px;
+  //padding-left:100px;
+}
+
+
+
+
+.app-head-menu-item
+{
+   display:inline-block;
+   padding-top:@head-item-top;
+   font-size:14px;
+   height: @app-head-menu-item-height;
+  .font-family();
+   float: left;
+   min-width:80px;
+   color:hsla(0,0%,100%,.5);
+}
+
+.app-head-menu-item a
+{
+  color:hsla(0,0%,100%,.5);
+}
+
+.app-head-menu-item-active
+{
+  border-bottom: 2px solid #32be77;
+}
+
+.app-head-menu-item-active a
+{
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+
+
+/*header 设置样式####################################################################################*/
+.app-head-settings
+{
+  /*background-color:#24272D;*/
+  padding-top:@head-item-top;
+  //width:150px;
+  //margin-right:20px;
+}
+
+//.app-head-settings ul li
+//{
+//  width: 40px;
+//  padding: 0px 5px 0px 0px;
+//  height: 25px;
+//
+//}
+//
+//.app-head-settings ul li i
+//{
+//
+//  display:inline-block;
+//  font-size:16px !important;
+//  opacity:0.6;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
