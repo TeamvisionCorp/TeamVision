@@ -1,0 +1,5 @@
+{% for product in products %}
+   
+      <option {{ product.is_selected }} value="{{ product.product.id }}">{{ product.product.PTitle }}</option>
+   
+{% endfor %}

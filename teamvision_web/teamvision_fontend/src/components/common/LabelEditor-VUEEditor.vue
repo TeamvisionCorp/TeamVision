@@ -11,8 +11,8 @@
     <vue-editor v-if="edited"  v-model="editValue" :editorToolbar="editorToolBar"  :placeholder="placeHolder">
     </vue-editor>
     <ButtonGroup v-if="edited" slot="suffix" style="width: 100px; margin-left: 0px; padding-top: 13px;" shape="circle" size="small">
-      <Button type="primary" @click="onOk" ghost>保存</Button>
-      <Button @click="onCancel">取消</Button>
+      <Icon :size="20" @click="onOk" color="black" class="cursor-hand" type="md-checkmark" />
+      <Icon :size="20" @click="onCancel" color="black" class="cursor-hand" type="md-close" />
     </ButtonGroup>
   </div>
 </template>

@@ -11,10 +11,6 @@
                 <router-link to="/ci/taskflow" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">
                   <a href="/ci/taskflow"><i class="fa fa-fw  fa-bus"></i>任务流</a>
                 </router-link>
-
-                <li class="app-body-head-menu-item">
-                  <a href="/ci/settings/global_variable"><i class="fa fa-fw  fa-bus"></i>设置</a>
-                </li>
               </ul>
             </div>
             </Col>
@@ -41,6 +37,8 @@
             <div class="app-body-header-rightbar-default" style="padding-top: 15px;height: inherit">
               <span v-if="menuItem === 'task'" @click="onAddCITask"><Avatar class="cursor-hand" style="background-color: #32be77;" icon="md-add"  /></span>
               <span v-if="menuItem === 'taskflow'" @click="onAddCITaskFlow"><Avatar class="cursor-hand" style="background-color: #32be77;" icon="md-add"  /></span>
+              <Divider type="vertical" />
+              <a  style="color:inherit;" href="/ci/settings/global_variable"><Icon :size="24" type="ios-cog" /></a>
             </div>
           </Col>
           </Row>
@@ -128,7 +126,7 @@ import { mapMutations} from 'vuex'
 <style scoped lang="less">
 @import '../../components/layout/appBody';
 @import '../../components/layout/appHead';
-@import '../../assets/teamcat/global/less/global';
+@import '../../assets/teamvision/global/less/global';
 .demo-auto-complete-item{
   padding: 4px 0;
   border-bottom: 1px solid #F6F6F6;

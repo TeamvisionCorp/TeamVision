@@ -1,0 +1,24 @@
+{% extends "home/logcat_index_view.html" %}
+
+{% block logcat_styles %}
+
+{% endblock %}
+
+
+{% block logcat_content %}
+<div id="logcat_logger_view" class="logcat_logger_view">
+	
+	{{ logger_list }}
+
+	
+</div>
+{% endblock %}
+
+{% block  logcat_scripts %}
+
+<script  type="text/javascript" src="/static/logcat/js/logcat-logger.js"></script>
+<script src="/static/global/js/ws4redis.js" type="text/javascript"></script>
+
+{% endblock %}
+
+

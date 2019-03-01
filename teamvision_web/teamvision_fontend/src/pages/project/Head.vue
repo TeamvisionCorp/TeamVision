@@ -6,29 +6,25 @@
         <div class="app-body-header-leftbar-default pull-left">
           <ul class="app-body-head-menu">
 
-            <!--<router-link :to="'/project/'+projectID+'/plan'" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">-->
-            <!--<a :href="'h/project/'+projectID+'/plan'"><i class="fa fa-fw  fa-bus"></i>计划</a>-->
-            <!--</router-link>-->
-
             <router-link :to="'/project/'+ projectID +'/issue/all'" :exact="false" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">
               <a href=""><i class="fa fa-fw  fa-bug"></i>问题</a>
             </router-link>
             <router-link :to="'/project/'+projectID+'/fortesting'" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">
               <span class="cursor-hand">
-                  <!--<i class="fa fa-fw  fa-bus"></i>提测-->
-                </span>
-              <Dropdown transfer trigger="click">
-              <a :href="'/project/'+projectID+'/fortesting'">
-                <span>
                   <i class="fa fa-fw  fa-bus"></i>提测
                 </span>
-                <Icon type="ios-arrow-down"></Icon>
-              </a>
-              <DropdownMenu slot="list">
-                <DropdownItem name="1"> <i class="fa fa-fw  fa-bus"></i> 提测</DropdownItem>
-                <DropdownItem name="2"><Icon type="md-recording" /> 报告</DropdownItem>
-              </DropdownMenu>
-              </Dropdown>
+              <!--<Dropdown transfer trigger="click">-->
+              <!--<a :href="'/project/'+projectID+'/fortesting'">-->
+                <!--<span>-->
+                  <!--<i class="fa fa-fw  fa-bus"></i>提测-->
+                <!--</span>-->
+                <!--<Icon type="ios-arrow-down"></Icon>-->
+              <!--</a>-->
+              <!--<DropdownMenu slot="list">-->
+                <!--<DropdownItem name="1"> <i class="fa fa-fw  fa-bus"></i> 提测</DropdownItem>-->
+                <!--<DropdownItem name="2"><Icon type="md-recording" /> 报告</DropdownItem>-->
+              <!--</DropdownMenu>-->
+              <!--</Dropdown>-->
 
             </router-link>
             <router-link :to="'/project/'+projectID+'/task'" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">
@@ -37,12 +33,12 @@
             <li class="app-body-head-menu-item">
               <a  :href="'/project/'+ projectID +'/statistics/all'"><Icon type="ios-stats"/> <span>统计</span></a>
             </li>
+            <!--<router-link :to="'/project/'+projectID+'/documents'" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">-->
+              <!--<a :href="'/project/'+projectID+'/documents'"><Icon type="md-albums" />文件</a>-->
+            <!--</router-link>-->
             <!--<li class="app-body-head-menu-item">-->
-              <!--<a  :href="'/project/'+ projectID +'/archive/all'"><i class="fa fa-flag fa-fw fa-lg"></i> <span>归档</span></a>-->
+              <!--<a  :href="'/project/'+ projectID +'/settings/basic'"><i class="fa fa-cog fa-fw"></i> <span>设置</span></a>-->
             <!--</li>-->
-            <li class="app-body-head-menu-item">
-              <a  :href="'/project/'+ projectID +'/settings/basic'"><i class="fa fa-cog fa-fw"></i> <span>设置</span></a>
-            </li>
           </ul>
 
         </div>
@@ -63,7 +59,21 @@
         <div class="app-body-header-rightbar-default pull-right">
           <span @click="newTask" v-if="showNewButton">
               <Avatar style="background-color: #32be77;"  class="cursor-hand" icon="md-add" />
-            </span>
+          </span>
+          <span @click="newTask" v-if="routerName==='projectDocument'">
+
+            <Dropdown transfer @on-click="createDocument">
+        <span>
+          <Avatar style="background-color: #32be77;"  class="cursor-hand" icon="md-add" />
+            <Icon type="ios-arrow-down"></Icon>
+        </span>
+        <DropdownMenu slot="list">
+            <DropdownItem name="1"><Icon type="ios-folder" /> 文件夹</DropdownItem>
+            <DropdownItem name="2"><Icon type="ios-document" /> Excel</DropdownItem>
+          <DropdownItem name="3"><Icon type="ios-cloud-upload" />上传文件</DropdownItem>
+        </DropdownMenu>
+    </Dropdown>
+          </span>
           <span v-if="routerName==='projectIssue'" style="padding-left: 10px">
              <Divider type="vertical" />
               <Tooltip content="导出" transfer>
@@ -92,15 +102,9 @@
                 </span>
               </Tooltip>
             </span>
-            <!--<span v-if="taskViewMode === 2">-->
-               <!--<Tooltip content="最大化" transfer v-if="taskViewMode === 2">-->
-                <!--<span @click="maxSizeGannt">-->
-                  <!--<Icon type="md-contract" :size="24"/>-->
-                <!--</span>-->
-              <!--</Tooltip>-->
-            <!--</span>-->
-
           </span>
+          <Divider type="vertical" />
+          <a  style="color:inherit;" :href="'/project/'+ projectID +'/settings/basic'"><Icon :size="24" type="ios-cog" /></a>
         </div>
       </i-col>
     </Row>
@@ -153,11 +157,19 @@
     },
     routerName: function () {
       return this.$route.name
+    },
+    activeFab: function () {
+      switch (this.tabs) {
+        case 'one': return { 'class': 'purple', icon: 'account_circle' }
+        case 'two': return { 'class': 'red', icon: 'edit' }
+        case 'three': return { 'class': 'green', icon: 'keyboard_arrow_up' }
+        default: return {}
+      }
     }
   },
   methods: {
     ...mapMutations('task', ['setTaskGanntMaxSize']),
-    ...mapMutations('projectglobal',['setCreateDialogShow','setProjectVersion','setRightPanelShow', 'setTaskViewMode']),
+    ...mapMutations('projectglobal',['setCreateDialogShow','setProjectVersion','setRightPanelShow', 'setTaskViewMode','setCreateDocumentType']),
     newTask () {
       this.setCreateDialogShow(true)
     },
@@ -173,6 +185,10 @@
     taskViewSwitch (value) {
       this.setTaskViewMode(parseInt(value))
       this.taskViewMode = parseInt(value)
+    },
+
+    createDocument: function (value) {
+      this.setCreateDocumentType(parseInt(value))
     },
 
     maxSizeGannt: function () {
@@ -202,7 +218,19 @@
   watch: {
       projectID: function () {
         this.loadProjectVersions()
-      }
+      },
+    top: function (val) {
+      this.bottom = !val
+    },
+    right: function (val) {
+      this.left = !val
+    },
+    bottom: function (val) {
+      this.top = !val
+    },
+    left: function (val) {
+      this.right = !val
+    }
   }
   }
 </script>
@@ -211,6 +239,6 @@
 <style scoped lang="less">
 @import '../../components/layout/appBody';
 @import '../../components/layout/appHead';
-@import '../../assets/teamcat/global/less/global';
+@import '../../assets/teamvision/global/less/global';
 
 </style>

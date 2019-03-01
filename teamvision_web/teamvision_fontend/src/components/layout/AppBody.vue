@@ -4,7 +4,7 @@
       <div class="app-body-head-default">
          <router-view  name="bodyhead"></router-view>
       </div>
-      <div class="app-body-default" id="appBody" :sytle="'height:'+ appBodyHeight +'px'">
+      <div class="app-body-default" id="appBody" :style="'top:'+appBodyTop+'px;' + 'height:'+ appBodyHeight +'px'">
           <div>
                 <router-view class="view animated"></router-view>
           </div>
@@ -29,13 +29,13 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['appBodyHeight'])
+    ...mapGetters(['appBodyHeight', 'appBodyTop'])
   },
   methods: {
     ...mapMutations(['setAppBodyHeight']),
     setBodyHeight () {
       let windowHeight=window.innerHeight
-      this.setAppBodyHeight(windowHeight - 120)
+      this.setAppBodyHeight(windowHeight - this.appBodyTop)
     }
   },
   components:
@@ -103,6 +103,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-@import "../../assets/teamcat/global/less/global";
+@import "../../assets/teamvision/global/less/global";
 @import './appBody';
 </style>

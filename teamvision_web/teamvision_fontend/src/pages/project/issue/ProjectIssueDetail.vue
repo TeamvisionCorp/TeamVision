@@ -14,7 +14,7 @@
           <span class="issue-detail-id">#{{ issueDetail.id }}</span>
           <span class="issue-default-title">{{ issueDetail.default_title }}</span>
           <span class="issue-detail-title">
-              <label-editor-input  @updateValue="updateIssueTitle" placeHolder="问题标题" :displayText="issueDetail.Title"></label-editor-input>
+              <label-editor-input  @updateValue="updateIssueTitle" placeHolder="问题标题"  :displayText="issueDetail.Title"></label-editor-input>
             </span>
         </div>
         <div class="issue-detail-creation">
@@ -45,12 +45,12 @@
                        <i
                          :class="'fa ' + issueDetail.severity_name.Label + ' ' + issueDetail.severity_name.LabelStyle "></i>
                       <span>
-                        <Dropdown @on-click="onFieldItemClick">
+                        <Dropdown @on-click="onFieldItemClick" >
         <a href="javascript:void(0)">
           <span ref="Severity">{{ issueDetail.severity_name.Name }}</span>
             <Icon type="ios-arrow-down"></Icon>
         </a>
-        <DropdownMenu slot="list">
+        <DropdownMenu slot="list" style="margin-left: -20px;">
             <DropdownItem v-for="item in issueSeverity" :selected="item.id === issueDetail.Severity" :name="item.Value + ',' + item.Name + ',' + 'Severity'" :key="item.Value">{{ item.Name }}</DropdownItem>
         </DropdownMenu>
     </Dropdown>
@@ -68,7 +68,7 @@
           <span ref="Priority">{{ issueDetail.priority_name }}</span>
             <Icon type="ios-arrow-down"></Icon>
         </a>
-        <DropdownMenu slot="list">
+        <DropdownMenu slot="list" style="margin-left: -20px;">
             <DropdownItem v-for="item in issuePriority" :selected="item.id === issueDetail.Priority" :name="item.Value + ',' + item.Name + ',' + 'Priority'" :key="item.Value">{{ item.Name }}</DropdownItem>
         </DropdownMenu>
     </Dropdown>
@@ -101,7 +101,7 @@
                   <span ref="Processor">{{ issueDetail.processor_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in projectMembers" :selected="item.id === issueDetail.Processor" :name="item.id + ',' + item.name + ',' + 'Processor'" :key="item.id">{{ item.name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -115,7 +115,7 @@
                   <span ref="Team">{{ issueDetail.team_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in projectTeams" :selected="item.id === issueDetail.Team" :name="item.id + ',' + item.Name + ',' + 'Team'" :key="item.Value">{{ item.Name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -129,7 +129,7 @@
                   <span ref="Module"> {{ issueDetail.module_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in projectModules" :selected="item.id === issueDetail.Module" :name="item.id + ',' + item.Name + ',' + 'Module'" :key="item.id">{{ item.Name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -145,7 +145,7 @@
                   <span ref="Version">{{ issueDetail.version_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in projectVersions" :selected="item.id === issueDetail.Version" :name="item.id + ',' + item.VVersion + ',' + 'Version'" :key="item.id">{{ item.VVersion }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -160,7 +160,7 @@
                  <span ref="IssueCategory">{{ issueDetail.category_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in issueCategories" :selected="item.id === issueDetail.IssueCategory" :name="item.Value + ',' + item.Name + ',' + 'IssueCategory'" :key="item.Value">{{ item.Name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -174,7 +174,7 @@
                   <span ref="ProjectPhase"> {{ issueDetail.project_phrase_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in issueProjectPhrase" :selected="item.id === issueDetail.ProjectPhase" :name="item.Value + ',' + item.Name + ',' + 'ProjectPhase'" :key="item.Value">{{ item.Name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -190,7 +190,7 @@
                  <span ref="DeviceOS"> {{ issueDetail.os_name }}</span>
                   <Icon type="ios-arrow-down"></Icon>
                 </a>
-                <DropdownMenu slot="list">
+                <DropdownMenu slot="list" style="margin-left: -20px;">
                   <DropdownItem v-for="item in DeviceOS" :selected="item.id === issueDetail.DeviceOS" :name="item.Value + ',' + item.Name + ',' + 'DeviceOS'" :key="item.Value">{{ item.Name }}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
@@ -230,9 +230,9 @@
           <div style="padding-left: 20px;padding-bottom: 40px;">
             <Timeline>
               <TimelineItem v-for="item in issueActivities" :key="item.id" color="#3b73af">
-                <Icon  :size="20" type="md-add-circle" slot="dot"></Icon>
+                <Icon   :size="20" type="md-add-circle" slot="dot"></Icon>
                 <span style="font-size: 15px;">
-                  {{ item.creator_name }}  {{ item.action_flag_name }} {{ item.action_type_name }} {{ item.Message }} [{{ item.FieldDesc }}]
+                  {{ item.creator_name }}  {{ item.action_flag_name }} {{ item.action_type_name }} {{ item.Message }} {{ item.FieldDesc }}
                   <span style="text-decoration: line-through;" v-html="item.OldValue">{{ item.OldValue }}</span>
                   <span v-html="item.NewValue"></span>
                 </span>
@@ -255,7 +255,7 @@
         </Alert>
         </div>
       <div v-if="viewAttachment.isPicture">
-        <img :src="'http://localhost:8000/project/issue/download/' + viewAttachment.fileID "/>
+        <img :src="'http://localhost:8000/project/issue/download/' + viewAttachment.fileID " style="max-width: 1920px; max-height:1080px"/>
       </div>
     </Modal>
 
@@ -266,7 +266,7 @@
                   :on-success="handleSuccess"
                   :on-remove="handleRemove"
                   :format="[]"
-                  :max-size="10240"
+                  :max-size="20480"
                   :default-file-list="defaultList"
                   :on-format-error="handleFormatError"
                   :on-exceeded-size="handleMaxSize">
@@ -276,8 +276,8 @@
             </div>
           </Upload>
         </TabPane>
-        <TabPane label="扫码上传">
-          <img :src="'/api/common/toolkit/qrcode?content=' +qrcodeContent " style="height: 100px;width: 100px;"/>
+        <TabPane label="扫码上传" style="padding-left: 35%;">
+            <img :src="'/api/common/toolkit/qrcode?content=' +qrcodeContent " style="height: 100px;width: 100px;"/>
         </TabPane>
       </Tabs>
     </Modal>
@@ -397,7 +397,7 @@ import {mapGetters, mapMutations} from 'vuex'
       },
       handleMaxSize (file) {
         this.$Message.warning({
-          content: '文件大小超过10M限制',
+          content: '文件大小超过20M限制',
           duration: 10,
           closable: true
         })
@@ -608,6 +608,11 @@ import {mapGetters, mapMutations} from 'vuex'
           this.issueComments.Message = value
           this.issueComments.Issue = this.issueID
           this.issueComments.Creator = this.userInfo.id
+          this.issueComments.NewValue = ''
+          this.issueComments.OldValue = ''
+          this.issueComments.FieldName = ''
+          this.issueComments.ActionType = 2
+          this.issueComments.ActionFlag = 1
           this.$axios.post('/api/project/issue/' + this.issueID + '/activities', this.issueComments).then(response => {
             this.loadIssueActivities(this.issueID)
           }, response => {
@@ -619,6 +624,7 @@ import {mapGetters, mapMutations} from 'vuex'
         this.viewAttachment.showDialog = true
         this.viewAttachment.fileName = fileName
         this.viewAttachment.fileID = fileID
+        console.log(FileSuffixes)
         if (FileSuffixes === 'jpg' || FileSuffixes === 'jpeg' || FileSuffixes === 'png')
         {
           this.viewAttachment.isPicture = true

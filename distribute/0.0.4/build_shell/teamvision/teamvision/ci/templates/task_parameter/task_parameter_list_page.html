@@ -1,0 +1,47 @@
+<div class="container-fluid">
+	<div class="ci-panel-nonbackground">
+		<input type="hidden"  id="ci_task_id" value="{{ ci_task.ci_task.id }}" />
+		<div class="ci-panel-head-nonbackground">
+		      <span class="nic-circle-30-green" style="margin-left:0px;">
+		    <span class="nic-content-30-white cursor-hand" >{{ ci_task.task_type_label }}</span>
+		</span>
+		    
+			<span class="panel-title" style="margin-left:0px;">
+			<strong>{{ ci_task.ci_task.TaskName }}</strong>
+			</span>
+		</div>
+		<div class="ci-panel-body-nonbackground" id="ci_task_container">
+			<div  class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12" id="task_parameter_group_list">
+						<div class="input-group parameter-group-name-input">
+						<span  id="parameter_group_settings" class="input-group-addon cursor-hand"><i class="fa fa-cog "></i>
+						<span id="parameter_group_type_menu" class="parameter-group-settings">
+						    {{ task_parameter_group_type_menu }}
+						</span>
+						</span>
+						<input type="text" class="form-control" id="task_add_parameter_group" placeholder="添加一组参数(回车完成添加)">
+						<span class="input-group-addon" name="task_create_parameter_group"><a ><i class="fa fa-arrow-right fa-fw"></i></a></span>
+					    </div>
+					    <div id="task_parameter_groups">
+					    	{{ task_parameter_group_list }}
+					    </div>
+						
+					</div>
+					<div class="col-sm-6" style="display: none" id="task_parameter_group_edit">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ci-panel-footer-nonbackground">
+			<!-- <a class="pull-right" id="ci_view_more_task"><i class="fa fa-hand-o-right fa-fw"></i>
+			</a>   -->
+		</div>
+	</div>
+</div>
+
+<div id="parameter_group_confirm_dialog_view">
+	
+</div>

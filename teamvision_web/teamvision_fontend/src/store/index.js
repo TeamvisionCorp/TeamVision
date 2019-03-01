@@ -14,7 +14,9 @@ Vue.use(Vuex)
 const state = {
   appBodyHeight: 0,
   inProject: false,
-  userInfo: {}
+  userInfo: {},
+  appHeadShow: true,
+  appBodyTop: '115'
 }
 const getters = {
   appBodyHeight (state) {
@@ -26,8 +28,14 @@ const getters = {
 
   userInfo (state) {
     return state.userInfo
-  }
+  },
+  appHeadShow (state) {
+    return state.appHeadShow
+  },
 
+  appBodyTop (state) {
+    return state.appBodyTop
+  }
 }
 const mutations = {
   setAppBodyHeight (state, height) {
@@ -38,6 +46,13 @@ const mutations = {
   },
   setUserInfo (state, userInfo) {
     state.userInfo = userInfo
+  },
+  setAppHeadShow (state,appHeadShow) {
+    state.appHeadShow = appHeadShow
+  },
+
+  setAppBodyTop (state,bodyTop) {
+    state.appBodyTop = bodyTop
   }
 }
 const actions = {

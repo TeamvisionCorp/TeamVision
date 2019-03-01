@@ -19,12 +19,12 @@
           <router-link to="/home/my/task" tag="li" active-class="app-body-head-menu-item-active" class="app-body-head-menu-item">
             <a href="/home/my/task"><i class="fa fa-fw  fa-bus"></i>任务</a>
           </router-link>
-          <li name="header_menu_device" label="device" labelid="3" class="app-body-head-menu-item">
-            <a href="/home/device/all"><i class="fa fa-fw fa-lg fa-mobile"></i>设备</a>
-          </li>
-          <li class="app-body-head-menu-item">
-            <a  href="/home/webapps/all"><i class="fa fa-flag fa-fw fa-lg"></i> <span>工具</span></a>
-          </li>
+          <!--<li name="header_menu_device" label="device" labelid="3" class="app-body-head-menu-item">-->
+            <!--<a href="/home/device/all"><i class="fa fa-fw fa-lg fa-mobile"></i>设备</a>-->
+          <!--</li>-->
+          <!--<li class="app-body-head-menu-item">-->
+            <!--<a  href="/home/webapps/all"><i class="fa fa-flag fa-fw fa-lg"></i> <span>工具</span></a>-->
+          <!--</li>-->
         </ul>
     </div>
       <div class="app-body-header-rightbar-default pull-right">
@@ -41,7 +41,7 @@
              <Divider type="vertical" />
               <Tooltip content="筛选" transfer>
                 <span @click="showRightPanel">
-                  <Icon type="ios-settings-outline" :size="24"/>
+                  <Icon type="ios-funnel-outline" :size="24" />
                 </span>
               </Tooltip>
           </span>
@@ -87,5 +87,5 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 @import '../../components/layout/appBody';
-@import '../../assets/teamcat/global/less/global';
+@import '../../assets/teamvision/global/less/global';
 </style>

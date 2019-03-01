@@ -1,0 +1,66 @@
+
+<div class="modal fade" id="fortesting_commit_confirm">
+	<div class="modal-dialog">
+		<div class="modal-content modal-dialog-alert-middle">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">提测确认</h4>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-warning" role="alert">
+					<i class="fa fa-exclamation-triangle fa-fw"></i>提测将发送邮件通知项目成员，请确认是否提测！
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default"
+					id="object_commit_confirm_button">提测</button>
+				<button  name="confirm_cancel_button" type="button" class="btn btn-danger" data-dismiss="modal">
+					取消</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="fortesting_starttesting_confirm">
+	<div class="modal-dialog">
+		<div class="modal-content modal-dialog-alert-middle">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">测试开始确认</h4>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-warning" role="alert" style="height:150px;" id="intesting_date_controll">
+					<i class="fa fa-exclamation-triangle fa-fw"></i>
+					<div class="form-group" style="margin-bottom:50px;">
+						<label for="testing_start_date" class="col-sm-2 control-label" >开始时间</label>
+						<div class="col-sm-6">
+							<input type=datetime class="form-control" id="testing_start_date" name="testing_start_date" placeholder="{% now 'Y-m-d' %}" value="{% now 'Y-m-d' %}" style="margin-top:-10px;">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="testing_end_date" class="col-sm-2 control-label" >截止时间</label>
+						<div class="col-sm-6">
+							<input type=datetime class="form-control" id="testing_end_date" name="testing_end_date" placeholder="{% now 'Y-m-d' %}" value="{% now 'Y-m-d' %}" style="margin-top:-10px;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default"
+					id="object_starttesting_confirm_button">开始测试</button>
+				<button   name="confirm_cancel_button" type="button" class="btn btn-danger" data-dismiss="modal">
+					取消</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>

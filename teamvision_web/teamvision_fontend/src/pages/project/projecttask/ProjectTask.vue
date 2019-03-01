@@ -57,7 +57,6 @@
           this.setRightPanelShow(false)
         },
 
-
         viewTaskItem (taskID)
         {
           this.setViewDialogShow(true)
@@ -71,7 +70,6 @@
     },
     watch: {
     },
-
     components: {
       Modal,
       ProjectTaskCreateDialog,

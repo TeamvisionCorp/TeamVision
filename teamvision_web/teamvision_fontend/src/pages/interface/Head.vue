@@ -28,6 +28,6 @@
 <style scoped lang="less">
 @import '../../components/layout/appBody';
 @import '../../components/layout/appHead';
-@import '../../assets/teamcat/global/less/global';
+@import '../../assets/teamvision/global/less/global';
 
 </style>

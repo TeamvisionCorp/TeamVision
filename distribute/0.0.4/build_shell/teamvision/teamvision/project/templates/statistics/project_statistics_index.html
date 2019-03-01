@@ -1,0 +1,24 @@
+{% extends "project/project_index_view.html" %}
+
+{% block project_styles %}
+<!-- <link rel="stylesheet/less" href="/static/project/less/project_dashboard.less" type="text/css" media="screen"/> -->
+
+{% endblock %}
+
+{% block project_content %}
+<div class="project-pagecontent-container">
+	<div class="row">
+		<div id="project_statistics" class="project_statistics">
+			{{ web_app_view }} 
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block project_scripts %}
+
+<script  type="text/javascript" src="/static/project/js/project_statistics.js"></script>
+<script type="text/javascript" src="/static/global/js/teamcat_webapp/webapp.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+
+{% endblock %}

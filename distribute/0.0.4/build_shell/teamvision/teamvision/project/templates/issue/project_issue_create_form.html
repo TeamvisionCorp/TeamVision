@@ -1,0 +1,122 @@
+<form class="form-horizontal" id="project_issue_create_form">
+	<input type="hidden" value="{{ issue.issue_temp_id }}" id="issue_temp_id" />
+	<div class="form-group">
+		<label for="ProjectID" class="col-sm-2 control-label">项目</label>
+		<div class="col-sm-9">
+			<select name="ProjectID" id="ProjectID">
+            {{ project_dorpdownlist }}
+        </select>
+		</div>
+	</div>
+	
+	
+	<div class="form-group">
+		<label for="VersionID" class="col-sm-2 control-label">影响版本</label>
+		<div class="col-sm-9">
+		    <select name="VersionID" id="VersionID">
+            {{ version_dorpdownlist }}
+            </select>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="IssueTitle" class="col-sm-2 control-label">主题:</label>
+		<div class="col-sm-9">
+			<input type="text" class="form-control" id="IssueTitle" name="IssueTitle" placeholder="问题描述摘要"  value="{{ fortesting.code_resp| default_if_none:"" }}" >
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="IssueProcessor" class="col-sm-2 control-label">经办人</label>
+		<div class="col-sm-9">
+		    <select name="IssueProcessor" id="IssueProcessor">
+            {{ project_members|safe }}
+            </select>
+		</div>
+	</div>
+
+
+    <div class="form-group" name="Team" >
+        <label for="IssueTeam" class="col-sm-2 control-label">团队</label>
+        <div class="col-sm-9">
+            <select name="IssueTeam" id="IssueTeam">
+                {{ team_dropdown_list|safe }}
+            </select>
+        </div>
+    </div>
+	
+	<div class="form-group">
+		<label for="IssueDescription" class="col-sm-2 control-label">描述</label>
+		<div class="col-sm-9">
+			<textarea   class="" id="IssueDescription" name="IssueDescription" placeholder="问题详细描述" rows="5">{{ issue.issue.Desc }}</textarea>
+		</div>
+	</div>
+	
+    <div class="form-group col-sm-6" name="project_module">
+		<label for="ProjectModule" class="col-sm-4 control-label">模块</label>
+		<div class="col-sm-8">
+			<select name="ProjectModule" id="ProjectModule">
+            {{ module_dorpdownlist }}
+            </select>
+		</div>
+	    </div>
+	
+	<div class="form-group col-sm-6" name="issue_category">
+		<label for="IssueCategory" class="col-sm-4 control-label">分类</label>
+		<div class="col-sm-8">
+			<select name="IssueCategory" id="IssueCategory">
+            {{ issue_category }}
+            </select>
+		</div>
+	</div>
+	<div class="form-group col-sm-6" name="issue_severity">
+		<label for="IssueSeverity" class="col-sm-4 control-label">严重性</label>
+		<div class="col-sm-8">
+			<select name="IssueSeverity" id="IssueSeverity">
+             {{ issue_severity }}
+            </select>
+		</div>
+	    </div>
+	
+	<div class="form-group col-sm-6" name="project_phase">
+		<label for="ProjectPhase" class="col-sm-4 control-label">阶段</label>
+		<div class="col-sm-8">
+			<select name="ProjectPhase" id="ProjectPhase">
+           {{ project_phase }}
+            </select>
+		</div>
+	</div>
+	
+	<div class="form-group col-sm-6" name="os">
+		<label for="OS" class="col-sm-4 control-label">系统</label>
+		<div class="col-sm-8">
+			<select name="OS" id="OS">
+            {{ os_dropdown_list }}
+            </select>
+		</div>
+	</div>
+	
+	<div class="form-group col-sm-6" name="OS_Version" >
+		<label for="OSVersion" class="col-sm-4 control-label">系统版本</label>
+		<div class="col-sm-8">
+			<select name="OSVersion" id="OSVersion">
+			{{ os_version_dropdown_list }}
+            </select>
+		</div>
+	</div>
+    
+	
+    <input  id="upload_files" name="attachments"  type="hidden" value="{{ fortesting.fortesting.Attachment|default_if_none:"" }}" />
+   </form>
+ <div class="form-group" style=" margin-top:100px;">
+		<label for="Attachments" class="col-sm-2 control-label" style="margin-left:10%;">附件</label>
+		<div class="col-sm-9" style="margin-left:140px;width:700px;">
+			<form action="/project/fortesting/upload_attachmentd" class="dropzone" name="project_issue_create_form" style="border: 2px dashed #ccc;border-radius:5px;min-height:100px;">
+             <div class="fallback">
+            <input name="file" type="file" multiple id="myId" />
+            </div>
+             </form>
+		</div>
+	</div>
+
+

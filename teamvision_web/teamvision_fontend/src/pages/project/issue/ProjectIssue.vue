@@ -5,7 +5,7 @@
          <project-issue-filter :projectID="projectID"></project-issue-filter>
       </Col>
       <Col :lg="issueContainerWidth" :md=issueContainerWidth :sm="issueContainerWidth" :xs="24">
-          <project-issue-list :projectID="projectID"></project-issue-list>
+          <project-issue-list :projectID="projectID"> </project-issue-list>
       </Col>
       <Drawer  :value="showIssueDetail" class-name="fdsfds" @on-close="onCloseDetailPanel" :inner="true" :transfer="false" :width="60" :mask="false">
         <div slot style=""></div>

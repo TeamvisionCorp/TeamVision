@@ -2,9 +2,9 @@
   <div class="layout-content portal-list-container" :style="'height:'+ projectContainerHeight +'px;'+' overflow-y: scroll'">
         <Card   v-for="project in myProjectList" v-if="project.Display" :key="project.id" style=" width:230px;height:180px;float:left;margin:20px;" :bordered="false">
           <div style="text-align:center;height:110px;">
-            <a :href="'/project/'+ project.id +'/issue/all'">
+            <router-link :to="'/project/'+ project.id +'/issue/all'" tag="div" class="cursor-hand">
               <img :src="'' + project.PBAvatar" class="project_icon">
-            </a>
+            </router-link>
           </div>
           <div><div style="padding-top: 10px;color:#333;text-align: center">{{ project.PBTitle }}</div></div>
         </Card>
@@ -87,7 +87,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-  @import "../../../src/assets/teamcat/global/less/common_controlls";
+  @import "../../assets/teamvision/global/less/common_controlls";
 
   .project_icon
   {

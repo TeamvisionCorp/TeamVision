@@ -164,7 +164,7 @@
     methods:
       {
         ...mapMutations('task', ['setTaskChange', 'setTaskFilterStatus','setTaskFilterOwners','setTaskFilterKeyword']),
-        ...mapMutations('projectglobal', ['setViewDialogShow']),
+        ...mapMutations('projectglobal', ['setViewDialogShow', 'projectVersion']),
 
         getProjectMembers (project){
           this.$axios.get('/api/project/' + project + '/project_members').then(response => {
@@ -204,12 +204,17 @@
       },
     created: function () {
       this.getProjectMembers(this.project)
+      this.projectVersion(0)
     },
     mounted: function () {
     },
     watch: {
       projectID: function (value) {
         this.getProjectMembers(value)
+      },
+
+      projectVersion: function (value) {
+        this.setTaskStatusPie(this.projectID,value)
       },
 
       rightSidePanelShow: function (value) {

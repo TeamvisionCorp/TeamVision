@@ -45,7 +45,7 @@
         <Row>
           <i-col :span="12">
             <FormItem label="严重性" prop="Severity">
-              <Select v-model="formItem.Severity" :filterable="true" placeholder="默认为创建者">
+              <Select v-model="formItem.Severity" :filterable="true" placeholder="问题严重性">
                 <Option v-for="severity in issueSeverity" :key="severity.Value" :value="severity.Value">{{ severity.Name }}
                 </Option>
               </Select>
@@ -53,7 +53,7 @@
           </i-col>
           <i-col :span="12">
             <FormItem label="阶段" prop="ProjectPhase">
-              <Select v-model="formItem.ProjectPhase" :filterable="true" placeholder="默认为创建者">
+              <Select v-model="formItem.ProjectPhase" :filterable="true" placeholder="问题发现阶段">
                 <Option v-for="phrase in issueProjectPhrase" :key="phrase.Value" :value="phrase.Value">{{ phrase.Name }}
                 </Option>
               </Select>
@@ -63,7 +63,7 @@
         <Row>
           <i-col :span="12">
             <FormItem label="系统" prop="DeviceOS">
-              <Select v-model="formItem.DeviceOS" :filterable="true" placeholder="默认为创建者">
+              <Select v-model="formItem.DeviceOS" :filterable="true" placeholder="问题系统">
                 <Option v-for="os in DeviceOS" :key="os.Value" :value="os.Value">{{ os.Name }}
                 </Option>
               </Select>
@@ -71,7 +71,7 @@
           </i-col>
           <i-col :span="12">
             <FormItem label="优先级" prop="Priority">
-              <Select v-model="formItem.Priority" :filterable="true" placeholder="默认为创建者">
+              <Select v-model="formItem.Priority" :filterable="true" placeholder="问题优先级">
                 <Option v-for="priority in IssuePriority" :key="priority.Value" :value="priority.Value">{{ priority.Name }}
                 </Option>
               </Select>
@@ -203,6 +203,8 @@ export default {
               if (this.createDialogShow) {
                 this.$axios.post('/api/project/' + this.formItem.Project[0] + '/version/' + this.formItem.Project[1] + '/issues', this.formItem).then(response => {
                   this.setIssueChange(true)
+                  this.formItem.Title = ' '
+                  this.formItem.Desc = '<p>步骤:</p></br><p>实际结果:</p></br><p>期望结果:</p>'
                 }, response => {
 
                 })

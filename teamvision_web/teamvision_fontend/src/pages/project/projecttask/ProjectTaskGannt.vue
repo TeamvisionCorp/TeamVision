@@ -1,55 +1,61 @@
 <template>
   <div>
     <gantt-data-source ref="ganttdatasource1"
-                           :transport-read-url="'/api/project/'+ project +'/version/' + versionID + '/project_tasks?page_size=10000'"
+                           :transport-read-url="getTaskUrl"
                            transport-read-data-type="json"
-                           :transport-update-url="serviceRoot + '/GanttTasks/update'"
-                           transport-update-data-type="jsonp"
-                           :transport-create-url="serviceRoot + '/GanttTasks/create'"
-                           transport-create-data-type="jsonp"
-                           :transport-destroy-url="serviceRoot + '/GanttTasks/destroy'"
-                           transport-destroy-data-type="jsonp"
+                           transport-update-url="/api/project/task/update/"
+                           transport-update-data-type="json"
+                           transport-update-type="PUT"
+                           transport-create-url="/api/project/task/create/"
+                           transport-create-data-type="json"
+                           transport-create-type="POST"
+                           transport-destroy-url="/api/project/task/delete/"
+                           transport-destroy-data-type="json"
+                           transport-destroy-type="DELETE"
                            :transport-parameter-map="parameterMap"
                            schema-model-id="id"
                            :schema-model-fields="fields"
-                           :resources="resources"
-                           @change="onTaskChange"
-                           :schema-data="testdata"
-                           :assignments="assignments">
+                           :schema-data="taskResultData"
+                       :resources="resources"
+                       :assignments="assignments">
     </gantt-data-source>
 
     <gantt-dependency-data-source ref="ganttdependencydatasource1"
-                                     :transport-read-url="serviceRoot + '/GanttDependencies'"
-                                     transport-read-data-type="jsonp"
-                                     :transport-update-url="serviceRoot + '/GanttDependencies/update'"
-                                     transport-update-data-type="jsonp"
-                                     :transport-create-url="serviceRoot + '/GanttDependencies/create'"
-                                     transport-create-data-type="jsonp"
-                                     :transport-destroy-url="serviceRoot + '/GanttDependencies/destroy'"
-                                     transport-destroy-data-type="jsonp"
-                                     :transport-parameter-map="parameterMap"
+                                     transport-read-url="/api/project/task_dependencies"
+                                     transport-read-data-type="json"
+                                     transport-update-url="/api/project/task_dependency/update/"
+                                     transport-update-data-type="json"
+                                     transport-update-type="PUT"
+                                     transport-create-url="/api/project/task_dependency/create/"
+                                     transport-create-data-type="json"
+                                     transport-create-type="POST"
+                                     transport-destroy-url="/api/project/task_dependency/delete/"
+                                     transport-destroy-data-type="json"
+                                     transport-destroy-type="DELETE"
+                                     :transport-parameter-map="dependencyParameterMap"
                                      schema-model-id="id"
+                                     :schema-data="taskDependencyData"
                                      :schema-model-fields="dependencyfields">
     </gantt-dependency-data-source>
 
-    <gantt id="gantt"
+    <gantt ref="grantt"
                  data-source-ref="ganttdatasource1"
                  dependencies-data-source-ref="ganttdependencydatasource1"
                  :show-work-hours="false"
                  :show-work-days="false"
                  :snap="false"
-                 :editable="false"
+                 :editable="true"
+                 :editable-dependencyCreate="true"
                  :height="appBodyHeight"
-                 :resources="resources"
-                 @add="onAddTask"
-                 @edit="onEditTask"
-                 @change="onSelectTask"
-                 :assignments="assignments">
+           :resources="resources"
+           :assignments="assignments">
       <gantt-view :type="'day'"></gantt-view>
       <gantt-view :type="'week'" :selected="true"></gantt-view>
       <gantt-view :type="'month'"></gantt-view>
       <gantt-column :field="'title'" :title="'标题'" :editable="true" :sortable="true"></gantt-column>
-      <!--<gantt-column :field="'resources'" :title="'Owner'" :editable="true" :sortable="true"></gantt-column>-->
+      <gantt-column :field="'resources'" :title="'Owner'" :editable="true" :sortable="true"></gantt-column>
+      <gantt-column :field="'end'" :title="'截止日期'" :format="'{0:yyyy-MM-dd}'" :editable="false" :sortable="true"></gantt-column>
+
     </gantt>
   </div>
 </template>
@@ -66,7 +72,6 @@
     TreeListDataSource,
     DataSourceInstaller } from '@progress/kendo-datasource-vue-wrapper'
 
-
   export default {
     name: 'projectTaskGannt',
     props: {
@@ -77,26 +82,26 @@
     },
     data () {
       return {
-        columnItemHeight: 200,
-        taskItemID: 0,
-        serviceRoot: 'https://demos.telerik.com/kendo-ui/service',
         resources: {
           field: "resources",
-          dataColorField: "Color",
-          dataTextField: "Name",
+          dataColorField: "color",
+          dataTextField: "name",
           dataSource: {
             transport: {
               read: {
-                url: "https://demos.telerik.com/kendo-ui/service/GanttResources",
-                dataType: "jsonp"
+                url: "/api/project/1/project_members",
+                dataType: "json"
               }
             },
             schema: {
               model: {
                 id: "id",
                 fields: {
-                  id: { from: "ID", type: "number" }
+                  id: { from: "PMMember", type: "number" }
                 }
+              },
+              data: function (resp) {
+                return resp.result
               }
             }
           }
@@ -108,24 +113,28 @@
           dataSource: {
             transport: {
               read: {
-                url: "https://demos.telerik.com/kendo-ui/service/GanttResourceAssignments",
-                dataType: "jsonp"
+                url: "",
+                dataType: "json",
+                type: 'GET'
               },
               update: {
-                url: "https://demos.telerik.com/kendo-ui/service/GanttResourceAssignments/Update",
-                dataType: "jsonp"
+                url: "/api/project/task_owner/update/",
+                dataType: "json",
+                type: 'PUT'
               },
               destroy: {
-                url: "https://demos.telerik.com/kendo-ui/service/GanttResourceAssignments/Destroy",
-                dataType: "jsonp"
+                url: "/api/project/task_owner/delete/",
+                dataType: "json",
+                type: "DELETE"
               },
               create: {
-                url: "https://demos.telerik.com/kendo-ui/service/GanttResourceAssignments/Create",
-                dataType: "jsonp"
+                url: "/api/project/task_owner/create/",
+                dataType: "json",
+                type: "POST"
               },
               parameterMap: function(options, operation) {
-                if (operation !== "read") {
-                  return { models: kendo.stringify(options.models || [options]) };
+                if (operation !== 'read') {
+                  return { models: kendo.stringify(options.models || options) }
                 }
               }
             },
@@ -133,40 +142,48 @@
               model: {
                 id: "ID",
                 fields: {
-                  ID: { type: "number" },
-                  ResourceID: { type: "number" },
-                  Units: { type: "number" },
-                  TaskID: { type: "number" }
+                  ID: { from: 'id', type: "number" },
+                  ResourceID: { from: 'Owner', type: "number" },
+                  Units: { from: 'Unit', type: "number" },
+                  TaskID: { from: 'Task', type: "number" }
                 }
+              },
+              data: function (resp) {
+                let soucreData = resp.result.results
+                if (!soucreData) {
+                  soucreData = resp.result
+                }
+                return soucreData
               }
             },
 //            filter: { field: 'ResourceID', operator: 'eq', value: '12' }
           }
         },
         fields: {
-          id: { from: 'ID', type: 'number' },
-          orderId: { from: 'Creator', type: 'number', validation: { required: true } },
+          id: { from: 'id', type: 'number' },
+          orderId: { from: 'OrderID', type: 'number', validation: { required: true } },
+          Status: { from: 'Status', type: 'number',defaultValue: 1, validation: { required: true } },
           parentId: { from: 'Parent', type: 'number', defaultValue: null, validation: { required: true } },
-          start: { from: 'StartDateFormat', type: 'date' },
+          start: { from: 'StartDate', type: 'date' },
           end: { from: 'DeadLine', type: 'date' },
           title: { from: 'Title', defaultValue: '', type: 'string' },
           percentComplete: { from: 'Progress', type: 'number' },
-          summary: { from: 'Tags', type: 'boolean',defaultValue: false },
-          expanded: { from: 'Expanded', type: 'boolean', defaultValue: true }
+          summary: { from: 'HasChild', type: 'boolean', defaultValue: false },
+          expanded: { from: 'Expandend', type: 'boolean', defaultValue: true }
         },
         dependencyfields: {
-          id: { from: 'ID', type: 'number' },
-          predecessorId: { from: 'PredecessorID', type: 'number' },
-          successorId: { from: 'SuccessorID', type: 'number' },
+          id: { from: 'id', type: 'number' },
+          predecessorId: { from: 'Predecessor', type: 'number' },
+          successorId: { from: 'Successor', type: 'number' },
           type: { from: 'Type', type: 'number' }
         },
-        filter: { field: 'title', operator: 'contains', value: 'w' }
+//        filter: { field: 'title', operator: 'contains', value: 'w' },
       }
     },
     computed: {
       ...mapGetters('task', ['taskChange','taskFilterStatus','taskFilterOwners','taskFilterKeyword','taskFilters']),
       ...mapGetters('projectglobal', ['projectVersion','rightSidePanelShow', 'taskViewMode']),
-      ...mapGetters(['appBodyHeight']),
+      ...mapGetters(['appBodyHeight','userInfo']),
       versionID: function () {
         return this.projectVersion
       },
@@ -177,6 +194,10 @@
            result = this.projectID
         }
         return result
+      },
+
+      getTaskUrl: function () {
+        return '/api/project/'+ this.project +'/version/0/project_tasks?page_size=10000'
       }
 
     },
@@ -185,22 +206,38 @@
         ...mapMutations('task', ['setTaskChange']),
         ...mapMutations('projectglobal', ['setViewDialogShow','setRightPanelShow']),
 
-        onDataBinding: function (ev) {
-          console.log('Gantt is about to be bound!')
-        },
-        onDataBound: function (ev) {
-          console.log('Gantt is now bound!')
+          taskResultData: function (resp) {
+          let soucreData = resp.result.results
+          if (!soucreData) {
+            soucreData = resp.result
+          }
+          return soucreData
         },
 
-        testdata: function (resp) {
-          console.log(resp)
-          return resp.result.results
+        taskDependencyData: function (resp) {
+          let soucreData = resp.result.results
+          if (!soucreData) {
+            soucreData = resp.result
+          }
+          return soucreData
         },
 
         onAddTask: function (e) {
 //          this.setViewDialogShow(true)
 //          e.preventDefault()
           console.log(e)
+        },
+
+        requestEnd: function (e) {
+          console.log(e)
+          if (e.action === 'add')
+          {
+            setTimeout(function () {
+//              this.$refs.ganttdatasource1.kendoWidget().sync()
+            })
+//            this.getTasks(this.project,this.versionID)
+//            this.$refs['grantt'].kendoWidget().dataSource.getByUid(e.items[0].uid).id=200
+          }
         },
 
         onEditTask: function (e) {
@@ -212,22 +249,56 @@
         },
 
         onTaskChange: function (e) {
-          console.log(e)
-          e.preventDefault()
         },
 
         parameterMap: function(options, operation) {
-          if (operation !== 'read') {
-            return {models: kendo.stringify(options.models || [options])}
+          let tempFormItem = options.models || options
+          if (operation === 'read')
+          {
+            return {'ProjectID': this.project,'Version': this.versionID}
           }
+          if (operation !== 'read') {
+            tempFormItem.ProjectID = this.project
+            tempFormItem.Version = this.versionID
+            tempFormItem.WorkHours = 8
+            tempFormItem.childTask= {}
+            return {models: kendo.stringify(tempFormItem)}
+          }
+        },
+
+        dependencyParameterMap: function (options, operation) {
+          let tempFormItem = options.models || options
+          if (operation === 'read')
+          {
+            return {'Version': this.versionID}
+          }
+          if (operation !== 'read') {
+            return {models: kendo.stringify(tempFormItem)}
+          }
+        },
+
+        loadAllTasks: function () {
+          this.$axios.get(this.getTaskUrl).then(response => {
+            console.log(response)
+            return response.data.result.results
+          }, response => {
+
+          })
         }
 
       },
     created: function () {
+      this.resources.dataSource.transport.read.url = '/api/project/' + this.project +'/project_members'
+      this.assignments.dataSource.transport.read.url = '/api/project/task/task_owners?Version=' + this.versionID + '&page_size=10000'
     },
     mounted: function () {
     },
     watch: {
+      versionID: function (value) {
+        let parameters = {}
+        parameters['Version'] = value
+        this.$refs['grantt'].kendoWidget().dataSource.read()
+      }
     },
 
     components: {

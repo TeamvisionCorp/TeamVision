@@ -1,0 +1,27 @@
+{% extends "project/project_index_view.html" %}
+
+{% block project_styles %}
+<!-- <link rel="stylesheet/less" href="/static/project/less/project_dashboard.less" type="text/css" media="screen"/> -->
+
+{% endblock %}
+
+{% block project_content %}
+<div class="container-fluid project-pagecontent-container">
+	<div class="row">
+		<div id="project_dashboard_activity" class="col-lg-12 col-sm-12 project_activity">
+			{{ project_activity }}
+		</div>
+		<!-- <div id="project_dashboard_child_item" class="col-lg-5 hidden-md hidden-sm hidden-xs">
+		    {{ project_items2 }}
+		</div> -->
+	</div>
+</div>
+{% endblock %}
+
+{% block project_scripts %}
+
+<script  type="text/javascript" src="/static/project/js/project_dash_board.js"></script>
+<script  type="text/javascript" src="/static/project/js/project_fortesting.js"></script>
+<script  type="text/javascript" src="/static/project/js/project_task.js"></script>
+
+{% endblock %}

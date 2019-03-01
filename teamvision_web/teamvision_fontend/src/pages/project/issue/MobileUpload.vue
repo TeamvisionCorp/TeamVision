@@ -5,7 +5,7 @@
                   :on-success="handleSuccess"
                   :on-remove="handleRemove"
                   :format="[]"
-                  :max-size="10240"
+                  :max-size="20480"
                   :default-file-list="defaultList"
                   :on-format-error="handleFormatError"
                   :on-exceeded-size="handleMaxSize">

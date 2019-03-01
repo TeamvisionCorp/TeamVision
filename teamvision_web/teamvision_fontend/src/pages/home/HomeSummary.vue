@@ -12,7 +12,9 @@
                <Card :padding="20" style="height: 100px;" dis-hover>
                  <div class="summary-number-title">问题:</div>
                  <div class="summary-number-content">
-                   <a href="/home/my/issue" style="color: inherit;">{{ toDoSummary.issueCount }}</a>
+                   <router-link to="/home/my/issue" style="color: inherit">
+                     {{ toDoSummary.issueCount }}
+                   </router-link>
                  </div>
                </Card>
             </Col>
@@ -20,9 +22,9 @@
              <Card :padding="20" style="height: 100px;" dis-hover>
                  <div class="summary-number-title">提测:</div>
                  <div class="summary-number-content">
-                   <a href="/home/my/fortesting" style="color: inherit;">
+                   <router-link to="/home/my/fortesting" style="color: inherit;">
                      {{ toDoSummary.fortestingCount }}
-                   </a>
+                   </router-link>
                  </div>
              </Card>
             </Col>
@@ -31,7 +33,7 @@
 
                  <div class="summary-number-title">任务:</div>
                  <div class="summary-number-content">
-                   <a href="/home/my/task" style="color: inherit;">{{ toDoSummary.taskCount }}</a>
+                   <router-link to="/home/my/task" style="color: inherit;">{{ toDoSummary.taskCount }}</router-link>
                  </div>
              </Card>
             </Col>

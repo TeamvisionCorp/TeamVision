@@ -95,7 +95,7 @@ import { mapMutations } from 'vuex'
 <style scoped lang="less">
 @import '../../components/layout/appBody';
 @import '../../components/layout/appHead';
-@import '../../assets/teamcat/global/less/global';
+@import '../../assets/teamvision/global/less/global';
 .project-search-item{
   padding: 4px 0;
   border-bottom: 1px solid #F6F6F6;

@@ -174,7 +174,7 @@
           }
         },
         getTaskList  (projectID, versionID, status, page) {
-          let url='/api/project/' + projectID + '/version/'+versionID+'/project_tasks?Status=' + status + '&page=' + page
+          let url='/api/project/' + projectID + '/version/'+versionID+'/project_tasks?Status=' + status + '&page=' + page + '&&Parent__isnull=True'
           if(this.taskFilters.owners.length>0)
           {
             url=url + '&Owner__in=' + this.taskFilters.owners

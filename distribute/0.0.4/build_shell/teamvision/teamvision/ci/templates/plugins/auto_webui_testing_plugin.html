@@ -1,0 +1,64 @@
+<div class="doraemon_wizard_column_item cursor-hand" id="ci_plugin_{{ plugin.get_controll_id }}" plugin_id="{{ plugin.plugin.id }}">
+<div name="ci_plugin_{{ plugin.plugin.id }}">
+	<div class="doraemon_wizard_column_item_header">
+		<span style="height:30px;">
+			<i class="fa fa-square fa-fw fa-lg" style="color:{{ plugin.plugin.PluginLabelColor }}"></i>{{ plugin.plugin.PluginName }}
+			<span class="pull-right cursor-hand">
+				<span name="ci_plugin_enabled" class='label label-default ' style='background-color:{{ plugin.get_enable_color }} ; opacity:0.5;font-size:8px !important;'>{{ plugin.is_enable }}</span>
+				<i class="fa fa-fw fa-close" name="plugin_close"></i>
+			</span>
+		</span>
+	</div>
+	<div class="doraemon_wizard_column_item_content">
+		<form class="form-horizontal" id="ci_plugin_{{ plugin.get_controll_id }}">
+		 <div class="form-group ">
+				<label for="plugin_using_name" class="col-sm-2 control-label">用途</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control"  name="plugin_using_name" value="{{ plugin.plugin_using_name }}" placeholder="插件用途说明"/>
+				</div>
+			</div>
+		    <div class="form-group">
+					
+						<label for="autocase_filter" class="col-sm-2 control-label">用例选择</label>
+						<div class="col-sm-10">
+						<select name="autocase_filter">
+							{{ case_tag_list }}
+						</select>
+					   </div>
+	          </div>
+			<div class="form-group ">
+				<label for="auto_tool_jdk" class="col-sm-2 control-label">JDK</label>
+				<div class="col-sm-8">
+					<select name="auto_tool_jdk">
+						{{ auto_tool_jdk }}
+					</select>
+				</div>
+			</div>
+			
+			<div class="form-group ">
+				<label for="auto_host_info" class="col-sm-2 control-label">Host绑定</label>
+				<div class="col-sm-8">
+					<select name="auto_host_info">
+						{{ auto_host_info }}
+					</select>
+				</div>
+			</div>
+			<div class="form-group ">
+				<label for="auto_project_dir" class="col-sm-2 control-label">项目目录</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="auto_project_dir" name="auto_project_dir" value="{{ plugin.auto_project_dir }}" placeholder="测试项目根目录"/>
+				</div>
+			</div>
+			<div class="form-group ">
+				<label for="auto_log_dir" class="col-sm-2 control-label">日志目录</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="auto_log_dir" name="auto_log_dir" value="{{ plugin.auto_log_dir }}" placeholder="需要上传服务器保存的文件及目录，build/images,testing.log"/>
+				</div>
+			</div>
+			
+		
+
+		</form>
+	</div>
+</div>
+</div>

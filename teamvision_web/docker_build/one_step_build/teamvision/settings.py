@@ -193,7 +193,7 @@ REDIS = {
 EMAILCONFIG = {
     'HOST': 'smtp.126.com',
     'PORT': 25,
-    'USER': 'qa',
+    'USER': 'gedqa',
     'PASSWORD': '',
     'ISAUTH': False,
     'STARTSSL': False,

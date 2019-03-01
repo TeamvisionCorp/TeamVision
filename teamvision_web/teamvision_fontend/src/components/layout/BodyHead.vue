@@ -26,5 +26,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-  @import '../../assets/teamcat/global/less/global';
+  @import '../../assets/teamvision/global/less/global';
 </style>

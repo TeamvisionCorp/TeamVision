@@ -1,0 +1,40 @@
+<div id="autoagent_create">
+        <div class="autoagent_page_title">
+        	<input type="button" value="返回" id='autoagent_create_backbutton' />
+        	<h3>添加机器结点</h3>
+       </div>
+        <div>
+            <form id="autoagent_create_form" action="/autotesting/autoagent/create">
+                <table class="autoagent_create_table">
+                    <tr>
+                        <td>结点Label:</td>
+                        <td><input type="text" id="autoagent_nameInput" name="AName" class="text-input" /></td>
+                    </tr>
+                    <tr>
+                        <td>IP地址:</td>
+                        <td><input type="text" id="autoagent_IPInput" name="AIP" class="text-input" /></td>
+                    </tr>
+                    <tr>
+                        <td>工作目录:</td>
+                        <td><input type="text" id="autoagent_WorkSpaceInput" name="AAgentWorkSpace" class="text-input" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>操作系统:</td>
+                        <td><div id="autoagent_OS_dropdownlist" name="AOS"></div></td>
+                    </tr>
+                    <tr>
+                        <td>浏览器:</td>
+                        <td><div id="autoagent_browsers_listbox" name="AAgentBrowser"></div></td>
+                    </tr>
+                     <tr>
+                        <td>是否保留:</td>
+                        <td><div id="autoagent_reserved_dropdownlist" name="AIsReserved"></div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input type="button" value="保存" id="sendButton" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>

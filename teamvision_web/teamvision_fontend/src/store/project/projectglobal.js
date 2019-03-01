@@ -10,7 +10,8 @@ const state = {
   project: 0,
   objectChange: false,
   rightSidePanelShow: false,
-  taskViewMode: 1
+  taskViewMode: 1,
+  createDocumentType: 0
 }
 const getters = {
   createDialogShow (state) {
@@ -34,6 +35,10 @@ const getters = {
 
   taskViewMode (state) {
     return state.taskViewMode
+  },
+
+  createDocumentType (state) {
+    return state.createDocumentType
   }
 
 }
@@ -62,6 +67,10 @@ const mutations = {
 
   setTaskViewMode (state,mode) {
     state.taskViewMode = mode
+  },
+
+  setCreateDocumentType (state,type) {
+    state.createDocumentType = type
   }
 }
 const actions = {

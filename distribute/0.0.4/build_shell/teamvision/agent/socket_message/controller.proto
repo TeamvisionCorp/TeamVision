@@ -1,0 +1,22 @@
+syntax = "proto3";
+package tutorial;
+
+
+enum TQCommand {
+    START = 0;
+    STOP = 1;
+  }
+ 
+enum TQTaskType {
+    AUTOTESTTASK = 0;
+    BUILDTASK = 1;
+    DEPLOYTASK = 2;
+  }
+
+message Controller {
+  int32 task_id = 1;
+  TQTaskType task_type = 2;
+  string task_uuid = 3;
+  string driver_key= 4;
+  TQCommand task_command = 5;
+}

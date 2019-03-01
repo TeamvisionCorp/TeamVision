@@ -28,7 +28,7 @@ class FileInfoService(BusinessService):
         file_info.FileFolder=folder_id
         file_info.FileName=file_name
         file_info.FilePath=file_mongo_id
-        file_info.FileSuffixes=FileInfoService.get_file_suffixes(file_name)
+        file_info.FileSuffixes = FileInfoService.get_file_suffixes(file_name)
         file_info.FileType=file_type
         file_info.FileSize=(file_size/1024)+1
         file_info.save()
@@ -85,10 +85,10 @@ class FileInfoService(BusinessService):
         file.save()
         
     @staticmethod
-    def delete_value(file_id):
+    def delete_value(file_id,mongo_model=PackgeMongoFile):
         file=FileInfo.objects.get(int(file_id))
         if file:
-            PackgeMongoFile.objects.delete_value(file.FilePath)
+            mongo_model.objects.delete_value(file.FilePath)
         file.IsActive=0
         file.save()
         

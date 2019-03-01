@@ -1,0 +1,5 @@
+{% for tool in build_tools %}
+   
+      <option {{ tool.is_selected }} value="{{ tool.dm_data_value.DicDataValue }}">{{ tool.dm_data_value.DicDataName }}</option>
+   
+{% endfor %}

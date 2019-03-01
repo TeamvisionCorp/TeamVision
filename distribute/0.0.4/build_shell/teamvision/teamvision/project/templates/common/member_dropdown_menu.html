@@ -1,0 +1,18 @@
+<span class="dorpdown_option_menu" role="member_meun">
+<div>
+	<b class="top"> <i class="top-arrow1"></i> <i class="top-arrow2"></i>
+	</b>
+</div>
+<ul class="dorpdown_option_list" role="member_menu">
+   <li class="option-item">
+			<input style="margin-left: auto;margin-right: auto;width: 160px;height: 30px;margin-top: -10px;" class="form-control" placeholder="查找" name="member-search" role="member" >
+		</li>
+  {% for member in members %}
+	<li class="option-item" style="padding-top:10px;" labelid='{{ member.member.id }}'>
+	   <span name="item-icon" style="display:inline-block;width:40px;padding-left:10px;"><img src="{{ member.member_avatar }}" class="img-circle" style="width:25px;height:25px" /></span>
+	   <span name="item-text" email="{{ member.member.email }}" style="display:inline-block;width:70px;"> {{ member.member_name }}</span>
+	   <span name="item-status" style="display:inline-block;width:30px;" ><i class="fa  {{ member.selected_style }}" type='{{ member.member.id }}'></i></span>
+  </li>
+ {% endfor %}
+</ul>
+ </span>

@@ -11,17 +11,22 @@ import './assets/bootstrap/dist/css/bootstrap.min.css'
 import './assets/bootstrap/dist/js/bootstrap'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import './assets/teamcat/global/less/global.less'
-import '../src/assets/teamcat/global/less/MyIviewTheme.less'
+import './assets/teamvision/global/less/global.less'
+import './assets/teamvision/global/less/MyIviewTheme.less'
 import '@progress/kendo-ui'
 import '@progress/kendo-theme-material/dist/all.css'
 // import '@progress/kendo-theme-default/dist/all.css'
 import '@progress/kendo-ui/js/messages/kendo.messages.zh-cn.js'
+// import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
+import JSZip from 'jszip/dist/jszip.min.js'
 // import VueQuillEditor from 'vue-quill-editor'
 
 require('font-awesome-webpack')
 axios.defaults.withCredentials = true
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+
+window.JSZip = JSZip
 
 // axios.defaults.headers.sessionId='afdgmgwex411zlj8r8wwfidbl6171ki7'
 // axios.defaults.headers.sessionId = 'genupzea4d5xvjwp087vwr0bdwo59drl'

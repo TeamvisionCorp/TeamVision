@@ -1,8 +1,8 @@
 <template>
-  <div id="app-head" class="app-head master-page-header-font">
+  <div v-if="appHeadShow" id="app-head" class="app-head master-page-header-font">
     <Row>
       <i-col :lg="1" :md="2" :sm="2" :xs="2" class="app-head-logo app-head-item">
-        <a href="/home"><img src="../../assets/teamcat/global/images/logo.jpg" class="img-circle"
+        <a href="/home/summary"><img src="../../assets/teamvision/global/images/logo.jpg" class="img-circle"
                              style="width: 40px; height: 40px;"></a>
       </i-col>
       <i-col :lg="1" :md="1" :sm="0" :xs="0" class="app-head-title">
@@ -107,7 +107,7 @@
       }
     },
     computed: {
-      ...mapGetters(['menuLabelID']),
+      ...mapGetters(['appHeadShow']),
 
       showProject: function () {
         return this.showHeadProject

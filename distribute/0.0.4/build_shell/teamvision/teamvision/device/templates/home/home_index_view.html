@@ -1,0 +1,31 @@
+{% extends "masterpage_nirvana.html" %}
+
+{% block styles %}
+      
+     <link rel="stylesheet/less" href="/static/home/less/home.less" type="text/css" media="screen"/>
+     <link rel="stylesheet/less" href="/static/project/less/project.less" type="text/css" media="screen"/>
+     {% block home_styles %} {% endblock %}
+
+{% endblock %}
+
+{% block left %}
+
+{{ left_nav_bar }}
+
+{% endblock %}
+
+{% block content %}
+
+     {% block home_content %}{% endblock %}
+
+{% endblock %}
+
+{% block scripts %}
+
+     <script  type="text/javascript" src="/static/home/js/home.js"></script>
+     {% block home_scripts %}{% endblock %}
+
+{% endblock %}
+
+<!--子页面继承内容 -->
+

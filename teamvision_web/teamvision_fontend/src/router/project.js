@@ -54,6 +54,32 @@ const projectRouter = [
   },
 
   {
+    name: 'projectDocument',
+    path: '/project/:projectID/documents/:folderID?',
+    components: {
+      default: function () {
+        return import('../pages/project/document/ProjectDocuments.vue')
+      },
+      bodyhead: ProjectHead
+    },
+    props: {default: true,bodyhead: true},
+    meta: ''
+  },
+
+  {
+    name: 'projectDocumentExcel',
+    path: '/project/documents/excel/:projectID',
+    components: {
+      default: function () {
+        return import('../pages/project/document/Excel.vue')
+      },
+      bodyhead: EmptyHead
+    },
+    props: {default: true,bodyhead: true},
+    meta: ''
+  },
+
+  {
     name: 'projectIssue',
     path: '/project/:projectID/issue/:issueID',
     components: {

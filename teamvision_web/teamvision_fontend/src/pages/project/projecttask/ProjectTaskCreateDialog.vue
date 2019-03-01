@@ -3,14 +3,14 @@
     <div :style="'height:' + containerHeight + 'px;overflow-y: scroll;overflow-x: hidden'">
       <Form ref="createTask" :model="formItem" :label-width="80" :rules="ruleCustom">
         <FormItem label="版本" prop="project">
-          <Cascader v-model="formItem.ProjectID" :data="projectVersions" @on-change="onProjectChange"
+          <Cascader v-model="formItem.ProjectVersions" :data="projectVersions" @on-change="onProjectChange"
                     :filterable="true"></Cascader>
         </FormItem>
         <FormItem label="标题" prop="Title">
           <Input v-model="formItem.Title" placeholder="任务标题"/>
         </FormItem>
         <FormItem label="执行者">
-          <Select v-model="formItem.Owner" :filterable="true" placeholder="默认为创建者">
+          <Select v-model="formItem.Owner" multiple filterable placeholder="默认为创建者">
             <Option v-for="member in projectMembers" :key="member.PMMember" :value="member.PMMember">{{ member.name }}
             </Option>
           </Select>
@@ -133,12 +133,16 @@
         formItem: {
           id: this.taskID,
           Title: '',
-          Owner: 0,
+          Owner: [],
+          Creator: 0,
+          Status: 1,
           Priority: '3',
           DeadLine: '',
           WorkHours: 8,
           Description: '',
-          ProjectID: [],
+          ProjectID: 0,
+          Version: 0,
+          ProjectVersions: [],
           childTask: {
             index: 0,
             items: [
@@ -169,7 +173,7 @@
     },
     computed: {
       ...mapGetters('projectglobal', ['createDialogShow', 'viewDialogShow', 'projectVersion']),
-      ...mapGetters(['appBodyHeight']),
+      ...mapGetters(['appBodyHeight','userInfo']),
       containerHeight: function () {
         return this.appBodyHeight-100
       },
@@ -186,7 +190,7 @@
       },
 
       projectMembers: function () {
-        let project = this.formItem.ProjectID[0]
+        let project = this.formItem.ProjectVersions[0]
         let result = []
         for (let i = 0; i < this.sourceProject.length; i++) {
           if (this.sourceProject[i].id === project) {
@@ -204,8 +208,14 @@
         ok (name) {
           this.$refs[name].validate((valid) => {
             if (valid) {
+              this.formItem.ProjectID = this.formItem.ProjectVersions[0]
+              this.formItem.Version = this.formItem.ProjectVersions[1]
+              if (this.formItem.Owner.length === 0)
+              {
+                this.formItem.Owner.push(this.userInfo.id)
+              }
               if (this.createDialogShow) {
-                this.$axios.post('/api/project/' + this.formItem.ProjectID[0] + '/version/' + this.formItem.ProjectID[1] + '/project_tasks', this.formItem).then(response => {
+                this.$axios.post('/api/project/' + this.formItem.ProjectID + '/version/' + this.formItem.Version + '/project_tasks', this.formItem).then(response => {
                   this.setTaskChange(true)
                   }, response => {
                   this.setTaskChange(true)
@@ -293,24 +303,27 @@
           if (this.formItem.id !== 0) {
             let initPromise = initTaskForm(this.taskID)
             initPromise.then(function (initData) {
+              defaultTask.childTask.items= []
               defaultTask.Title = initData.Title
-              defaultTask.Owner = parseInt(initData.Owner)
+              defaultTask.Owner =initData.Owner
               defaultTask.Priority = initData.Priority + ''
               defaultTask.DeadLine = initData.DeadLine
               defaultTask.Description = initData.Description
               defaultTask.WorkHours = parseInt(initData.WorkHours)
-              defaultTask.ProjectID = [initData.ProjectID, initData.Version]
-              for (let i = 0; i < initData.Child.length; i++) {
+              defaultTask.ProjectVersions = [initData.ProjectID,initData.Version]
+              defaultTask.ProjectID = initData.ProjectID
+              defaultTask.Version = initData.Version
+              for (let i = 0; i < initData.Childs.length; i++) {
                 defaultTask.childTask.index = defaultTask.childTask.index + 1
                 let temp = {}
-                temp.value = initData.Child[i].Title
+                temp.value = initData.Childs[i].Title
                 temp.index = i + 1
-                temp.status = initData.Child[i].Status
-                temp.active = initData.Child[i].IsActive
-                temp.id = initData.Child[i].id
+                temp.status = initData.Childs[i].Status
+                temp.active = initData.Childs[i].IsActive
+                temp.id = initData.Childs[i].id
                 defaultTask.childTask.items.push(temp)
               }
-              if (initData.Child.length === 0) {
+              if (initData.Childs.length === 0) {
                 defaultTask.childTask.items = []
               }
 
@@ -318,12 +331,14 @@
           }
           else {
             defaultTask.Title = ''
-            defaultTask.Owner = 0
+            defaultTask.Owner = [this.userInfo.id]
             defaultTask.Priority = '3'
             defaultTask.DeadLine = ''
             defaultTask.Desc = ''
             defaultTask.WorkHours = 8
-            defaultTask.ProjectID = []
+            defaultTask.ProjectVersions = []
+            defaultTask.ProjectID = 0
+            defaultTask.Version = 0
             defaultTask.childTask.items = []
           }
         }

@@ -13,8 +13,8 @@
         <Option v-for="item in optionList" :value="item.id" :key="item.id">{{ item.label }}</Option>
       </Select>
       <ButtonGroup style="margin-left:10px;" shape="circle" size="small">
-        <Button type="primary" @click="onOk" ghost>保存</Button>
-        <Button @click="onCancel">取消</Button>
+        <Icon :size="20" @click="onOk" color="black" class="cursor-hand" type="md-checkmark" />
+        <Icon :size="20" @click="onCancel" color="black" class="cursor-hand" type="md-close" />
       </ButtonGroup>
     </div>
   </div>
