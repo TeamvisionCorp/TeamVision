@@ -1,0 +1,45 @@
+<div class="listview-window-container" style="padding-top:0px;">
+	<div class="portal_project_container" style="margin-top:10px;">
+		<div id="project_portal_listview_window" class="listview-window">
+			<div id="project_portal_listview_container">
+			<nav class="navbar navbar-default navbar-static-top" style="background:none !important" role="navigation">
+				<div class="navbar-header">
+					<!-- <a class="navbar-brand" href="#">全部设备</a> -->
+				</div>
+				<div>
+					<!-- <ul class="nav navbar-nav" id="project_portal_page_menu">
+						<li class="project_portal_menu_item project_portal_menu_item_active" method="all">
+							<a  href="#">全部项目</a>
+						</li>
+						<li class="project_portal_menu_item" method="android">
+							<a href="#">Android</a>
+						</li>
+						<li class="project_portal_menu_item" method="ios">
+							<a href="#">IOS</a>
+						</li>
+						<li class="project_portal_menu_item" method="web">
+							<a href="#">Web</a>
+						</li>
+						<li class="project_portal_menu_item" method="other">
+							<a href="#">其他</a>
+						</li>
+					</ul>
+ -->				</div>
+				{% manager_required %}
+				<div class="nic-circle-30-green pull-right" style="margin-right:5px;margin-top:15px;margin-right:50px;">
+		        <span id="portal_toolbar_add_project" class="nic-content-30-white cursor-hand"><i class="fa fa-plus fa-fw"></i></span>
+		        </div>
+		        {% end_manager %}
+			</nav>
+				<div >
+					<div id="project_portal_project_listview" style="overflow-y: scroll;">
+						
+						{{ project_list }}   
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

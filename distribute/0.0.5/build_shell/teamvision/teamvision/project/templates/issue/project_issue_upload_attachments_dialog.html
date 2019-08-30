@@ -1,0 +1,47 @@
+<div class="modal fade" id="issue-upload-attachments-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog modal-md" role="document" style="position:fixed;left:20%;right:25%;bottom:30px;top:100px;">
+		<div class="modal-content modal-dialog-form-middle" style="height:300px;border-radius:0px;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="exampleModalLabel">上传文件</h4>
+			</div>
+			<div class="modal-body" style="overflow-y:scroll;height:80%;">
+			    <div class="add_member_dialog_nav_container">
+	                  <span class="fortesting_view_edit_active add_member_dialog_nav_item " >
+	                      <center style="padding-bottom:5px;">
+				           <span id="upload-dialog-local-button" class="cursor-hand " style="">本地上传</span>
+                           </center>
+                     </span>
+                     <span class="add_member_dialog_nav_item">
+                         <center style="padding-bottom:5px;">
+				            <span id="upload-dialog-mobile-button" class="cursor-hand">手机上传</span>
+                         </center>
+                     </span>
+                </div>
+                <div class="upload_view_container">
+                      <div class="local_upload_view">
+                          <div class="form-group">
+		        
+		                 <div class="col-sm-12">
+			              <form action="/project/fortesting/upload_attachmentd" class="dropzone" id="issue_file_upload_form" name="issue_file_upload_form" style="border: 2px dashed #ccc;border-radius:5px;">
+                         <div class="fallback">
+                            <input name="file" type="file" multiple id="issue_upload_file" />
+                         </div>
+                         <input  id="upload_files" name="attachments"  type="hidden" value="" />
+                         <input  id="issue_id"  type="hidden" value="{{ issue_id }}" />
+                      </form>
+		              </div>
+	</div>
+                          
+                      </div>
+                      <div class="mobile_upload_view">
+                      </div>
+                </div>
+			</div>
+			<div class="modal-footer" id="issue_dialog_footer">
+			</div>
+		</div>
+	</div>
+</div>

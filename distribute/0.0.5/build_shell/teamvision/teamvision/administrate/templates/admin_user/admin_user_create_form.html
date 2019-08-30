@@ -1,0 +1,55 @@
+<form class="form-horizontal" id="{{ user.form_id }}">
+
+	<div class="form-group">
+		<label for="emali" class="col-sm-2 control-label">邮箱</label>
+		<div class="col-sm-6">
+				<input type="email" class="form-control input-md"  name="email" id="email" placeholder="Email" value="{{ user.user.email|default_if_none:"" }}">
+		</div>
+	</div>
+
+	{% if user.is_create %}
+
+	<div class="form-group">
+		<label for="new_password" class="col-sm-2 control-label">密码</label>
+		<div class="col-sm-4">
+				<input type="password" class="form-control input-md"  name="new_password" id="new_password" placeholder="输入密码">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="confirm_password" class="col-sm-2 control-label">确认</label>
+		<div class="col-sm-4">
+
+				<input type="password" class="form-control input-md"  name="confirm_password" id="confirm_password" placeholder="再次输入密码" >
+
+		</div>
+	</div>
+	{% endif %}
+
+	<div class="form-group" >
+		<label for="last_name" class="col-sm-2 control-label">姓氏</label>
+		<div class="col-sm-4">
+				<input type="text" class="form-control input-md"  name="last_name" id="last_name" placeholder="姓氏" value="{{ user.user.last_name|default_if_none:"" }}">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="first_name" class="col-sm-2 control-label">名字</label>
+		<div class="col-sm-4">
+				<input type="text" class="form-control input-md"  name="first_name" id="first_name" placeholder="名字" value="{{ user.user.first_name|default_if_none:"" }}">
+		</div>
+	</div>
+
+
+	{% if not user.is_create %}
+
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<button type="button" class="btn btn-success" id="save_fortesting">
+				保存
+			</button>
+		</div>
+	</div>
+
+	{% endif %}
+</form>

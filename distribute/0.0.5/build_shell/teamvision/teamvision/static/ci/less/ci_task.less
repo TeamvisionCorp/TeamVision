@@ -1,0 +1,309 @@
+
+@import '/static/home/less/home-variables.less';
+@import '/static/home/less/home-base.less';
+@import '/static/global/less/global-left-sub-nav.less';
+@import '/static/global/less/global.less';
+
+/*设置任务工具条---------------------------------------------------------------------------------*/
+.ci_task_sub_leftnav
+{
+  .sub-leftnav();
+}
+
+
+.ci_task_view
+{
+ .sub_leftnav_brother();
+ left:0px;
+}
+
+
+.ci_task_listview_item
+{
+  .listview-item(80px);
+}
+
+.ci_task_listview_item_title
+{
+	padding:3px 0px 0px 3px;
+	margin: 5px 50px 5px 0px;
+  height: 22px;
+  line-height: 28px!important;
+}
+
+.ci_task_listview_item_content
+{
+  padding-top:8px;
+	color:#555;
+	margin-left:0px;
+	display: block;
+	line-height: 20px;
+	font-size:13px;
+}
+
+.ci_task_property_nav_item
+{
+  padding-right:20px;
+}
+
+.ci_task_listview_item_content span
+{
+	font-size: 13px;
+	margin-right: 10px;
+  line-height: 1em;
+  padding: 2px 4px;
+}
+
+
+.ci-panel-body-nonbackground:first-child
+{
+	.listview-item(80px);
+    margin-left:20px;
+    border-top: 1px solid @listitem_border_color;
+    height:auto!important;
+}
+
+.ci-panel-body-nonbackground
+{
+    overflow-y: scroll;
+}
+
+//代码变更记录也样式
+/***********************************************************************/
+
+.ci_task_changelog_listview_item
+{
+  .listview-item(auto);
+}
+
+.ci_task_changelog_listview_item_title
+{
+  padding:3px 0px 0px 3px;
+  margin: 5px 50px 5px 26px;
+  height: 22px;
+  line-height: 28px!important;
+}
+
+.ci_task_changelog_listview_item_content
+{
+  padding-top:8px;
+  color: #FFA487;
+  margin-left:30px;
+  display: block;
+  line-height: auto;
+  font-size:12px;
+}
+
+
+.ci_task_changelog_listview_item_content span
+{
+  font-size: 13px;
+  margin-right: 10px;
+  line-height: 1em;
+  padding: 2px 4px;
+}
+
+
+/**********************************************************************/
+.position-span
+{
+  position:absolute;
+}
+
+
+.task_detail_controller
+{
+  padding:0px 10px 20px 10px;
+}
+
+.task_detail_header
+{
+  padding:0px 10px 0px 10px;
+}
+
+.task_detail_option
+{
+  padding:0px 10px 0px 10px;
+}
+
+
+.task_detail_description
+{
+  padding:20px 10px 0px 5px;
+}
+
+.task_detail_content
+{
+  width:75%;
+}
+.task_detail_menu
+{
+  padding-left:40px;
+  width:200px;
+}
+
+.task_detail_menu_item
+{
+  font-size:13px;
+  padding:4px;
+}
+
+.columnCollapsed_background
+{
+  background:white;
+}
+.columnHeader
+{
+  background-color:#32be77;
+  opacity:0.8;
+  font-size:16px;
+  color:white;
+  font-family: '微软雅黑', 'Helvetica Neue', sans-serif, SimHei;
+}
+
+.jqx-kanban-item-color-status span
+{
+  color:black !important;
+  font-size:14px;
+}
+
+.ci_task_info_item_header
+{
+  display:none;
+}
+
+.ci-task-config-pop-meun
+{
+  .filed-pop-object(@context-menu-opacity);
+  right:33px;
+  z-index:99999;
+}
+
+.plugin_add_button
+{
+  .radius_button();
+  height:20px !important;
+  width:60px !important;
+  // opacity:0.8;
+  margin-top:0px;
+  padding-top:0px !important;
+  
+}
+
+.parameter-edit-split-line
+{
+  .split-line();
+}
+
+.parameter-value-container
+{
+  padding:20px 0px 10px 0px;
+  margin-left: -15px;
+  // margin-bottom: 10px;
+}
+
+.parameter-value-container-mouseover
+{
+  // border:1px dashed #f0f0f0;
+  background:#f6f5f1;
+  opacity:0.8;
+}
+
+.parameter-group-selected
+{
+  background:rgba(0,0,0,.05);
+  opacity:0.8;
+  border-radius:15px;
+}
+
+.parameter-group-name-input
+{
+   width:40%; 
+   margin-left:auto;
+   margin-right:auto;
+   margin-bottom:10px;
+   margin-top:10px;
+}
+
+.parameter-group-settings
+{
+  position:absolute;
+  margin-top:20px;
+  margin-left:-60px;
+  z-index:2;
+  display:none;
+  background:#FFF;
+}
+
+#task_parameter_group_form label
+{
+   width:100px;
+   color:#777;
+}
+
+
+.task_change_log_index
+{
+  font-size:8px;
+  width:20px;
+  margin-left:65px;
+  margin-top:34px;
+}
+
+.qrcode
+{
+  border:1px solid #555;
+  margin:25px 10px 0px -270px;
+  height:250px;
+  width:200px;
+  display:none;
+  background-color:#fffef9; 
+  opacity:0.9;
+  border-radius:15px;
+}
+
+.task_parameter_view_panel
+{
+   color:#777;
+   height:25px;
+   padding-top:5px;
+   padding-left:10px;
+   border-radius:15px!important;
+}
+
+.parameter_change_confirm_column
+{
+   width:200px;
+   padding:5px;
+   word-break:break-all;
+}
+
+.ci_task_status
+{
+	width:2px;
+	height:78px; 
+	float:left; 
+	opacity: 0.6;
+	margin-top:-5px;
+	margin-bottom:3px;
+}
+
+.ci_task_history_status
+{
+	width:2px;
+	height:78px; 
+	float:left; 
+	opacity: 0.6;
+	margin-top:-5px;
+	margin-bottom:3px;
+}
+
+.ci_testing_history_status
+{
+	width:1px;
+	height:40px; 
+	float:left; 
+	opacity: 0.6;
+	margin-top:-5px;
+	margin-bottom:3px;
+}

@@ -1,0 +1,197 @@
+<html>
+      <title></title>
+      <header>
+      	 <style type="text/css">
+      	      body
+      	      {
+      	      	width: 800px;
+      	      	border:1px solid #d3d7d4;
+      	      	margin-left:1%;
+                font-family: '微软雅黑', 'Helvetica Neue', sans-serif, SimHei;
+                background-color: #fff;
+                padding:20px 20px 5px 20px;
+                color: #555555;
+      	      }
+      	      .projectinfo
+      	      {
+/*	            border:1px solid #B0D7B0;*/
+      	      }
+              .summarytitle
+              {
+              	border-bottom: 1px solid #d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .summarytitle span
+              {
+              	 font-size:120%;
+                 color: #555;
+                 font-weight: bold;
+              }
+
+              .summarybody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 10px;
+              }
+
+              .summarybody span
+              {
+              	  font-size:120%;
+                  color: #1d953f;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+               
+              .projectinfoheader
+              {
+              	border-bottom: 1px solid #d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .projectinfoheader span
+              {
+              	 font-size:120%;
+                 color: #555;
+                 font-weight: bold;
+              }
+
+              .projectinfobody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .projectinfoitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+              .buildinfoheader
+              {
+              	border-bottom: 1px solid #d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .buildinfoheader span
+              {
+              	 font-size:120%;
+                 color: #555;
+                 font-weight: bold;
+              }
+
+              .buildinfobody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .buildinfoitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+
+               .suggestionheader
+              {
+              	border-bottom: 1px solid #d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .suggestionheader span
+              {
+              	 font-size:120%;
+                 color: #555;
+                 font-weight: bold;
+              }
+
+              .suggestionbody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .suggestionbody div div
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              	margin-left: 50px;
+              }
+
+              .suggestionitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+              .item
+              {
+              	    margin-top: 10px;
+              	    margin-bottom: 20px;
+              }
+
+
+
+         </style>
+      </header>
+      <body >
+      	<div class="summary">
+               <div class="summarytitle">
+      		     <span>测试信息：</span>
+      	     </div>
+      	     <div class="summarybody">
+      	     	 <div>
+      	     	 	<span>${SUBMITIONINFO}</span>
+      	     	 </div>
+               <div>
+                <span>测试人员：${TESTER}</span>
+               </div>
+               <div>
+                <span>开始日期：${STARTTIME}</span>
+               </div>
+               <div>
+                <span>结束日期：${ENDTIME}</span>
+               </div>
+      	     </div>
+      	</div>
+
+      	<div class="projectinfo">
+      		<div class="projectinfoheader">
+      		     <span >提测信息:</span>
+      	   </div>
+            <div class="projectinfobody">
+            	
+            	 <div class="item">
+                    <span class="projectinfoitmename">项目名称:</span>
+                    <span>${PROJECTNAME}</span>
+      	        </div>
+
+                <div class="item">
+                    <span class="projectinfoitmename">提测版本:</span>
+                    <span>${VERSION}</span>
+                </div>
+      	        
+      	        
+      	        <div class="item">
+                    <span class="projectinfoitmename">提测ID:</span>
+                    <span>${TPID}</span>
+      	        </div>
+      	        
+      	        <div class="item">
+                    <span class="projectinfoitmename">提测人员:</span>
+                    <span>${SUBMITIOR}</span>
+      	        </div>
+      	        
+            </div>
+      	</div>
+
+      </body>
+</html>

@@ -1,0 +1,51 @@
+{% for version in versions %}
+		   <div  class="project_version_listview_item container-fluid">
+		   	<div class="row">
+				<div class="col-lg-10 col-md-8 col-sm-8">
+					<div class="container-fluid">
+						<div class="project_version_listview_item_title">
+							<div class="fontfamily">
+								<i class="fa fa-fw {{ version.platform }}"></i>
+								<span  name="version_project-title">{{ version.project_title }}</span>
+							</div>
+						</div>
+						<div class="project_version_listview_item_content row">
+							<span class="col-sm-2">
+								    <span name="version_update_loader"><i class="fa fa-spinner fa-spin"></i></span>
+									<span name="project_version_id">#{{ version.version.id }}</span>
+								    <span class="project_version_listview_item_runtime content-editable" name="project_version_number" contenteditable="true"> <span name="VVersion">{{ version.version.VVersion }}</span> </span>
+								    <!-- <span> <i class="fa fa-info-circle fw"></i> <a href="/project/{{ version.version.VProjectID }}/version/{{ version.version.id }}"><span>详情</span></a> </span> -->
+								    
+							</span>
+							<span class="col-sm-3"> 
+								     <span name="version_update_loader"><i class="fa fa-spinner fa-spin"></i></span>
+								    <span name="project_version_startdate_trigger">
+								    	 <a class="project_version_listview_item_timer"  >
+								    	 	<i class="fa fa-calendar fa-fw"></i>
+								    	 	<span name="VStartDate">{{ version.version.VStartDate| default_if_none:"未设置开始日期" }}
+								    	 	</span>
+								    	 </a>
+								    </span>
+								    <div name="calender" class="filed-pop-calender"></div>
+							</span>
+							<span class="col-sm-3">
+								 <span name="version_update_loader"><i class="fa fa-spinner fa-spin"></i></span>
+								<span name="project_version_releasedate_trigger"> <a class="project_version_listview_item_timer" ><i class="fa fa-calendar fa-fw"></i><span name="VReleaseDate">{{ version.version.VReleaseDate| default_if_none:"未设置发布日期" }}</span></a> </span>								    
+							    <div name="calender" class="filed-pop-calender"></div>
+							</span>
+						</div>
+					</div>
+
+				</div>
+				
+				
+				
+				
+				<div class="col-lg-1 col-md-4 col-sm-4" style="line-height:1.5em">
+					<span style="margin-top:30px;display:inline-block" class="postion-absolute"><!-- <i class="fa fa-gears fa-fw fa-lg"></i> -->
+						<a><span name="project_version_delete" style="color:red; 	quotes: 		;"><i class="fa fa-trash-o fa-lg fa-fw"></i></span></a>
+					</span>
+				</div>	
+			</div>
+		    </div>
+		    {% endfor %}

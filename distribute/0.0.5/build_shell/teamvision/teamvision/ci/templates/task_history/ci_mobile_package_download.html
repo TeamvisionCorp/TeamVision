@@ -1,0 +1,59 @@
+<html>
+	<header>
+		<title>TeamCat</title>
+	</header>
+	<head>
+		<link rel="stylesheet" href="/static/global/css/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="/static/global/js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet/less" href="/static/global/less/global.less" type="text/css" media="screen"/>
+		<link rel="stylesheet/less" href="/static/home/less/home_unlogin.less" type="text/css" media="screen"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="home_page_center row">
+				<div class="col-sm-12">
+					<div class="row" style="height:40%">
+						<div id="home_page_welcome" class="col-sm-12">
+							<h2>
+							<p>
+								TeamCat
+							</p></h2>
+							<h4>
+							<p>
+								<small style="margin-left:30px">让工作更高效。</small>
+							</p></h4>
+						</div>
+
+					</div>
+					<div class="row" style="height:35%">
+						<div class=col-sm-12>
+							<img src="/static/global/images/logo.jpg"/ class="img-circle" style="width:50px; height:50px;">
+						</div>
+					</div>
+					<div class="row" style="height:25%">
+						<div class="col-sm-12">
+							<button type="button" class="btn btn-default btn-lg">
+								<i class="fa fa-download fa-fw"></i>
+								{% if android %}
+								<a href="{{ package }}" style="color:#555;text-decoration:none;">{{ os_name }}</a>
+								{% else %}
+								<a href="itms-services://?action=download-manifest&url={{ package }}" style="color:#555;text-decoration:none;">{{ os_name }}</a>
+								{% endif %}
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<script src="/static/global/js/jquery-2.1.4.min.js"></script>
+		<script  type="text/javascript" src="/static/global/js/less.js-master/less.js-master/dist/less.js"></script>
+	</body>
+</html>
+

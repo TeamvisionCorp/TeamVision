@@ -1,0 +1,35 @@
+{% for group in groups %}
+		   <div  class="admin_user_listview_item container-fluid">
+		   	<div class="row">
+		   		<div class="pull-left usergroup_row_item" style="width:150px;">
+					<span style="color:#333; font-size:14px;">
+						<span  name="user_group_id" labelid="{{ group.group.id }}">
+							<i class="fa fa-lock fa-fw fa-lg"></i>
+							{{ group.group.name }}
+						</span>
+					</span> 
+					
+				</div>
+				<div class="col-md-8 col-sm-6 usergroup_row_item" >
+							<a name="usergroup_edit" href="/administrate/usergroup/{{ group.group.id }}/edit_get">
+								<i class="fa fa-cog fa-fw"></i>
+								设置权限
+							</a>
+							<span name="user_group_description" contenteditable="true" class="content-editable" style="margin-left:50px; color:#999">
+							<i class="fa fa-info-circle fa-fw"></i>
+								{{ group.group.extend_info.description | default_if_none:"输入用户组描述" }}
+							</span>
+				</div>
+				<div class="col-sm-1" style="line-height:1.5em;">
+					<span style="margin-top:30px;display:inline-block;cursor:pointer" name="usergroup_delete"><i class="fa fa-trash-o fa-fw fa-lg" style="color:red;"></i></span>
+				</div>
+			</div>
+		    </div>
+{% endfor %}
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+{% extends "ci/ci_index_view.html" %}
+
+{% block ci_styles %}
+
+<link rel="stylesheet/less" href="/static/ci/less/ci_task.less" type="text/css" media="screen"/>
+
+{% endblock %}
+
+{% block ci_content %}
+	{{ sub_nav_bar }}
+<div id="ci_task_view_list" class="ci_task_view">
+	{{ ci_task_list }}
+	{{ ci_task_config }}
+	{{ ci_task_history }}
+	{{ task_parameter_groups }}
+	{{ build_parameter_webpart }}
+	{{ task_changelogs }}
+	{{ history_claen_page }}
+</div>
+
+{% endblock %}
+
+{% block ci_scripts %}
+
+<script  type="text/javascript" src="/static/ci/js/ci_task.js"></script>
+<script  type="text/javascript" src="/static/global/js/wizard_controll.js"></script>
+<script  type="text/javascript" src="/static/ci_testing/js/ci-testing.js"></script>
+
+{% endblock %}

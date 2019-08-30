@@ -1,0 +1,102 @@
+
+@import 'ci-variables.less';
+@import 'ci-base.less';
+@import '/static/global/less/global-variables.less';
+
+/*设置自动化任务工具条---------------------------------------------------------------------------------*/
+
+.ci-dashboard-summary
+{
+	/*width:60%;*/
+    float:left;
+    height: 100%;
+    padding:0px 10px 0px 10px;
+}
+
+.ci-dashboard-activity
+{
+	margin-left: 0px;
+  float:left;	
+  height: 100%;
+  padding-right:10px;
+  padding-top:40px;
+}
+
+
+.ci_task_queue_listview_item
+{
+  .listview-item(35px);
+  margin-right:0px;
+}
+
+.ci_dashboard_build_status_listview_item
+{
+  .listview-item(auto);
+  margin-right:0px;
+}
+
+.ci_dashboard_build_status_listview_item_content
+{
+  padding-top:5px;
+  color: #555;
+  margin-left:30px;
+  display: block;
+  line-height: 15px;
+  font-size:12px;
+  height:40px;
+}
+
+.ci_dashboard_build_status_listview_item_title
+{
+  padding:3px 0px 0px 0px;
+  margin: 5px 0px 5px 0px;
+  height: 22px;
+  line-height: 28px!important;
+}
+
+.ci_dashboard_build_status_listview_item_title span
+{
+  font-size: 12px;
+  margin-right: 10px;
+  line-height: 1em;
+  padding: 2px 4px;
+}
+
+.ci_task_queue_listview_item_content
+{
+  padding-top:8px;
+  color: #555;
+  margin-left:0px;
+  display: block;
+  line-height: 20px;
+  font-size:12px;
+}
+
+.ci_task_queue_listview_item_content span
+{
+  font-size: 12px;
+  margin-right: 10px;
+  line-height: 1em;
+  padding: 2px 4px;
+}
+
+.dashboard_summary_window
+{
+  padding-right:5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+#dashboard_activity_window
+{
+  border: 1px solid #f0f0f0;
+  padding-right:5px;
+  -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+}
+
+#billboard
+{
+  break-word:break-all;
+}

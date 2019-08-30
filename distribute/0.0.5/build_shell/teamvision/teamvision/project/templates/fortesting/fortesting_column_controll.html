@@ -1,0 +1,75 @@
+
+
+<div class="web-board-column-default">
+   <div  class="web-board-column-container">
+       <div class="web-board-column-header" style="display:table;">
+          <center><i class="fa fa-circle-o fa-fw" style="color:red;opacity:0.7;"></i>待提测</center>
+          <span class="pull-right cursor-hand" style="margin-top:-20px;opacity:0.4;"><i class="fa fa-fw fa-navicon"></i></span>
+       </div>
+       <div class="web-board-column-item-container" id="wait_for_commit" item-status="1">
+           {{ wait_for_commit }}
+       </div>
+   </div>
+   
+</div>
+
+<div class="web-board-column-default" >
+<div  class="web-board-column-container">
+       <div class="web-board-column-header" style="display:table;">
+          <center><i class="fa fa-circle-o fa-fw" style="color:orange;opacity:0.7;"></i>已提测</center>
+          <span class="pull-right cursor-hand" style="margin-top:-20px;opacity:0.4;"><i class="fa fa-fw fa-navicon"></i></span>
+       </div>
+       <div class="web-board-column-item-container" id="commited" item-status="2">
+         
+             {{ commited }}
+          
+       </div>
+   </div>
+   
+</div>
+
+<div class="web-board-column-default" >
+    <div  class="web-board-column-container">
+       <div class="web-board-column-header" style="display:table;">
+          <center><i class="fa fa-circle-o fa-fw" style="color:#009ad6;opacity:0.7;"></i>测试中</center>
+          <span class="pull-right cursor-hand" style="margin-top:-20px;opacity:0.4;"><i class="fa fa-fw fa-navicon"></i></span>
+       </div>
+       <div class="web-board-column-item-container" id="intesting" item-status="3">
+
+             {{ intesting }}
+       </div>
+     </div>
+   </div>
+
+
+<div class="web-board-column-default" >
+<div class="web-board-column-container">
+       <div class="web-board-column-header" style="display:table;">
+          <center><i class="fa fa-circle-o fa-fw" style="color:green;opacity:0.7;"></i>测试完成</center>
+          <span class="pull-right cursor-hand" style="margin-top:-20px;opacity:0.4;"><i class="fa fa-fw fa-navicon"></i></span>
+       </div>
+       <div class="web-board-column-item-container"  id="testfinished" item-status="4">
+           {{ testfinished }} 
+       </div>
+   </div>
+   </div>
+
+<div class="web-board-column-default" style="margin-right:70px;" >
+<div  class="web-board-column-container">
+       <div class="web-board-column-header" style="display:table;">
+          <center><i class="fa fa-circle-o fa-fw" style="color:gray;opacity:0.7;"></i>已发布</center>
+          <span class="pull-right cursor-hand" style="margin-top:-20px;opacity:0.4;"><i class="fa fa-fw fa-navicon"></i></span>
+       </div>
+       <div class="web-board-column-item-container" id="archived" item-status="5">
+         {{ archived }}
+       </div>
+   </div>
+   </div>   
+
+
+
+
+
+<div class=""  style="margin-right:70px;"></div>
+
+    

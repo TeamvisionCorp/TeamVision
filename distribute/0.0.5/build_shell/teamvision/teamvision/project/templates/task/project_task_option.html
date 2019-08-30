@@ -1,0 +1,122 @@
+<div>
+	{% if not task.is_create %}
+	<div class="row">
+		<span class="col-sm-12 task_detail_menu_item">引用ID</span>
+		<span id="project_task_id" class="col-sm-12 task_detail_menu_item">{{ task.task.id }}</span>
+	</div>
+	{% endif %}
+	<div class="row" name="ProjectID">
+		<span class="col-sm-12 task_detail_menu_item">
+			<span>所属项目</span>
+			{% if task.is_create %}
+		    <span name="task-add-project"><a><i class="fa fa-caret-down fa-fw pull-right"></i></a></span>
+		    {{ task.project_menu }}
+		    {% endif %}
+		</span>
+		
+		{% if not task.is_create %}
+		
+		<span class="col-sm-12 task_detail_menu_item">
+		    <img src="{{ task.task_project_avatar }}" class="img-circle" style="width:20px;height:20px">	
+			{{ task.task_project_title }}
+		</span>
+		
+		{% endif %}
+	</div>
+
+	<div class="row" name="Owner">
+		<span class="col-sm-12 task_detail_menu_item"> <span>执行者</span>
+		{% if task.is_create %}
+		 <span name="task-add-owner">
+		 	<a><i class="fa fa-caret-down fa-fw pull-right"></i></a>
+		 </span>
+		 {% endif %}
+			{{ task.owner_menu }}
+			</span>
+			{% for owner in task.task_owners %}
+			<span class="col-sm-12 task_detail_menu_item" labelid="{{ owner.id }}"><img src="{{ owner.extend_info.avatar }}" class="img-circle" style="width:20px;height:20px" />{{ owner.username }}</span>
+						    <!-- <span labelid="{{ owner.id }}"><img src="{{ owner.extend_info.avatar }}" class="img-circle" title="{{ owner.username }}" style="width:30px;height:30px;" /></span>	 -->
+		    {% endfor %}
+	</div>
+	
+	<div class="row" name="StartDate">
+		<span class="col-sm-12 task_detail_menu_item"> <span>开始日期</span>
+		 {% if task.is_create %}
+		 <span name="start_date">
+			<a ><i class="fa fa-caret-down fa-fw pull-right"></i></a>
+		</span> 
+		{% endif %}
+		<div name="calender" class="filed-pop-calender"></div> </span>
+		<span class="col-sm-12 task_detail_menu_item"> <span class="label label-success"><i class="fa fa-calendar"></i> <span name="task-start-date">{{ task.task.StartDate|default_if_none:"未设置开始日期" }}</span></span> </span>
+	</div>
+
+	<div class="row" name="DeadLine">
+		<span class="col-sm-12 task_detail_menu_item"> <span>截止日期</span>
+		 {% if task.is_create %}
+		 <span name="dead_line_date">
+		 	<a><i class="fa fa-caret-down fa-fw pull-right"></i></a>
+		 </span> 
+		 {% endif %}
+		<div name="calender" class="filed-pop-calender"></div> </span>
+		<span class="col-sm-12 task_detail_menu_item"> <span class="label label-danger"><i class="fa fa-calendar"></i> <span name="task-deadline-date">{{ task.task.DeadLine|default_if_none:"未设置截止日期" }}</span></span> </span>
+	</div>
+
+	<div class="row" name="Progress">
+		<span class="col-sm-12 task_detail_menu_item"> <span>进度</span> </span>
+		<span class="col-sm-12 task_detail_menu_item">
+			<div class="progress task-process-bar">
+				<div class="progress-bar progress-bar-success  content-editable" role="progressbar" aria-valuenow="{{ task.task.Progress|default_if_none:"0" }}" aria-valuemin="0" aria-valuemax="100" style="min-width: 4em; width:{{ task.task.TProgress|default_if_none:"0" }}%;padding: 5px;">
+					<span name="task-progress" contenteditable="true" class="content-editable" >{{ task.task.Progress|default_if_none:"0" }}%</span>
+				</div>
+			</div> 
+		</span>
+	</div>
+
+	<div class="row" name="WorkHours">
+		<div class="col-sm-12 task_detail_menu_item">
+			<span><i class="fa fa-info-circle fw"></i>工时</span>
+		</div>
+		<div class="col-sm-12 task_detail_menu_item">
+			<span name="task-working-hours" class="content-editable" contenteditable="true">{{ task.task.WorkHours|default_if_none:"8" }}</span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 task_detail_menu_item splitier"></div>
+	</div>
+
+	<div class="row" name="Tags">
+
+		<div class="col-sm-12 task_detail_menu_item">
+			<span > <i class="fa fa-tags fa-fw"></i> 标签 </span>
+			{% if task.is_create %}
+			<span name="add_tag"><a><i class="fa fa-plus-circle fa-fw pull-right"></i></a></span>
+			{% endif %}
+			{{ task.tag_menu }}
+		</div>
+		
+		{% if not task.is_create %}
+		{% for tag in task.task_tags %}
+		    
+		    <span class="col-sm-12 task_detail_menu_item" labelid="{{ tag.idd }}">
+		    	<span class='label label-default'  style='background-color:{{ tag.TagColor }} ; opacity:0.5'><i class='fa fa-tag fa-fw'></i>{{ tag.TagName }}</span>
+		    </span>
+		    
+		{% endfor %}
+		{% endif %}
+
+	</div>
+	<div class="row">
+		<div class="col-sm-12 task_detail_menu_item splitier"></div>
+	</div>
+	
+	{% if not task.is_create %}
+	
+	<!-- <div class="row">
+		<div class="col-sm-12 task_detail_menu_item">
+			<a class="btn btn-danger" href="#"> <i class="fa fa-trash-o fa-lg"></i> 删除</a>
+		</div>
+	</div> -->
+	{% endif %}
+
+</div>

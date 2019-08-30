@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="stylesheet"
+	href="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/styles/jqx.base.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet"
+	href="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/styles/jqx.bootstrap.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet"
+	href="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/styles/jqx.ui-start.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet"
+	href="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/styles/jqx.metro.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet"
+	href="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/styles/jqx.office.css"
+	type="text/css" media="screen" />
+<link rel="stylesheet"
+	href="/static/global/css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link
+	href="/static/global/js/bootstrap-3.3.5-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet/less" href="/static/global/less/global.less"
+	type="text/css" media="screen" />
+<link rel="stylesheet/less" href="/static/project/less/project_task.less" type="text/css"
+	media="screen" />
+<link rel="stylesheet/less" href="/static/global/js/dropzone/dropzone.css" type="text/css"
+	media="screen" />
+<link rel="shortcut icon" href="/static/global/images/logo.jpg" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/static/global/images/logo.jpg" type="image/vnd.microsoft.icon" />
+<link href="/static/global/js/bootstrap-markdown-editor/bootstrap-markdown-editor/dist/css/bootstrap-markdown-editor.css" rel="stylesheet">
+<link rel="bookmark" type="image/x-icon" href="/static/global/images/logo.jpg"/>
+{% block styles %}
+<!--custom styles-->
+{% endblock %}
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="团队协作工具,团队管理工具,项目管理工具,项目协作工具,任务分配,任务进度,文件存储,文件共享,在线预览,知识管理,日程管理,项目管理,项目讨论,项目沟通">
+<meta name="description" content="Teamvision是一款开源软件功能协作平台。包含项目管理，任务看板，BUG管理，BUG统计，项目提测，自动化测试，CI,API管理等功能！">
+<meta name="author" content="zhangtiande,155174391@qq.com">
+
+<title>Teamvison</title>
+
+</head>
+
+<body
+	style="display: none; background: {{ login_background|safe }};height:100% !important;opacity:0.95;">
+	<div class="" style="display: none" id="global-mark">
+		<div
+			style="margin-left: auto; margin-right: auto; margin-top: 22%; margin-bottom: 45%; height: 10%; width: 30px; color: #FFF">
+			<i class="fa fa-5x fa-spinner fa-pulse"></i>
+		</div>
+
+	</div>
+	<div id="master-header-div"
+		class="container-fluid master-page-header master-page-header-font">
+		<div class="row">
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 master-page-header-logo">
+				<ul class="list-inline">
+					<li class=""><a href="/home/summary"><img
+							src="/static/global/images/logo.jpg" / class="img-circle"
+							style="width: 40px; height: 40px;"></a></li>
+				</ul>
+			</div>
+
+ 			<div class="col-lg-1 col-md-2 hidden-sm hidden-xs">
+				<div>
+					<ul class="list-inline cursor-hand">
+						<li class="master-page-header-title text-center">Teamvision
+						</li>
+						<!-- <div name="feature_nav_menu" class="filed-pop-meun">
+							<ul class="list-group">
+								<li class="list-group-item" labelid="1">
+								<i class="fa fa-fw fa-lg"></i>
+								<span></span>
+								</li>
+							</ul>
+						</div> -->
+					</ul>
+				</div>
+			</div>
+			<div id="headermenu" class="col-lg-6 col-md-6 col-sm-9">
+				<div id='headermenubar' class="master-page-menu"
+					style=' margin-left: 5px;'>
+					<ul class="list-inline">
+					    <li name="header_menu_home">
+						<a href="/home/summary"style="font-family: '幼圆' !important;">
+						<i class="fa fa-fw  fa-home"></i>我的</a>
+						</li>
+ 						<li name="header_menu_project">
+						<a href="/project"style="font-family: '幼圆' !important;">
+						<i class="fa fa-fw  fa-laptop"></i>项目</a> 
+							<span name="header_menu_project_label" class="master-page-header-menu-circle" style=" color: #e0861a;display:none"><i
+								class="fa fa-circle fa-fw"></i></span>
+                            <span name="header_menu_project_status" class="master-page-header-menu-label" style=" color: #e0861a;"><i class="fa fa-circle fa-fw"></i></span>
+						</li>
+                        <li name="header_menu_ci"><a href="/ci/task">
+                            <i class="fa fa-fw  fa-building-o"></i>CI</a>
+                            <span name="header_menu_ci_label" class="master-page-header-menu-circle" style="color: #f58f98;display:none"><i
+                                    class="fa fa-circle fa-fw"></i></span>
+                            <span name="header_menu_ci_status" class="master-page-header-menu-label"
+                                  style=" color: #f58f98"><i class="fa fa-circle fa-fw"></i></span></li>
+
+{#                        <li name="header_menu_interface">#}
+{#                            <a  href="/interface/mock" style="font-family: '幼圆' !important;">#}
+{#                                <i class="fa fa-fw fa-lg fa-mobile"></i>API</a>#}
+{#                            <span  name="header_menu_device_label" class="master-page-header-menu-circle" style="color:#6f60aa;display:none"><i  class="fa fa-circle fa-fw"></i></span>#}
+{#                            <span name="header_menu_device_status" class="master-page-header-menu-label" style="color:#6f60aa;" ><i  class="fa fa-circle fa-fw"></i></span>#}
+{#                        </li>#}
+
+						<!-- <li name="header_menu_test">
+								<a style="font-family: '幼圆' !important;" >测试</a>
+								<span name="header_menu_test_label" class="master-page-header-menu-circle" style="margin-left:-15px;color:#8c531b"><i  class="fa fa-circle fa-fw"></i></span>
+								<span name="header_menu_test_status" class="master-page-header-menu-label" style="margin-left:-15px;color:#8c531b" ><i  class="fa fa-circle fa-fw fa-lg"></i></span>
+								<ul>
+									<li>
+										<a href="#MobileProducts">缺陷</a>
+									</li>
+									<li>
+										<a href="#AllProducts">用例</a>
+									</li>
+									<li>
+										<a href="#AllProducts">性能</a>
+									</li>
+									<li>
+										<a href="#AllProducts">安全</a>
+										
+									</li>
+									<li>
+										<a href="#PCProducts">自动化</a>
+									</li>
+								</ul>
+							</li>
+
+						<li name="header_menu_interface">
+								<a style="font-family: '幼圆' !important;">接口</a>
+								<span name="header_menu_interface_label" class="master-page-header-menu-circle" style="margin-left:-10px;color:#1d953f"><i  class="fa fa-circle fa-fw"></i></span>
+								<span name="header_menu_interface_status" style="display:none;position:absolute;top:53px;margin-left:-10px;color:#1d953f " ><i class="fa fa-circle fa-fw fa-lg"></i></span>
+								<ul>
+									<li>
+										<a href="#MobileProducts">接口管理</a>
+									</li>
+									<li>
+										<a href="#AllProducts">接口Mock</a>
+									</li>
+								</ul>
+							</li> -->
+
+
+							
+{#							#}
+{# 			       		<li name="header_menu_env"><a href="/env/portal">#}
+{#							<i class="fa fa-fw  fa-bus"></i>环境</a> #}
+{#							<span name="header_menu_env_label" class="master-page-header-menu-circle" style="color: #32be77;display:none"><i#}
+{#								class="fa fa-circle fa-fw"></i></span> #}
+{#						    <span name="header_menu_env_status" class="master-page-header-menu-label"#}
+{#							style="color: #32be77"><i class="fa fa-circle fa-fw"></i></span>#}
+{#						</li>#}
+						 
+{#					<li name="header_menu_logcat">#}
+{#								<a style="font-family: '幼圆' !important;" href="/logcat/logger">#}
+{#								<i class="fa fa-fw fa-file-text-o "></i>埋点日志</a>#}
+{#								<span name="header_menu_logcat_label" class="master-page-header-menu-circle" style="margin-left:-10px;color:#1d953f;display:none"><i  class="fa fa-circle fa-fw"></i></span>#}
+{#								<span name="header_menu_logcat_status" style="display:none;position:absolute;top:53px;margin-left:-10px;color:#1d953f " ><i class="fa fa-circle fa-fw fa-lg"></i></span>#}
+{##}
+{#						</li>#}
+
+						
+					</ul>
+				</div>
+			</div>
+
+           {{ header_project_group }}
+           
+			<div id="headersettings" class="hidden-sm hidden-xs col-md-2 col-lg-2 pull-right master-page-header-settings">
+				<div id='headersettingbar' style='visibility: hidden; margin-left: 5px;'>
+				{% login_required %}
+					<ul class="list-inline">
+						<li id="new_item"  style="display:none;">
+						  <span class="nic-circle-20-green"><span class="nic-content-20-white">
+						     <i style="color:#FFF !important;opacity:1;padding-top:5px;" class="fa fa-plus fa-fw fa-lg"></i>
+						   </span></span>
+						   
+							<ul class="menu_item">
+								{% if user.is_superuser %}
+								<li id="head_add_project"><a style="color: #777">项目</a></li> 
+								{% endif %}
+
+								<li id="head_add_task"><a style="color: #777">任务</a></li>
+
+								<li id="head_add_ci_task"><a style="color: #777">构建任务</a></li>
+								
+								<li id="head_add_issue"><a style="color: #777">构建任务</a></li>
+
+								<li id="head_add_fortesting_top"><a style="color: #777">提测</a>
+									<ul>
+										<li id="head_add_fortesting"><a style="color: #777">功能</a>
+										</li>
+										
+									</ul></li>
+								
+							</ul>
+							</li>
+						<!-- <li><i class="fa fa-bell-o fa-fw fa-2x"></i></li> 
+ -->						{% manager_required %}
+						<li id="admin_board"><i class="fa fa-cogs fa-fw fa-lg"></i>
+							<ul>
+								<li><a href="/administrate/user/all">
+								<i class="fa fa-user fa-fw fa-lg"></i>用户</a></li>
+								<li><a href="/administrate/device/all">
+								<i class="fa fa-mobile fa-fw fa-lg"></i>设备</a></li>
+								<li><a href="/administrate/device/all"><i class="fa fa-asterisk fa-fw fa-lg"></i>IOS证书</a></li>
+							</ul></li> 
+						{% end_manager %}
+
+						<li id="loginuser"><i class="fa fa-user-o fa-fw fa-lg"></i>
+							<ul>
+								<li><a href="/ucenter/{{ request.user.id }}/account/basic"><i
+										class="fa fa-home fa-fw pull-left"></i> 个人中心</a></li>
+								<li><a href="/user/logout">
+								<i class="fa fa-sign-out fa-fw pull-left"></i> 注销</a></li>
+							</ul></li>
+
+					</ul>
+					{% end_login %} 
+					{% logout_required %} 
+					<a class="login-button" href="/user/login" style="">登陆</a> 
+					{% end_logout %}
+				</div>
+
+			</div>
+		    </div>
+	</div>
+	
+	<div id="mainContainer">
+		{% login_required %}
+		   {% if left_nav_bar != "" %}
+		   <div id="leftContainer">
+		   {% block left %}
+		   {% endblock %}
+		   </div>
+	       {% endif %}
+		{% end_login %}
+		<div id="contentContainer">{% block content %} {% endblock %}</div>
+	</div>
+	<div id="popup-dialog-container"></div>
+
+		<div class="modal fade" id="object_delete_confirm">
+			<div class="modal-dialog">
+				<div class="modal-content modal-dialog-alert-middle">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">删除确认</h4>
+					</div>
+					<div class="modal-body">
+						<div class="alert alert-danger" role="alert">
+							<i class="fa fa-exclamation-triangle fa-fw"></i>删除是危险操作，请确认是否删除！
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							id="object_delete_confirm_button">删除</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							取消</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<div id="operation_notification">
+			<div id="operation_notification_message"></div>
+		</div>
+		<div id="notification_container" class="notify_container"></div>
+</body>
+<!-- <script type="text/javascript" src="/static/global/js/jquery-1.8.2.js"></script> -->
+<script src="/static/global/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxcore.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxribbon.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxcheckbox.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxmenu.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxtabs.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxtoolbar.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxbuttons.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxcombobox.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxinput.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxlistbox.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdropdownlist.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxscrollbar.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxexpander.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxvalidator.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxcheckbox.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/globalization/globalize.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxcalendar.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdatetimeinput.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxmaskedinput.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxsplitter.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxpanel.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdropdownbutton.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdata.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdatetimeinput.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxnotification.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxswitchbutton.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxeditor.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxtree.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxwindow.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxtooltip.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdocking.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxdragdrop.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxkanban.js"></script>
+<script type="text/javascript" src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxsortable.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/jqwidgets-ver4.1.2/jqwidgets/jqxnavigationbar.js"></script>
+<script type="text/javascript"
+	src="/static/global/js/less.js-master/less.js-master/dist/less.js"></script>
+
+<script src="/static/global/js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/global/js/global.js"></script>
+<script type="text/javascript" src="/static/global/js/global-create-new.js"></script>
+<script src="/static/global/js/Highcharts/code/highcharts.js"></script>
+<script src="/static/global/js/Highcharts/code/modules/exporting.js"></script>
+<script src="/static/global/js/Highcharts/code/themes/grid-light.js"></script>
+<script type="text/javascript" src="/static/global/js/dropzone/dropzone.js"></script>
+<script type="text/javascript" src="/static/global/js/bootstrap-markdown-editor/ace-builds/src-min/ace.js"></script>
+<script type="text/javascript" src="/static/global/js/bootstrap-markdown-editor/bootstrap-markdown-editor/dist/js/bootstrap-markdown-editor.js"></script>
+
+{% block scripts %}
+<!--custom scripts-->
+{% endblock %}
+</html>
