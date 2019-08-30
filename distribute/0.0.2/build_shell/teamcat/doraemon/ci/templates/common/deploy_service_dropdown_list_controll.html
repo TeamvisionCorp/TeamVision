@@ -1,5 +1,0 @@
-{% for service in deploy_services %}
-   
-      <option {{ service.is_selected }} value="{{ service.ci_service.id }}">{{ service.ci_service.ServiceName }}</option>
-   
-{% endfor %}

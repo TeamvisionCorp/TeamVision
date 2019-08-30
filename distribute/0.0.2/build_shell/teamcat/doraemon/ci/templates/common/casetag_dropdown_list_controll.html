@@ -1,5 +1,0 @@
-{% for case_tag in case_tags %}
-   
-      <option  {{ case_tag.is_selected }} value="{{ case_tag.ci_tag.id }}">{{ case_tag.ci_tag.TagName }} ({{ case_tag.ci_tag.TagDesc }})</option>
-   
-{% endfor %}
