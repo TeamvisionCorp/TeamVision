@@ -1,0 +1,5 @@
+{% for project in projects %}
+   
+      <option {{ project.is_selected }} value="{{ project.project.id }}">{{ project.project.PBTitle }}</option>
+   
+{% endfor %}

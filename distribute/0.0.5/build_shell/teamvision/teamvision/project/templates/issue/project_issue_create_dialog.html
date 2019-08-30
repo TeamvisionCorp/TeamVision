@@ -1,0 +1,23 @@
+<div class="modal fade" id="newissue-popup-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog modal-lg" role="document" style="position:fixed;left:20%;right:25%;bottom:30px;top:5px;">
+		<div class="modal-content modal-dialog-form-middle" style="height:100%;border-radius:0px;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="exampleModalLabel">创建问题</h4>
+			</div>
+			<div class="modal-body" style="overflow-y:scroll;height:80%;">
+			    {{ formhtml }}
+			</div>
+			<div class="modal-footer" id="issue_dialog_footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal" id="issue_close_button">
+			取消
+			</button>
+			<button type="button" class="btn btn-success" id="issue_create_button">
+			创建
+			</button>
+			</div>
+		</div>
+	</div>
+</div>

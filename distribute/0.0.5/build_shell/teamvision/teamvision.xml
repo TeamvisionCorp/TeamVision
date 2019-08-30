@@ -1,0 +1,16 @@
+<uwsgi>
+  <socket>127.0.0.1:8022</socket>
+  <chdir>/web/www/teamvision/</chdir>
+  <env>DJANGO_SETTINGS_MODULE=teamvision.settings</env>
+  <module>django.core.handlers.wsgi:WSGIHandler()</module>
+  <master>true</master>
+  <workers>3</workers>
+  <vhost>true</vhost>
+  <no-stie>true</no-stie>
+  <buffer-size>32768</buffer-size>
+  <daemonize>/web/www/teamvision/logs/uwsgi.log</daemonize>
+  <worker-reload-mercy>10</worker-reload-mercy>
+  <harakiri>60</harakiri>
+  <memory-report/>
+  <max-requests>1000</max-requests>
+</uwsgi>

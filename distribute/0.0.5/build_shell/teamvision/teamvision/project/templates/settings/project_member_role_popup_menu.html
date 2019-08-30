@@ -1,0 +1,13 @@
+ <div name="project-role-list" class="filed-pop-meun">
+					<ul class="list-group" name="member-role-group">
+						<li class="list-group-item">
+							<input class="form-control" placeholder="按照标签名称查找" name="popmenu_memeber_role_search">
+						</li>
+						{% for role in roles %}
+						<li class="list-group-item" labelid="{{ role.role.id }}">
+							<i class="fa  fa-fw fa-lg {{ role.member_role }}"></i><i class="fa fa-square fa-fw fa-2x" style="color:{{ role.role.PRColor }}"></i><span>{{ role.role.PRName }}</span>
+						</li>
+						{% endfor %}
+						
+					</ul>
+</div>

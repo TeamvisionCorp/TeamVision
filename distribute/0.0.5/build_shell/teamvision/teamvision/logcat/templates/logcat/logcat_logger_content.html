@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-default navbar-static-top"
+	style="background: none !important" role="navigation">
+	<div class="navbar-header">
+		<!-- <a class="navbar-brand" href="#">全部设备</a> -->
+	</div>
+	<div>
+		<ul class="nav navbar-nav" id="logger_type_menu">
+			<li class="logger_type_menu_item logger_type_menu_item_active"
+				method="all"><a href="#">埋点日志</a></li>
+			<li class="logger_type_menu_item" method="android"><a href="#">其他日志</a>
+			</li>
+		</ul>
+	</div>
+	<span style="margin-top:25px;margin-right:20px;font-size:10px;color:#777;" class="pull-right">
+	   <input type="checkbox" checked  id="logcat_sbar_default_setting" >
+	   滚动条默认在最下方
+	</span>
+</nav>
+<div>
+  <div class="logger_content_show_box" id="logger_content_show_box">
+    <a  id="logcat_last_day_log" style="display:none;color:#777">查看之前的日志</a>
+	<div id="logcat_old_log">
+	  
+	</div>
+	<div id="logcat_logger_content">
+	  <p style="text-align:center; color:#777;">请选择设备，查看日志！</p>
+	</div>
+</div>
+  
+</div>
+

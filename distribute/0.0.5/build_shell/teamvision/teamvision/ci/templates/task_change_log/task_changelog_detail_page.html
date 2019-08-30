@@ -1,0 +1,33 @@
+<div  id="ci_history_changelog_container" style="border-left:1px solid #f0f0f0;">
+
+	<div style="height:50px;">
+		<!-- <span style="margin-left:15px;">Develop-IOS-NGA2</span> -->
+		<span class="cursor-hand" id="close_changelog_detail_webpart"><i class="fa fa-close fa-fw pull-right"></i></span>
+	</div>
+    <div>
+    	<ul style="list-style: none;">
+    		<li style="line-height:30px;"><span style="padding: 10px 10px 10px 0px;">仓库地址:</span><span>{{ changefile.repo }}</span></li>
+    		<li><span style="padding: 10px 10px 10px 0px;">提交时间:</span><span>{{ changefile.commit_time }}</span></li>
+    		<li><span style="padding: 10px 10px 10px 0px;">提交人员:</span><span>{{ changefile.commitor }}</span></li>
+    		<li><span style="padding: 10px 10px 10px 0px;">版本:</span><span>{{ changefile.version }}</span></li>
+    	</ul>
+    </div>
+    <div name="editor_body" style="margin:50px 0px 10px 20px;">
+			<div style="margin-bottom: 20px;">
+				<span>变更文件列表</span>
+				<div class="parameter-edit-split-line"></div>
+			</div>
+
+			<div id="changelog_detail_container">
+				{% for file in changefile.change_file_list %}
+				     <div style="line-height:30px;word-break:break-all;margin-left:20px;">
+				     	<span><i class="fa {{ file.file_change_type_icon }}  fw"></i></span>
+				     	<span>{{ file.new_path }}</span>
+				     </div>
+				    <!-- </br> -->
+				{% endfor %}
+			</div>
+
+		</div>
+
+</div>

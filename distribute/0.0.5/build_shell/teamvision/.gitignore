@@ -1,0 +1,5 @@
+.idea/
+migrations
+settings.py
+*.pyc
+logs/

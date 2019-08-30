@@ -1,0 +1,74 @@
+<form class="form-horizontal" id="ci_server_create_form">
+	<div class="form-group">
+		<label for="ServerName" class="col-sm-1 control-label">服务器</label>
+		<div class="col-sm-6">
+			<input  type="hidden" class="form-control" id="ServerID" name="ServerID"  value="{{ ci_server.ci_server.id|default_if_none:"0" }}">
+			<input  type="text" class="form-control" id="ServerName" name="ServerName" placeholder="服务器名称" value="{{ ci_server.ci_server.ServerName |default_if_none:"" }}">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="Host" class="col-sm-1 control-label">Host</label>
+		<div class="col-sm-6">
+			<input  type="text" class="form-control" id="Host" name="Host" placeholder="服务器IP或名称" value="{{ ci_server.ci_server.Host|default_if_none:""}}">
+		</div>
+	</div>
+
+	<div class="form-group" id="ssh_key">
+		<label for="Port" class="col-sm-1 control-label">端口</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" id="Port" name="Port" placeholder="服务器连接端口" value="{{ ci_server.ci_server.Port|default_if_none:"22"}}" >		
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="Port" class="col-sm-1 control-label">工作目录</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" id="RemoteDir" name="RemoteDir" placeholder="远程工作目录" value="{{ ci_server.ci_server.RemoteDir|default_if_none:""}}" >		
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="Credential" class="col-sm-1 control-label">凭证</label>
+		<div class="col-sm-6">
+			<select name="Credential" id="Credential">
+				{{ ci_server_credential }}
+			</select>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="Description" class="col-sm-1 control-label">描述</label>
+		<div class="col-sm-6">
+			<textarea  rows="2" class="form-control" id="Description" name="Description" placeholder="证书描述信息" >{{ ci_server.ci_server.Description|default_if_none:""}}</textarea>			
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="optionsRadios" class="col-sm-1 control-label">可见范围</label>
+		<div class="col-sm-10">
+			<div class="radio">
+				<label>
+					<input type="radio" name="Scope" id="optionsRadios1" value="1" {{ ci_server.every_one }} aria-describedby="option_private">
+					<i class="fa fa-lock fa-fw fa-lg"></i>所有人<span id="option_private" class="help-block">所有人都可以看到服务器信息</span></label>
+			</div>
+
+			<div class="radio">
+				<label>
+					<input type="radio" name="Scope" id="optionsRadios2" value="2"  {{ ci_server.only_me }} aria-describedby="option_internal">
+					<i class="fa fa-shield fa-fw fa-lg"></i>仅自己<span id="option_internal" class="help-block">只有自己可以看到服务器信息</span></label>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-offset-1 col-sm-10">
+			{% if ci_server.is_create %}
+			<button type="button" class="btn btn-success" id="ci_add_server">
+				添加服务器
+			</button>
+			{% else %}
+			<span class="btn btn-success" id="ci_save_server"> 保存修改 </span>
+			{% endif %}
+		</div>
+	</div>
+</form>

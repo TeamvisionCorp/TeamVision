@@ -1,0 +1,63 @@
+<form class="form-horizontal" id="project_webhook_form">
+				<div class="form-group">
+					<label for="project_webhook_url" class="col-sm-1 control-label">URL</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="project_webhook_url" name="WHURL" placeholder="http://ci/build/77(77是Build Farm中构建任务的ID)" value="{{ webhook.webhook.WHURL|default_if_none:"" }}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="project_hook_parameters" class="col-sm-1 control-label">参数</label>
+					<div class="col-sm-10">
+						<input  type="text" class="form-control" id="project_hook_parameters" name="WHParameters" placeholder="parameter_group_id=1(被构建任务需要的参数组ID,在Build Farm任务通用参数中可以看到)" value="{{ webhook.webhook.WHParameters|default_if_none:"" }}">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="project_hook_label" class="col-sm-1 control-label">标签</label>
+					<div class="col-sm-10">
+						<input  type="text" class="form-control" id="project_hook_label" name="WHLabel" placeholder="Hook引用标示" value="{{ webhook.webhook.WHLabel|default_if_none:""}}">
+					</div>
+				</div>
+				
+
+				<div class="form-group">
+					<label for="optionsRadios" class="col-sm-1 control-label">用途</label>
+					<div class="col-sm-10">
+						<div class="radio">
+							<label>
+								<input type="radio" name="WHCatagory" id="optionsRadios1" value="1" checked aria-describedby="option_private">
+								<i class="fa fa-lock fa-fw fa-lg"></i> 构建<span id="option_private" class="help-block">项目构建hook!。</span></label>
+						</div>
+
+						<!-- <div class="radio">
+							<label>
+								<input type="radio" name="WHCatagory" id="optionsRadios2" value="2" checked aria-describedby="option_internal">
+								<i class="fa fa-shield fa-fw fa-lg"></i>通知<span id="option_internal" class="help-block">通知代码部署。</span></label>
+						</div> -->
+					</div>
+				</div>
+				
+				<!-- <div class="form-group">
+					<label for="project_isdefault" class="col-sm-1 control-label">默认</label>
+					<div class="col-sm-10">
+						{% if webhook.is_create %}
+						  <div name="WHIsDefault" id="project_isdefault" isdefault="True" ></div>
+						{% else %}
+						  <div name="WHIsDefault" id="project_isdefault" isdefault={{ webhook.webhook.WHIsDefault|default_if_none:"True" }} ></div>
+						{% endif %}
+					</div>
+				</div> -->
+				
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
+						{% if webhook.is_create %}
+						<button type="button" class="btn btn-success" id="project_add_webhook">
+							添加Hook
+						</button>
+						{% else %}
+						  <a  href="/project/{{ webhook.project_id }}/settings/webhook" class="btn btn-success" id="project_save_webhook">
+						         保存Hook
+						  </a>  
+						{% endif %}
+					</div>
+				</div>
+			</form>

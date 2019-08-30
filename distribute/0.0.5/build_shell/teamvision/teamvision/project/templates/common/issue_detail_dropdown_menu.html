@@ -1,0 +1,15 @@
+<span class="dorpdown_option_menu">
+<div>
+	<b class="top"> <i class="top-arrow1"></i> <i class="top-arrow2"></i>
+	</b>
+</div>
+<ul class="dorpdown_option_list" role="field_menu">
+  {% for item in fields %}
+	<li class="option-item" labelid='{{ item.issue_field.Value }}'>
+	   <span name="item-icon" style="display:inline-block;width:30px;padding-left:10px;"><i   class="fa {{ item.issue_field.Label }} {{ item.issue_field.LabelStyle }} fa-fw "></i></span>
+	   <span name="item-text" style="display:inline-block;width:70px;"> {{ item.issue_field.Name }}</span>
+	   <span name="item-status" style="display:inline-block;width:30px;" ><i class="fa  {{ item.is_selected_style }}"></i></span>
+  </li>
+ {% endfor %}
+</ul>
+ </span>

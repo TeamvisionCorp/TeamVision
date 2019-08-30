@@ -1,0 +1,53 @@
+<div class="doraemon_wizard_column_item cursor-hand" id="ci_plugin_{{ plugin.get_controll_id }}" plugin_id="{{ plugin.plugin.id }}">
+	<div name="ci_plugin_{{ plugin.plugin.id }}">
+		<div class="doraemon_wizard_column_item_header">
+			<span style="height:30px;"> <i class="fa fa-square fa-fw fa-lg" style="color:{{ plugin.plugin.PluginLabelColor }};"></i>{{ plugin.plugin.PluginName }} <span class="pull-right cursor-hand"> <span name="ci_plugin_enabled" class='label label-default ' style='background-color:{{ plugin.get_enable_color }} ; opacity:0.5;font-size:8px !important;'>{{ plugin.is_enable }}</span> <i class="fa fa-fw fa-close" name="plugin_close"></i> </span> </span>
+		</div>
+		<div class="doraemon_wizard_column_item_content">
+			<form class="form-horizontal" id="{{ page.form_id }}">
+			 <div class="form-group ">
+				<label for="plugin_using_name" class="col-sm-2 control-label">用途</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control"  name="plugin_using_name" value="{{ plugin.plugin_using_name }}" placeholder="插件用途说明"/>
+				</div>
+			</div>
+				<div class="form-group ">
+					<label for="deploy_server" class="col-sm-2 control-label">服务器:</label>
+					<div class="col-sm-8">
+						<select name="deploy_server">
+							{{ deploy_servers }}
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="source_file" class="col-sm-2 control-label">源文件:</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="source_file" name="source_file" placeholder="/app/web/source 多个文件用逗号分隔" value="{{ plugin.source_file }}" >
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="exclude_file" class="col-sm-2 control-label">剔除文件:</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="exclude_file" placeholder="/app/web/*.jar 多个文件用逗号分隔" value="{{ plugin.exclude_file }}" >
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="dest_dir" class="col-sm-2 control-label">目标目录:</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" name="dest_dir" placeholder="/app/web/source" value="{{ plugin.dest_dir }}" >
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="exec_command" class="col-sm-2 control-label">命令行:</label>
+					<div class="col-sm-8">
+						<textarea class="form-control" id="exec_command" name="exec_command" rows="5">{{ plugin.exec_command }} </textarea>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

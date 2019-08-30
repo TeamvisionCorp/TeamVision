@@ -1,0 +1,15 @@
+
+<div name="member-list" class="filed-pop-meun">
+	<ul class="list-group" style="max-height:210px;max-width:200px;overflow-y:scroll;">
+		<li class="list-group-item">
+			<input class="form-control" placeholder="按照用户名称查找" name="context_search_input" role="{{ menu_role }}">
+		</li>
+		{% for member in members %}
+		<li class="list-group-item" labelid="{{ member.member.id }}">
+			<i class="fa  fa-lg fa-fw {{ member.is_fortesting_tester }} pull-left"></i> <img src="{{ member.member_avatar }}" class="img-circle" style="width:30px;height:30px" /><span email="{{ member.member.email }}"> {{ member.member_name }} </span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+
+

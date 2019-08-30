@@ -1,0 +1,61 @@
+@import "global-variables.less";
+@import "global-base.less";
+
+
+
+/* Sytle for left container  **********************************************************/
+#leftContainer {
+  width: @master-page-leftnav-width;
+  height: 55px;
+  background-color:@master-page-leftnav-background;
+  position: fixed;
+  border-bottom: 1px solid #f0f0f0;
+//  margin-top:4px;
+  z-index:900;
+  padding-left:30px;
+}
+
+#contentContainer {
+  width: 100%;
+  //padding: 0px 0px 0px @master-page-leftnav-width;
+  z-index: 10;
+  position: fixed;
+  top:115px;
+}
+
+.left_menu_container ul {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.left_menu_container li {
+  height: 50px;
+  width: 80px;
+  list-style-type: none;
+  float:left;
+  margin-top:-5px;
+}
+
+.leftmenuitem 
+{
+  height: 50px;
+  width: @master-page-leftnav-width;
+  padding-top: 18px;
+  display: block;
+}
+
+.leftmenu a 
+{
+  .doraemon-font(@body-font-family,@menu-size,@leftnav-font-color);
+  width:80px;
+}
+
+.leftmenuitemhover {
+  background-color: @menu-item-hover-color;
+}
+
+.leftmeunactive {
+  background-color:@left-menu-item-active-color;
+}

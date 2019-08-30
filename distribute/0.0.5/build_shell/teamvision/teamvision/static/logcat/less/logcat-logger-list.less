@@ -1,0 +1,139 @@
+
+@import '/static/global/less/global-variables.less';
+
+/*左侧子导航样式#########################################################################*/
+
+.logcat_logger_container
+{
+
+height:700px;
+width:240px;
+float:left;
+margin-top:55px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+.logcat_logger_container ul
+{
+  width:200px;
+  list-style: none;
+  // // margin-left:-40px;
+  // margin-top:0px;
+  text-align:center;
+  // padding-top:30px;
+  // height:100%;
+}
+// 
+// .logcat_logger_container li
+// {
+  // height:35px;
+  // width:180px;
+  // color:#555;
+  // text-align:left;
+  // /*list-style-type:none;*/
+// }
+// 
+.logcat_logger_item
+{
+  color: #555 !important;
+  font-size:@sub-menu-size;
+  border-bottom:1px solid #ddd;
+  height:35px;
+  padding-top:10px;
+}
+
+.logcat_logger_item span
+{ 
+  color:#777;
+}
+
+.logcat_logger_item_button
+{
+  color: #555 !important;
+  font-size:@sub-menu-size;
+}
+
+
+.logcat_logger_item_hover
+{
+  background-color: @sub-menu-item-hover-color;
+}
+
+
+.logcat_logger_item_active
+{
+  background-color:@sub-menu-item-active-color !important;
+}
+
+.logcat_logger_item-plus
+{
+  width:90% !important;
+  margin-left:5px;
+  margin-top:10px;
+  padding-left:-5px;
+  border: 2px dashed #a1a3a6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius:3px;
+  font-size: 15px !important;
+}
+
+.button-inlist
+{
+  height:25px; 
+  margin-left:10%;
+  margin-right:35%;
+  margin-bottom:10px;
+  padding-top:3px !important;
+  font-size:14px;
+  border-radius:15px;
+  background-color:#32be77!important;
+  opacity:0.8;
+  color:#FFF !important;
+}
+
+
+
+
+.remove_icon-inlist
+{
+  color:#d9534f;
+  opacity:0.8;
+  display:none;
+  padding-top:10px;
+  margin-right:-10px;
+}
+
+.sub-leftnav(@subnav-width:@left-subnav-width)
+{
+    width:@subnav-width;
+    float:left;
+    height: 100%;
+    padding:0px 0px 0px 0px;
+    position: fixed;
+    border-right: 1px solid #f0f0f0;
+}
+
+.sub_leftnav_brother(@padding-left:140px)
+{
+  padding-left:@padding-left;
+  width:100%;
+  float:left;
+}
+
+
+.sub_side_bar
+{
+  .sub-leftnav();
+}
+
+.sub_sidebar_brother
+{
+  .sub_leftnav_brother();
+}
+
+.sub_bar_header
+{
+  padding:20px 10px 20px 30px;
+}

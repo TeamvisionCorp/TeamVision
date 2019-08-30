@@ -1,0 +1,12 @@
+<div name="project-task-tags" class="filed-pop-meun">
+									<ul class="list-group">
+										<li class="list-group-item">
+											<input class="form-control" placeholder="按照标签名称查找" name="context_search_input">
+										</li>
+										{% for tag in tags %}
+										<li class="list-group-item" labelid="{{ tag.tagid }}" >
+											<i class="fa  fa-fw fa-lg"></i><i class="fa fa-square fa-fw fa-2x" style="color:{{ tag.tagcolor }}"></i><span>{{ tag.tagname }}</span>
+										</li>
+										{% endfor %}				
+									</ul>
+								</div> 

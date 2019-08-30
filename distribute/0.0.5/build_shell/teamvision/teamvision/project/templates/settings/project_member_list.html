@@ -1,0 +1,32 @@
+{% for member in members  %}
+					<div class="project_settings_listview_item row">
+						<div class="project_settings_listview_item_content">
+							<span class="col-lg-7 col-md-7 col-sm-7  col-xs-7"> 
+						 	   <span>
+								 <img src="{{ member.member_avatar }}" class="img-circle" style="width:30px;height:30px" />
+							     <span name="userid" userid="{{ member.member.id }}">{{ member.member_name }}</span>
+							     {% if member.is_me %}
+							     <span class="project_settings_member_role">It's you!</span>
+							     {% endif %} 
+							   </span>
+							 </span>
+							<span class="col-lg-4 col-md-4 col-sm-4 col-xm-4 pull-right"> 
+								<span > 
+								    {% project_manager_required member.project_id %}
+									<span class="project_settings_member_role" name="project-member-role" style="cursor:pointer" >
+									  <i class="fa fa-cog fa-fw"></i>
+									       角色
+									</span>
+									{% end_project_manager %}
+									<span class='label label-success visible-lg-inline-block' labelid="{{ member.member_role }}" style='opacity:0.5'>{{ member.role_name }}</span>
+									{% project_manager_required member.project_id }} %}
+									<a name="project_remove_member">
+										<i class="fa fa-trash-o fa-fw fa-2x" style="color:red"></i>
+										</a>
+									{% end_project_manager %}
+								    {{ member.role_menu }} 
+							    </span>
+							</span>
+						</div>
+					</div>
+{% endfor %}

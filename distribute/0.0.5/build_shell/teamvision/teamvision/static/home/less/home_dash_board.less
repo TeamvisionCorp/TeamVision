@@ -1,0 +1,75 @@
+
+@import 'home-variables.less';
+@import 'home-base.less';
+@import '/static/global/less/global-variables.less';
+
+/*设置自动化任务工具条---------------------------------------------------------------------------------*/
+
+.home-dashboard-project
+{
+	/*width:60%;*/
+    float:left;
+    height: 100%;
+    padding:0px 0px 0px 40px;
+}
+
+.home-dashboard-activity
+{
+	margin-left: 0px;
+  float:left;	
+  height: 100%;
+  padding-right:20px;
+  padding-top:20px;
+}
+
+
+.home-dashboard-toolbar
+{
+  .home-toolbar();
+}
+
+.home-dashboard-addnewtoolbutton
+{
+	float: right;
+	background-color: #019775;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+    padding-right:5px;
+    font-weight:bold !important;
+}
+
+.home-dashboard-toolslistbox
+{
+	display:none;
+	position:absolute;
+	z-index: 3;
+}
+
+.home-dashboard-confirmbutton
+{
+	display:none;
+	position:absolute;
+	z-index: 3;
+	width:145px;
+	border-bottom: 1px solid #E1E1E1;
+	
+}
+
+
+.dashboard_docking_windowtitle
+{
+	// background-color:@title-default-background;
+	// color: #FFF;
+	font-size:14px;
+	font-weight: bold;
+	height:30px;
+	opacity:0.7;
+}
+
+#dashboard_activity_window
+{
+  border: 1px solid #E1E1E1;
+  padding-right:5px;
+}
+

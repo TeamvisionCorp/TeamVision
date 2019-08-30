@@ -1,0 +1,19 @@
+{% extends "project/project_index_view.html" %} 
+{% block project_styles %}
+
+<!-- <link rel="stylesheet/less" href="/static/project/less/project_fortesting.less" type="text/css" media="screen"/> -->
+
+{% endblock %} 
+{% block project_content %}
+<div id="project_issue_view" class="project_issue_view" style="padding-left:0px;">
+    <input type="hidden" id="project_issue_id" value="{{ issue_id }}"  />
+	{{ web_app_view }} 
+</div>
+
+{% endblock %} 
+{% block project_scripts %}
+
+<script type="text/javascript" src="/static/project/js/project_issue.js"></script>
+<script type="text/javascript" src="/static/global/js/teamcat_webapp/webapp.js"></script>
+
+{% endblock %}

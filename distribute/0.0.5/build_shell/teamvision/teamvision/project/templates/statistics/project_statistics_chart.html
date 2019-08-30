@@ -1,0 +1,175 @@
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            问题状态统计
+              <div class="pull-right" style="margin-right:40px;">
+                  <select id="issuestatus_chart_version">
+                      {{ version_dropdownlist|safe }}
+                  </select>
+              </div>
+          </div>
+           <div class="panel-body">
+                <div id="status_chart_version" style="margin-right:30px;max-height:400px;">
+                     {{ issue_status_summary }}
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            剩余问题分布
+            <div class="pull-right" style="margin-right:40px;">
+               <select id="unresloved_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container" style="margin-right:30px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            每日新增问题趋势
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="opened_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container2" style="margin-right:20px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            问题总体趋势
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="total_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container9" style="margin-right:20px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+
+
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            各版本问题分布
+          </div>
+           <div class="panel-body">
+                <div id="container4" style="margin-right:30px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+
+<div >
+    <div class="col-lg-12">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            各模块问题分布
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="module_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container5" style="margin-right:30px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
+
+
+<div >
+    <div class="col-lg-4">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            问题严重性分布
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="severity_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container6" style="margin-right:10px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+    <div class="col-lg-4">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            问题类别分布
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="category_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container8" style="margin-right:10px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+    <div class="col-lg-4">
+       <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#f7f9fa;border-color:#f7f9fa;">
+            <i class="fa fa-bar-chart"></i>
+            问题解决结果分布
+             <div class="pull-right" style="margin-right:40px;">
+               <select id="reslovedresult_chart_version">
+                     {{ version_dropdownlist|safe }}   
+               </select>
+            </div>
+          </div>
+           <div class="panel-body">
+                <div id="container7" style="margin-right:30px;max-height:400px;">
+                </div>
+           </div>
+        </div> 
+    </div>
+</div>
