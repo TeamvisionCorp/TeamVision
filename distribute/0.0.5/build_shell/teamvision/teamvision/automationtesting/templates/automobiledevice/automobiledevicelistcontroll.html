@@ -1,0 +1,31 @@
+<div id="automobiledevicelist">
+	<ul id="automobiledevicelisturl">
+		<li id="automobiledevicetitlerow">
+			<!-- <input id="automobiledeviceselectall" type="checkbox" disabled=""/> -->
+			<span class="automobiledeviceidheader">ID</span>
+			<span class="automobiledevicenameheader">名称</span>
+			<span class="automobiledeviceosheader">操作系统</span>
+			<span class="automobiledevicehostheader">Host主机</span>
+			<span class="automobiledevicescreenheader">分辨率</span>
+			<span class="automobiledevicestatusheader">状态</span>
+			<span class="autoagenoperationheader">操作</span>
+		</li>
+		{% for automobiledevice in automobiledevicelist %}
+		  <li class="automobiledevicedatarow">
+		  	<!-- <input name="selectautomobiledevice" type="checkbox" /> -->
+		    <span class="automobiledeviceidcontent">
+		    	{{ automobiledevice.automobiledevice.id }}
+		    </span>
+		    <span class="automobiledevicenamecontent">{{ automobiledevice.get_automobiledevice_name }}</span>
+		    <span class="automobiledeviceoscontent">{{ automobiledevice.get_os }}</span>
+		    <span class="automobiledevicehostcontent">{{ automobiledevice.get_hostmachine }}</span>
+		    <span class="automobiledevicescreencontent">{{ automobiledevice.get_screen }}</span>
+		    <span class="automobiledevicestatuscontent">{{ automobiledevice.get_status }}</span>
+		    <span class="automobiledeviceoperationcontent">  
+		    	<!-- <button name="automobiledevicerowedit" class="button gray operationbutton">编辑</button>  -->
+			</span>
+		  </li>
+       {% endfor %}
+	</ul>
+	
+</div>

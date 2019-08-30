@@ -1,0 +1,40 @@
+
+<div id="home_task_sub_leftnav" class="left_sub_nav">
+    <div style="height:50px;">
+  	<div style="padding:20px 10px 10px 20px;font-size:15px;">我的任务</div>
+  </div>
+
+
+<div class="left_sub_menu_container">
+    <input type="hidden" id="task_subaction_filter" value="{{ page.sub_nav_action }}">
+	<ul class="nav nav-stacked">
+		<li class="{{ page.all_active }}">
+			<a href="/home/task/all" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>所有任务</a>
+		</li>
+		<li class="{{ page.process_active }}">
+			<a href="/home/task/process" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>进行中</a>
+		</li>
+		<li class="{{ page.createbyme_active }}">
+			<a href="/home/task/createbyme" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>我创建的</a>
+		</li>
+		<li class="{{ page.asgin2me_active }}">
+			<a href="/home/task/asginme" class="left_sub_menu_item"><i class="fa fa-tasks fa-fw pull-left"></i>分配给我的</a>
+		</li>
+		<li style="border-bottom: solid #f0f0f0; height:20px; margin-bottom: 20px" class=""></li>
+		
+		<li class="">
+		    <input type="hidden" id="task_owner_filter" value="0">
+		    <a href="#" class="left_sub_menu_item"><i class="fa fa-user fa-fw pull-left"></i>执行人</a> 
+		    <ul class="nav nav-stacked task_member_filter" style="height: 250px;overflow-y: scroll;">
+	        {% for member in page.members %}
+	        <li class="option-item cursor-hand" style="padding-top:10px;padding-bottom:5px;" labelid='{{ member.member.id }}'>
+	        <span name="item-icon" style="display:inline-block;width:40px;"><img src="{{ member.member_avatar }}" class="img-circle" style="width:25px;height:25px" /></span>
+	          <span name="item-text" email="{{ member.member.email }}" style="display:inline-block;width:70px;"> {{ member.member_name }}</span>
+            </li>
+               {% endfor %}
+		    </ul>
+		</li>
+	</ul>
+
+</div>
+</div>

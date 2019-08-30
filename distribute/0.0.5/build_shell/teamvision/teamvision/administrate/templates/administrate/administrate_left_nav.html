@@ -1,0 +1,60 @@
+				<div class="left_menu_container">
+					<ul class="leftmenu">
+						
+						<li id="my_account" class="{{ page.user_active }}">
+							<a class="leftmenuitem" href="{{ page.user_href }}"><i class="fa fa-user fa-fw fa-lg"></i> <span>用户</span></a>
+						</li>
+						
+						<li id="user_group" class="{{ page.user_group_active }}">
+							<a class="leftmenuitem" href="{{ page.user_href }}"><i class="fa fa-group fa-fw fa-lg"></i> <span>用户组</span></a>
+						</li>
+						
+						{% admin_required %}
+						
+						<li class={{ page.permission_active }}>
+							<a class="leftmenuitem" href="{{ page.permission_href }}"><i class="fa fa-hourglass-start fa-fw fa-lg"></i><span>权限</span> </a>
+						</li>
+						
+						
+						<li class={{ page.system_role_active }}>
+							<a class="leftmenuitem" href="{{ page.system_role_href }}"><i class="fa fa-eraser fa-fw fa-lg"></i><span>角色</span> </a>
+						</li>
+						
+		
+						{% end_admin %}
+						
+						<li class={{ page.device_active }}>
+							<a class="leftmenuitem" href="{{ page.device_href }}"><i class="fa fa-mobile-phone fa-fw fa-lg"></i><span>设备</span></a>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						
+						
+						<!-- {% for menuitem in meunitemlist %}
+						     <li id={{ menuitem.get_id }}>
+							      <a class="leftmenuitem"><i class=" {{ menuitem.get_key }} "></i> {{ menuitem.get_name }}</a>
+						    </li>
+						{% endfor %} -->
+						
+					</ul>
+					
+					</div>

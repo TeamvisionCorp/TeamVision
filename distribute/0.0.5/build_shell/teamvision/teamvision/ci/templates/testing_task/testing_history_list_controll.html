@@ -1,0 +1,31 @@
+<div class="container-fluid" style="overflow-y: scroll; height: 150px;">
+   {% for history in ci_task_histories %}
+	<div class="row ci_testing_history_row cursor-hand">
+        <input type="hidden" name="task_history_id" value="{{ history.ci_task_history.id }}" />
+		<span style="width: 20px;" class="col-sm-1 ci_testing_history_row_item">
+		 <i style="font-size: 2px;" class="fa fa-circle  {{ history.is_build_success_color }}"></i>
+		</span> 
+		<span class="col-sm-1 ci_testing_history_row_item">{{ history.ci_task_history.BuildVersion }}</span> 
+		<span class="col-sm-3 ci_testing_history_row_item">{{ history.ci_task_history.StartTime|default_if_none:"--" }}</span> 
+			<span class="col-sm-2 ci_testing_history_row_item">{{ history.duration }}</span>
+		<span class="col-sm-1 ci_testing_history_row_item">
+		  <img src="{{ history.started_by_avatar }}" style="width:20px;height:20px;" class="img-circle" title="{{ history.started_by_name }}">
+		</span>
+		 <span class="col-sm-4 ci_testing_history_row_item">
+		      {% if history.ci_task_history.BuildStatus == 1 %}
+		          <!-- <a href="" style="color:#555;" title="下载日志"><i class="fa fa-fw fa-download"></i>日志</a> -->
+		      {% else %}
+		        {% if history.ci_task_history.BuildStatus != 0 %} 
+				    	<span><a href="/ci/history/buildlog/{{ history.ci_task_history.BuildLogID }}" target="_blank" style="color:#555" title="查看日志">
+				    	<i class="fa fa-fw fa-book"></i>日志
+				    	</a></span> 
+				    </span> 
+				    {% else %}
+				     <span name="ci_bulid_log" class="cursor-hand" style="padding-top:10px;color:#555" title="查看日志"><i class="fa fa-fw fa-book"></i>日志</span>
+				    {% endif %}
+		       
+		      {% endif  %}
+		 </span>
+	</div>
+	{% endfor %}
+</div>

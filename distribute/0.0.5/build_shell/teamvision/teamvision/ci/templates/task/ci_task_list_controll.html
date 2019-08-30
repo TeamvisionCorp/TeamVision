@@ -1,0 +1,49 @@
+{% for task in ci_tasks %}
+<div  class="ci_task_listview_item container-fluid">
+    <div style="" class="ci_task_status {{ task.last_build_success }}">
+			
+		</div>
+	<div class="row">
+		<div class="col-lg-9 col-md-8 col-sm-8" style="margin-left: 0px;">
+			<div class="ci_task_listview_item_title row">
+				<span class="col-sm-12">
+					 <!-- <i class="fa fa-fw fa-bell {{ task.last_build_success }}" name="ci-task-check"></i> -->
+					 <span  name="ci-task_title" ><a name="ci_task_name"  style="color:black;font-size:14px !important;" href="{{ task.task_history_url }}">{{ task.ci_task.TaskName }}</a></span> </span>
+			</div>
+			<div class="ci_task_listview_item_content row">
+				<div class="col-sm-12">
+					<span class="" name="ci_task_deadline_trigger" style="cursor:pointer"> <i class="fa fa-clock-o"></i> <span name="ci_task_last_run_time">{{ task.last_run_time }}</span> </span>
+					<span style="display:none" name="ci_task_id">#{{ task.ci_task.id }}</span>
+					<span class="postion-absolute"   name="task_tags"> 
+						<span name="add_tag" style="cursor:pointer"> <i class="fa fa-tags fa-fw"></i> 标签 <i class="fa fa-plus-circle fa-fw"></i> </span> 
+						{% for tag in task.task_tags %} 
+						<span class='label label-default visible-lg-inline-block ' labelid="{{ tag.id }}" style='background-color:{{ tag.TagColor }} ; opacity:0.5;font-size:8px !important;'>{{ tag.TagName }} </span> 
+						{% endfor %} 
+						<span name="loader"><i class="fa fa-spinner fa-spin"></i></span> 
+						{{ task.tag_menu }}
+					 </span>
+					
+				</div>
+
+			</div>
+
+		</div>
+		<div class="col-lg-2 col-md-3 col-sm-3 cursor-hand" style="line-height:1.5em;">
+		   <!--  <span style="margin-top:30px; display:inline-block;" class="cursor-hand">
+			<a href="/project/{{ task.ci_task.Project }}/dashboard/"><img src="{{ task.task_project_avatar }}" style="width:30px;height:30px;" class="img-circle" title="{{ task.task_project_title }}"></a> 
+			</span> -->
+            {% project_user_not_allowed task.ci_task.Project %}
+			<div class="row-operation postion-absolute">
+				{% if task.has_parameters %}
+				<span name="build_with_parameter" style="width:60px!important;margin-top:2px;" class="cursor-hand small_gray_radius_button">构建<i class="fa fa-caret-down"></i></span>
+				{{ task.parameter_group_menu }}
+				{% else %}
+				  <span name="build_task" style="width:60px!important; margin-top:2px;" class="cursor-hand small_gray_radius_button ">构建</span>
+				{% endif %}
+			</div>
+			{% end_project_user_not_allowed %}
+		</div>
+
+	</div>
+</div>
+{% endfor %}

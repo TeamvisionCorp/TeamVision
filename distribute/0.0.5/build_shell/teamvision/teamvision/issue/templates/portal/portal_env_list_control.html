@@ -1,0 +1,31 @@
+{% for env in envs %}
+                           <div class="portal_env_listitem" name="portal-env-item">
+							 <a href="/env/1/dashboard" class="env_archive_folder">
+		          <div class="env_archive_folder_header">
+		             <span class="pull-right" style="color:#f0f0f0;padding:5px;" ><i class="fa fa-bars fa-fw"></i></span>
+		          </div>
+		          <div class="env_archive_folder_body">
+
+		                <div class="nic-square-default pull-right" style="margin-right:auto;margin-left:auto;width:80%;margin-top:10px;font-size:6px;">
+		                  <span id="portal_toolbar_add_project" class="nic-content-default cursor-hand" style="width:100%;">
+		                    环境
+		                  </span>
+		                </div>
+		
+		          </div>
+		          <div class="env_archive_folder_footer">
+		          		             <center> 
+		                  <div class="env_archive_version_file">
+		                      <div  href="#"  style="color: inherit" title="{{ item.file.FileName }}">AppRelase 37</div>
+		                  </div>
+		                  <div style="font-size:12px;">
+		                      {{ item.file_size }}
+		                  </div>
+		                  </center>
+		              
+		          </div>
+          </a>
+         
+						</div>
+                            
+{% endfor%}

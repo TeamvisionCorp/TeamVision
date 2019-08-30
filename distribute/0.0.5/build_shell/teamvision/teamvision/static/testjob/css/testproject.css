@@ -1,0 +1,433 @@
+.testprojectfielderror {
+	color: red;
+}
+
+/* test testproject opertaion container style ----------------------------------------------------*/
+#operationcontainer {
+	height: 5%;
+	/*border-bottom: 1px solid #E1E1E1;*/
+}
+
+/* testproject list content container style-------------------------------------------------------*/
+#listcontainer 
+{
+}
+
+#testprojectlist
+{
+}
+
+/* test testproject page updown controll container style*/
+
+#testprojectpageupdowncontainer {
+	height: 80px;
+}
+
+#testprojectpageupdowncontainer div {
+	margin-left:40%;
+}
+
+/* style for testproject list ul*/
+#testprojectlisturl {
+	list-style: none;
+	margin-left:0px;
+}
+
+.testprojectdatarow:nth-of-type(odd)
+{
+	background:#ebf2f9;
+}
+
+#testprojecttitlerow {
+	margin-left: 0px;
+	border-bottom: 1px solid #E1E1E1;
+	height: 50px;
+}
+
+.testprojectdatarow {
+	margin-left: 0px;
+	border-bottom: 1px solid #E1E1E1;
+	border-left: 1px solid #E1E1E1;
+	border-right: 1px solid #E1E1E1;
+	height: 40px;
+	padding-bottom: 0.1%;
+}
+
+#testprojecttitlerow span {
+	display: inline-block;
+	padding: 0.05% 0.1% 0.05% 0.1%;
+	margin-left: 2px;
+	text-align:left;
+	color: #48A781;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.testprojectdatarow span {
+	display: inline-block;
+	padding: 0.05% 0.1% 0.05% 0.1%;
+	margin-left: 2px;
+	text-align: left;
+	font-size: 70%;
+}
+
+.newchildrow {
+	margin-left: -40px;
+	border-bottom: 1px solid #E1E1E1;
+	height: 7%;
+}
+
+.newchildrow span {
+	display: inline-block;
+	padding: 2px 10px 2px 10px;
+	margin-left: 2px;
+	text-align: center;
+	font-size: 80%;
+}
+
+.newchildrow span input {
+	display: inline-block;
+	padding: 2px 10px 2px 10px;
+	margin-left: 2px;
+	text-align: center;
+	font-size: 80%;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.testprojectidheader {
+	width: 5%;
+	padding: 2px 0px 2px 0px;
+}
+
+
+
+.testprojectnameheader {
+	width: 25%;
+}
+
+.testprojectkeyheader {
+	width: 10%;
+}
+
+.testprojectleadheader {
+	width: 15%;
+}
+
+
+.testprojectlastversionheader {
+	width: 15%;
+}
+
+
+.testprojectoperationheader
+{
+	width:10%;
+}
+
+.testprojectidcontent {
+	width: 5%;
+	padding: 0px 0px 2px 0px;
+}
+
+
+.testprojectnamecontent {
+	width: 25%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.testprojectkeycontent {
+	width: 10%;
+}
+
+.testprojectleadcontent {
+	width: 15%;
+		overflow:hidden;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.testprojectlastversioncontent {
+	width: 15%;
+}
+
+
+.testprojectoperationcontent {
+	/*position: fixed;*/
+	width: 10%;
+}
+
+/* testproject operation style ---------------------------------------------*/
+.objectoperation {
+	list-style: none;
+}
+
+.operationitem {
+	width: 100px;
+	padding-left: 20px;
+}
+
+.operationbutton {
+	cursor: pointer;
+}
+
+.headerbutton {
+	cursor: pointer;
+	width: 20px;
+}
+
+button[name=rowedit] {
+	display: none;
+}
+button[name=detail] {
+	display: none;
+}
+
+button[name=newchildjob] {
+	display: none;
+	width: 60px;
+}
+
+#dialogcontainer {
+	display: none;
+}
+
+#dialog-newtestproject {
+	display: none;
+}
+
+.modelforminputbox {
+	width: 150px;
+	height: 25px;
+}
+
+.modelformselect {
+	width: 150px;
+	height: 25px;
+}
+
+.modelformmulipleselect {
+	width: 150px;
+	height: 100px;
+	scrollbar-3dlight-color: gray;
+}
+
+.hiddenelement {
+	display: none;
+}
+
+.button {
+	width: 50px;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+	border-radius: 5px;
+	/*margin:0 20px 20px 0;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.button.gray {
+	color: #8c96a0;
+	text-shadow: 1px 1px 1px #fff;
+	border: 1px solid #dce1e6;
+	box-shadow: 0 1px 2px #fff inset, 0 -1px 0 #a8abae inset;
+	background: -webkit-linear-gradient(top,#f2f3f7,#e4e8ec);
+	background: -moz-linear-gradient(top,#f2f3f7,#e4e8ec);
+	background: linear-gradient(top,#f2f3f7,#e4e8ec);
+}
+.searchcontrol {
+	margin-left: 45%;
+	color: #A8A8A8;
+}
+
+.mouseroverdatarow {
+	background-color: #74787c;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.6;
+}
+
+/* JOB filter*/
+
+ol[name=filter] .ui-selecting {
+	background: #7d5886;
+}
+ol[name=filter] .ui-selected {
+	background: gray;
+	color: white;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.6;
+}
+ol[name=filter] {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+ol[name=filter] li {
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 0.8em;
+	height: 15px;
+}
+
+
+/* JOB properties*/
+
+#jobpropertiessection
+{
+	width:auto;
+}
+
+#jobproperties
+{
+	margin-left:-20px;
+	width: 120%;
+}
+
+
+ol[name=jobproperties] .ui-selecting 
+{
+	background: #7d5886;
+}
+
+ol[name=jobproperties] .ui-selected
+{
+	background: gray;
+	color: white;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.6;
+}
+
+ol[name=jobproperties]
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+ol[name=jobproperties] li 
+{
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 0.8em;
+	height: 15px;
+}
+
+
+img[name=testprojectrowmore]
+{
+	padding:2px 0px 0px 10px;
+}
+
+ul[name=testprojectrowoperationitems]
+{
+	display:none;
+}
+
+.hiddenelement
+{  
+	display:none; 
+}
+
+/*testproject 工具条 样式*/
+
+#testprojectsearchbox
+{
+	margin-left:100px;
+}
+/*创建任务页面*/
+
+.text-input
+        {
+            height: 21px;
+            width: 100%;
+        }
+        .testproject_create_table
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .testproject_create_table td, 
+        .testproject_create_table tr
+        {
+            margin: 10px;
+            padding: 10px;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            font-family: Verdana;
+            font-size: 12px;
+        }
+        h3 
+        {
+            display: inline-block;
+            margin: 0px 0px 0px 30px;
+        }
+
+#testproject_create
+{
+	border: none;
+}
+
+#testproject_create_form
+{
+	padding-left:60px;
+	padding-top:30px;
+}
+.testproject_page_title
+{
+	background-color:#e8e8e8;
+}
+
+.testproject_advance
+{
+	display:none;
+}
+
+.toolBar
+{
+	width: 100%;
+	visibility: hidden;
+	margin-left: 0px;
+}
+
+#testproject_add
+{
+   width:100px;
+}
+
+#testproject_view
+{
+   width:100px;
+}
+
+
+#testprojecttoolbar
+{
+	height:35px;
+	padding-top:2px;
+}
+
+#testprojectsearchbutton
+{
+ float:left;   
+  
+}
+
+.custommenu
+{
+	list-style:none;
+	padding-top:2px;
+}

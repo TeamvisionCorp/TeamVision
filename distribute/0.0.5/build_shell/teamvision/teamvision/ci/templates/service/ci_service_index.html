@@ -1,0 +1,21 @@
+{% extends "ci/ci_index_view.html" %}
+
+{% block ci_styles %}
+
+{% endblock %}
+
+{% block ci_content %}
+	{{ sub_nav_bar }}
+<div id="ci_service_view" class="ci_service_view">
+	{{ ci_service_webpart }}
+	{{ ci_service_config }}
+</div>
+{% endblock %}
+
+{% block ci_scripts %}
+
+<script  type="text/javascript" src="/static/ci/js/ci_service.js"></script>
+
+
+
+{% endblock %}

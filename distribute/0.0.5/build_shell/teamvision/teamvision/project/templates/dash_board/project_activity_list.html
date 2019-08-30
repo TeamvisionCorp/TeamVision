@@ -1,0 +1,24 @@
+{% for action in actions %}
+<div class="row doraemon-activity-item">
+	<!-- <div class="doraemon-activity-cirle">
+		<i class="fa fa-circle fa-sm"></i>
+	</div> -->
+	<span class="doraemon-activity-timeline">
+		<i class="fa fa-circle fa-sm"></i>
+		{{ action.action_time }}
+	</span>
+	<span class="doraemon-activity-avatar">
+		<img src="{{ action.user_avatar }}" style="width:25px;height:25px;" class="img-circle" title="{{ action.user_name }}">
+		{% if action.is_fullpart %}
+		<span class="text-primary">{{ action.user_name }}</span>
+		{% endif %}
+	</span>
+	<span class="doraemon-activity-content">
+		<span class="doraemon-activity-action">
+			<span class="text-primary">{{ action.action_log.ChangeMessage }}</span>
+		</span>
+		<span class="text-info">{{ action.action_title }}</span>
+		<span class="text-primary">at {{ action.action_project }}</span>
+	</span>
+</div>
+{% endfor %}

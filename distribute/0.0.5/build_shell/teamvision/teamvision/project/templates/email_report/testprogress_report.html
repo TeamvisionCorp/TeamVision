@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+        background-color: #f5f7f9; color: #6a6c6f;
+        }
+
+        tr {
+            #border: 1px solid lightgray;
+        }
+
+        td {
+            border: 1px solid lightgray;
+            height: 30px;
+        }
+
+        .table {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+
+        .tr {
+            display: flex;
+        }
+
+        .td {
+            border-right: 1px solid lightgrey;
+            padding: 5px 5px 0px 5px;
+            text-align: left;
+        }
+
+        .row {
+            padding-top: 5px;
+            padding-left: 10px;
+            text-align: left;
+            height: 30px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .comment {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /*padding: 2px;*/
+            /*padding-left: 5px;*/
+            /*padding-right: 5px;*/
+        }
+
+        .report-title {
+            text-align: center;
+            height: 38px;
+            background-color: #202d40;
+            color: #fff;
+            padding-top: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+
+<table class="table" style="width: 787px; margin-bottom: 20px;">
+    <tr>
+        <td class="report-title" style="padding: 0px;">{{ report.Topic }}</td>
+    </tr>
+</table>
+
+<table class="comment" style="margin-left: 100px;width: 760px;">
+    <tr>
+        <td style="border: none;">{{ report.Comments|safe }}</td>
+    </tr>
+</table>
+
+<table class="table" style="width: 760px; margin-bottom: 50px;">
+    <tr class="tr">
+        <td class="td title"
+            style="width: 760px;">{{ report.ProjectInfo.Project }}-{{ report.ProjectInfo.Version }}测试进度
+        </td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">项目名称:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Project }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">版本:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Version }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">测试人员:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Tester }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">开发人员:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.Dev }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">PM:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.PM }}</td>
+    </tr>
+    <tr class="tr">
+
+        <td class="td" style="width: 160px;">测试开始日期:</td>
+        <td class="td" style="width: 600px;">{{ report.ProjectInfo.StartDate }}</td>
+    </tr>
+</table>
+<table class="table" style="width: 760px; margin-bottom: 20px;">
+    <tr class="tr">
+        <td class="td title" style="width:760px;">
+            功能点测试进度
+        </td>
+    </tr>
+    <tr class="tr">
+        <td class="td" style="width: 161px;">
+            完成度
+        </td>
+        <td  style="width:600px;color: green;">
+            {{ report.FeatureProgress.Progress }}
+        </td>
+    </tr>
+    <tr class="tr">
+        <td class="td" style="width: 160px; height:{{ feature_container_height }}px">
+            功能点
+        </td>
+        <td class="td" style="width:600px;padding-top: 0px;height:{{ feature_container_height }}px">
+            <table>
+                {% for feature in report.FeatureProgress.Feature %}
+                    <tr class="row" style="width: 600px;padding-top: 0px;">
+                        <td class="td"
+                            style="width:500px;border-bottom: 1px solid lightgray;"> {{ feature.Content }}</td>
+                        {% if feature.Passed1 %}
+                            <td class=""
+                                style="width:100px;border-bottom: 1px solid lightgray;padding-top: 0px;color: green;">完成
+                            </td>
+                        {% else %}
+                            <td class=""
+                                style="width:100px;border-bottom: 1px solid lightgray;padding-top: 0px; padding-left:5px;color: red;">
+                                未完成
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </td>
+    </tr>
+    <tr class="tr">
+        <td class="td" style="width: 161px;">
+            Bug情况
+        </td>
+        <td  style="width:600px;">
+            {{ report.FeatureProgress.BugSummary }}
+        </td>
+    </tr>
+</table>
+
+<table class="table" style="margin-left: 100px;width: 760px;">
+    {% for attachment in report.BugTrendAttachments %}
+        <tr style="padding-bottom: 10px;">
+            <td>
+                <img src="{{ attachment.url }}" style="width: 770px;height:400px"/>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

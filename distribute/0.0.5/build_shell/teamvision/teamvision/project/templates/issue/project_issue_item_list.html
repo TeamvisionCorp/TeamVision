@@ -1,0 +1,27 @@
+<div class="issue-item col-sm-10 col-xs-12" style="background-color:;" >
+    <div class="issue-item-panel">
+		      <div class="issue-item-panel-head">
+		                <div class="issue-item-panel-head-tools">
+		                  
+		                </div>
+		                
+		                <div>
+		                     <span style="margin-top:-6px;" class="col-lg-3 col-sm-6 col-xs-9">
+                              <input type="text" value="{{ search_word }}" id="issue_search_box" style="height:30px;" class="form-control" placeholder="搜索问题标题...">
+                             </span>
+                             <span style="margin-right:20px;">{{ issue_count }}个相关问题</span>
+		                     <span id="reload_issue_list" title="刷新列表" data-toggle="tooltip" data-placement="bottom"><i class="cursor-hand fa fa-refresh"></i></span>
+		                </div>
+		               
+                        
+		      </div>
+		      <div class="issue-item-panel-body">
+		        <div id="issue_item_list"> 
+		          {{ issue_list_controll }}
+                </div>
+		      </div>
+		      <div class="issue-item-panel-footer">
+		      </div>
+</div>
+
+</div>

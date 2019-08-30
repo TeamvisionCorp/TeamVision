@@ -1,0 +1,234 @@
+<html>
+      <title></title>
+      <header>
+      	 <style type="text/css">
+      	      body
+      	      {
+      	      	width: 800px;
+      	      	border:1px solid #d3d7d4;
+      	      	margin-left:1%;
+      	      	font-family: '微软雅黑', 'Helvetica Neue', sans-serif, SimHei;
+      	      	background-color: #f6f5f1;
+      	      	padding:20 20px 5px 20px;
+      	      	color: #555555;
+      	      }
+      	      .projectinfo
+      	      {
+/*	            border:1px solid #B0D7B0;*/
+      	      }
+              .summarytitle
+              {
+              	background-color:#d3d7d4; 
+              	width:inherit;
+              	height: 50px;
+              }
+              .summarytitle span
+              {
+              	 font-size:120%;
+              	 height:50px;
+                 color: white;
+                 font-weight: bold;
+                 margin-left-left:30px;
+              }
+
+              .summarybody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 10px;
+              	padding-left:20px;
+              }
+
+              .summarybody span
+              {
+              	  font-size:120%;
+                  color: #1d953f;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+               
+              .projectinfoheader
+              {
+              	background-color:#d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .projectinfoheader span
+              {
+              	 font-size:120%;
+                 color: white;
+                 font-weight: bold;
+              }
+
+              .projectinfobody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .projectinfoitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+              .buildinfoheader
+              {
+              	background-color:#d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .buildinfoheader span
+              {
+              	 font-size:120%;
+                 color: white;
+                 font-weight: bold;
+              }
+
+              .buildinfobody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .buildinfoitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+
+               .suggestionheader
+              {
+              	background-color:#d3d7d4; 
+              	width:inherit;
+              	height: 30px;
+              }
+              .suggestionheader span
+              {
+              	 font-size:120%;
+                 color: white;
+                 font-weight: bold;
+              }
+
+              .suggestionbody
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              }
+
+              .suggestionbody div div
+              {
+              	margin-top: 10px;
+              	margin-bottom: 20px;
+              	margin-left: 50px;
+              }
+
+              .suggestionitmename
+              {
+              	  font-size:100%;
+                  color: #426ab3;
+                  font-weight: bold;
+                  margin-left: 30px;
+              }
+
+              .item
+              {
+              	    margin-top: 10px;
+              	    margin-bottom: 20px;
+              }
+
+
+
+         </style>
+      </header>
+      <body >
+      	<div class="summary">
+               <div class="summarytitle">
+      		     <span>打包信息：</span>
+      	     </div>
+      	     <div class="summarybody">
+      	     	 <div>
+      	     	 	<span>${SUBMITIONINFO}</span>
+      	     	 </div>
+      	     	 <div>
+      	     	 	<span>打包时间：</span>
+      	     	 	<span>${SUBMITTIME}</span>
+      	     	 </div>
+      	     	 <div>
+      	     	 	<span>提测ID：</span>
+      	     	 	<span>${SUBMITID}</span>
+      	     	 </div>
+      	     </div>
+      	</div>
+
+      	<div class="projectinfo">
+      		<div class="projectinfoheader">
+      		     <span >项目信息:</span>
+      	   </div>
+            <div class="projectinfobody">
+            	
+            	 <div class="item">
+                    <span class="projectinfoitmename">运行平台:</span>
+                    <span>${PLATFORM}</span>
+      	        </div>
+            	
+            	 <div class="item">
+                    <span class="projectinfoitmename">项目名称:</span>
+                    <span>${PROJECTNAME}</span>
+      	        </div>
+      	        
+      	        <div class="item">
+                    <span class="projectinfoitmename">版本:</span>
+                    <span>${VERSION}</span>
+      	        </div>
+      	        
+      	        <div class="item">
+                    <span class="projectinfoitmename">提测人员:</span>
+                    <span>${SUBMITIOR}</span>
+      	        </div>
+            </div>
+      	</div>
+
+
+      	<div class="buildinfo">
+      		<div class="buildinfoheader">
+      		     <span >打包信息:</span>
+      	   </div>
+            <div class="buildinfobody">
+            	  <div class="item">
+                    <span class="projectinfoitmename">打包状态:</span>
+                    <span>${BUILDSTATUS}</span>
+      	        </div>
+            	 <div class="item">
+                    <span class="buildinfoitmename">测试包地址:</span>
+                    <span>${PACKAGEFORTESTING}</span>
+      	        </div>
+      	        <div class="item">
+                    <span class="projectinfoitmename">打包任务URL:</span>
+                    <span>${BUILDURL}</span>
+      	        </div>
+      	        </div>
+      	        <div class="item">
+                    <span class="projectinfoitmename">打包日志:</span>
+                    <span>${BUILDLOGURL}</span>
+      	        </div>
+      	         <div class="item">
+                    <span class="projectinfoitmename">代码版本:</span>
+                    <span>${SVNVERSION}</span>
+      	        </div>
+      	        <div class="item">
+                    <span class="projectinfoitmename">代码地址:</span>
+                    <span>${SVNADDRESS}</span>
+      	        </div>
+      	        <div class="item">
+                    <span class="projectinfoitmename">代码变更信息:</span>
+                    <span>${CODECHANGELOG}</span>
+      	        </div>
+            </div>
+      	</div>
+      </body>
+</html>

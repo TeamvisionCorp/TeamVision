@@ -1,0 +1,20 @@
+{% extends "project/project_index_view.html" %}
+
+{% block project_styles %}
+
+<!-- <link rel="stylesheet/less" href="/static/project/less/project_fortesting.less" type="text/css" media="screen"/> -->
+
+{% endblock %}
+
+{% block project_content %}
+	<!-- {{ sub_leftnav }} -->
+<div id="project_version_view" class="">
+	{{ version_list }}
+</div>
+{% endblock %}
+
+{% block project_scripts %}
+
+<script  type="text/javascript" src="/static/project/js/project_version.js"></script>
+
+{% endblock %}

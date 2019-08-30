@@ -1,0 +1,95 @@
+<div class="modal fade" id="parameter_group_confirm">
+	<div class="modal-dialog">
+		<div class="modal-content modal-dialog-alert-middle">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">
+				保存确认</h4>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-danger" role="alert">
+					<i class="fa fa-exclamation-triangle fa-fw"></i>属性变化：
+					<table style="margin-bottom: 20px;">
+					   <th style="margin-bottom: 10px;">
+					      <tr>
+					       <td class="parameter_change_confirm_column">字段</td>
+					       <td class="parameter_change_confirm_column">原值</td>
+					       <td class="parameter_change_confirm_column">新值</td>
+					   </tr>
+					   </th>
+					   {% for property in  task_parameter_diff.parameter_group_property_diff %}
+					   <tr style="margin-bottom: 10px;">
+					       <td class="parameter_change_confirm_column">{{ property.field_name }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_old_value }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_new_value }}</td>
+					   </tr>
+					   {% endfor %}
+					</table>
+					<i class="fa fa-exclamation-triangle fa-fw"></i>参数变化：
+					<table style="margin-bottom: 20px;">
+					   <th style="margin-bottom: 10px;">
+					   <tr>
+					       <td class="parameter_change_confirm_column">字段</td>
+					       <td class="parameter_change_confirm_column">原值</td>
+					       <td class="parameter_change_confirm_column">新值</td>
+					       </tr>
+					   </th>
+					   {% for property in  task_parameter_diff.parameter_diff %}
+					   <tr style="margin-bottom: 10px;">
+					       <td class="parameter_change_confirm_column">{{ property.field_name }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_old_value }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_new_value }}</td>
+					   </tr>
+					   {% endfor %}
+					</table>
+					
+					<i class="fa fa-exclamation-triangle fa-fw"></i>新增参数：
+					<table style="margin-bottom: 20px;">
+					   <th style="margin-bottom: 10px;">
+					      <tr>
+					       <td class="parameter_change_confirm_column">字段</td>
+					       <td class="parameter_change_confirm_column">原值</td>
+					       <td class="parameter_change_confirm_column">新值</td>
+					   </tr>
+					   </th>
+					   {% for property in  task_parameter_diff.parameter_new %}
+					   <tr style="margin-bottom: 10px;">
+					       <td class="parameter_change_confirm_column">{{ property.field_name }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_old_value }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_new_value }}</td>
+					   </tr>
+					   {% endfor %}
+					</table>
+					
+					<i class="fa fa-exclamation-triangle fa-fw"></i>删除的参数：
+					<table>
+					   <th style="margin-bottom: 10px;">
+					      <tr>
+					       <td class="parameter_change_confirm_column">字段</td>
+					       <td class="parameter_change_confirm_column">原值</td>
+					       <td class="parameter_change_confirm_column">新值</td>
+					   </tr>
+					   </th>
+					   {% for property in  task_parameter_diff.parameter_delete %}
+					   <tr style="margin-bottom: 10px;">
+					       <td class="parameter_change_confirm_column">{{ property.field_name }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_old_value }}</td>
+					       <td class="parameter_change_confirm_column">{{ property.field_new_value }}</td>
+					   </tr>
+					   {% endfor %}
+					</table>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					取消
+				</button>
+				<button type="button" class="btn btn-danger" id="parameter_group_confirm_button">
+					确认
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

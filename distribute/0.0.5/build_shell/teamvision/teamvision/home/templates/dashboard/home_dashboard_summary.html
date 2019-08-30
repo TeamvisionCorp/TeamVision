@@ -1,0 +1,43 @@
+<div id="dashboard_project_docking">
+	<div>
+		<div id="window1">
+			<div class="dashboard_docking_windowtitle">
+				<p style="padding:5px 5px 5px 15px">最新项目</p>
+			</div>
+			<!-- <a href="/home/project/all" class="pull-right" style="margin-top:-28px;margin-right:10px;color:#767676;">查看所有</a> -->	
+			<div id="home_dashboard_project_listview_container">
+				<div id="home_dashboard_project_listview" class="container-fluid">
+					<div class="row">
+					    {{ dashboard_project_list }}
+					    {% if user.is_superuser %}
+					    {% if not dashboard_project_list %}
+					      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 home_project_listitem home-project-list-plus" name="home-project-item" id="home_add_project">
+							<p class="text-center"><i class="fa fa-plus"></i></p>
+						</div>
+					    {% endif %}
+					    {% endif %}
+					</div>
+
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div>
+		<div id="window2">
+			<div class="dashboard_docking_windowtitle">
+				<p style="padding:5px 5px 5px 15px;">任务</p>
+			</div>
+			<div style="overflow: hidden;">
+		      <div >
+				{{ dashboard_task_list }}			
+			   
+			</div>
+		</div>
+	</div>
+	</div>
+
+</div>

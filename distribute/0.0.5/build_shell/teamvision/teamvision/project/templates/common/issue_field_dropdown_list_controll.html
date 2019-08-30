@@ -1,0 +1,5 @@
+
+{% for field in fields %}    
+      <option {{ field.is_selected }} value="{{ field.issue_field.Value }}">{{ field.issue_field.Name }}</option>
+{% endfor %}
+

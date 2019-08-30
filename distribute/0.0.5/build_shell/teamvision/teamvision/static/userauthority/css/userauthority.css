@@ -1,0 +1,79 @@
+
+.dialog-usertitle
+{
+  background:#74787c;
+  height:25px;
+  padding-top:10px;
+  border-radius: 8px;
+  
+}
+
+
+.error
+{
+	padding-top:0px;
+	color:red;
+	/*border: 1px solid red;
+	background-color:#F4F379;*/
+	
+}
+
+.dialog-usertitle span
+{
+	font-size: 15px;
+	font-weight:bold;
+	color: white;
+}
+
+.dialog-user
+{
+	top:30%;
+	left:40%;
+	width: 350px;;
+	height: 220px;
+	position:fixed;
+	z-index: 1000;
+	border: 2px solid #B0D7B0;
+	background-color:white;
+	border: 1px solid #696;
+	
+	text-align: center; 
+	width: 300px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    background: white;
+    behavior: url(/PIE.htc);
+}
+
+.userform{
+	padding-top:10px;
+}
+
+.userform div{
+	margin-top: 10px;
+}
+
+#userformsubmit
+{
+	margin-top:15px;
+	margin-left: 40px;
+}
+
+.watermark
+{
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color:#74787C;
+	filter:alpha(opacity=35); 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5; 
+    opacity: 0.35;
+    z-index: 100;
+}

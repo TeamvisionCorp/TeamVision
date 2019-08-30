@@ -1,0 +1,5 @@
+{% for agent in agent_list %}
+   
+      <option {{ agent.is_selected }} value="{{ agent.ci_agent.id }}">{{ agent.ci_agent.Name }}</option>
+   
+{% endfor %}

@@ -1,0 +1,49 @@
+<div class="container-fluid">
+	<div class="project-setting-panel-nonbackground">
+		<div class="project-setting-panel-head-nonbackground">
+			<h2 class="panel-title">Web Hook</h2>
+		</div>
+		<div class="project-setting-panel-body-nonbackground">
+		     {{ webhook_form }}
+		</div>
+	</div>
+    
+    {% if is_create %}
+	<div class="project-setting-panel-nonbackground">
+		<div class="project-setting-panel-body-nonbackground">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading">
+					WebHooks <span class="badge">{{ webhooks|length }}</span>
+				</div>
+				<div class="panel-body">
+				  <table class="table table-hover">
+				  	<tbody class="container-fluid">
+				  		{% for webhook in webhooks %}
+				  		<tr class="row">
+				  			<td class="col-sm-1" style="display: none" name="project_webhookid">{{ webhook.webhook.id }}</td>
+				  			<td class="col-sm-9">
+				  				<a href="/project/{{ webhook.webhook.WHProjectID }}/webhook/{{ webhook.webhook.id }}/edit">{{ webhook.webhook.WHURL }}</a>
+				  			</td>
+				  			<td class="col-sm-1">
+				  				{% if webhook.webhook.WHIsDefault %}
+				  				<i  name="project_webhook_default"  class="fa fa-toggle-on fa-fw fa-2x" style="color:green;" isdefault={{ webhook.webhook.WHIsDefault|default_if_none:"False" }}></i>
+				  				{% else %}
+				  				   <i name="project_webhook_default" class="fa fa-toggle-off fa-fw fa-2x" style="color:gray" isdefault={{ webhook.webhook.WHIsDefault|default_if_none:"False" }}></i>
+				  				{% endif %}
+				  				<!-- <div name="project_webhook_default" isdefault={{ webhook.webhook.WHIsDefault|default_if_none:"False" }}></div> -->
+				  			</td>
+				  			<td class="col-sm-2"><button class="btn btn-primary btn-sm" name="project_webhook_perform">{{ webhook.category_name }}</button>  <button class="btn btn-danger btn-sm" name="project_delete_webhook">删除</button></td>
+				  		</tr>
+				  		{% endfor %}
+				  	</tbody>
+				  	
+				  </table>
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+	{% endif %}
+</div>
