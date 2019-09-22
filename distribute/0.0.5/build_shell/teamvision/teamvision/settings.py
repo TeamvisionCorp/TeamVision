@@ -48,7 +48,6 @@ INSTALLED_APPS = (
     'ws4redis',
     'rest_framework',
     'rest_framework_mongoengine',
-    'rest_framework_docs',
     'rest_framework.authtoken',
     'crispy_forms',
     'django_filters',
@@ -192,6 +191,16 @@ REDIS = {
         "DB": 1,
         "EXPIRE": 7200
     }
+}
+
+EMAILCONFIG = {
+    'HOST': 'smtp.163.com',
+    'PORT': 25,
+    'USER': 'xxxxx4061',
+    'PASSWORD': 'xxxxxntang199',
+    'ISAUTH': True,
+    'STARTSSL': False,
+    'POSTFIX': '163.com'
 }
 
 EMAIL_TEMPLATES = {
