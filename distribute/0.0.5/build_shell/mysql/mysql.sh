@@ -63,7 +63,7 @@ mysql -uroot -p${mysqlpassword}  -e "set global validate_password_length=4"
 echo "----------------------------------set mysql password '123456'--------------
 ----------------"
 
-mysql -uroot -p${mysqlpassword}  -e "ALTER USER 'root'@'localhost' IDENTIFIED BYY
+mysql -uroot -p${mysqlpassword}  -e "ALTER USER 'root'@'localhost' IDENTIFIED BY
  '123456'"
 echo "开始导入sql"
 mysql -uroot -p123456  < $dir/team_vision.sql
