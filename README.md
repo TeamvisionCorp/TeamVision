@@ -82,7 +82,7 @@ mongo,redis,nginx,mysql,python
 
    安装成功后，输入目标机器地址，端口8848，例如http://127.0.0.1:8848/ 访问teamvision
    
-### 注：目前teamvision只支持chrome浏览器，初始登录账号：teamcat@teamcat.cn 密码：123456  用此账号登录后可自由添加账号。
+### 注：目前teamvision只支持chrome浏览器，初始登录账号：teamvision@teamvision.cn 密码：123456  用此账号登录后可自由添加账号。
 
 ### 项目
 1. 添加首个自己的项目
