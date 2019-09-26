@@ -150,7 +150,7 @@ CREATE TABLE `auth_user` (
 --  Records of `auth_user`
 -- ----------------------------
 BEGIN;
-INSERT INTO `auth_user` VALUES ('1', 'pbkdf2_sha256$100000$r5or5rIt7Whg$c+6efLZNgOZ4802kSnMgBSJSyOWmjlWjwnjf3A0K4WU=', '2019-07-29 05:36:08', '1', 'admin', '理员', '管', 'teamvision@teamvision.cn', '1', '1', '2014-10-16 09:42:16');
+INSERT INTO `auth_user` VALUES ('1', 'pbkdf2_sha256$100000$N5p1dHCRfh5z$D606BIFDz8CgucDFEYgr1I4jNwQlq089Rd+TrSsqXAQ=', '2019-07-29 05:36:08', '1', 'admin', '理员', '管', 'teamvision@teamvision.cn', '1', '1', '2014-10-16 09:42:16');
 COMMIT;
 
 -- ----------------------------
