@@ -11,7 +11,7 @@ markdown
 django-filter
 django-crispy-forms
 django-guardian
-djangorestframework==3.8.2
+djangorestframework==3.9.1
 django-url-filter
 django-cors-headers
 django-oauth-toolkit
