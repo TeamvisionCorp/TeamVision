@@ -24,7 +24,7 @@
     "@progress/kendo-treeview-vue-wrapper": "^2019.1.220",
     "@progress/kendo-ui": "^2019.1.206",
     "@progress/kendo-window-vue-wrapper": "^2019.1.124",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "handsontable-pro": "^4.0.0",
     "highcharts": "^6.2.0",
     "jszip": "^2.6.1",
