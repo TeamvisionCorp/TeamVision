@@ -1,4 +1,4 @@
-django==2.0
+django==2.2.24
 mysqlclient
 pymysql
 pillow
