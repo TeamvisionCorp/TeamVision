@@ -27,7 +27,7 @@
     "axios": "^0.18.0",
     "handsontable-pro": "^4.0.0",
     "highcharts": "^6.2.0",
-    "jszip": "^2.6.1",
+    "jszip": "^2.7.0",
     "sortablejs": "^1.7.0",
     "vue": "^2.5.16",
     "vue-axios": "^2.1.1",
